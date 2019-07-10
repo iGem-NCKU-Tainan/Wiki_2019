@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Normal</title>
   <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css"/>  
-  <link rel="stylesheet" type="text/css" href="universal.css"> 
+  <link rel="stylesheet" type="text/css" href="universal.css">
 </head>
+
 <body data-spy="scroll" data-target=".sidenav"> 
-  <header>
+
+  <header class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="#">
         <img src="logo.png" alt="">
@@ -88,12 +90,16 @@
         </ul>
       </div>
     </nav>
-    <div class="bread"></div>
+    <div class="breadshape">
+      <p id="breadtext">123456</p>
+    </div>  
   </header>
+
+
   <div class="content container-fluid">
     <div class="row">
       <aside class="sidenav d-none d-md-flex flex-column justify-content-center align-items-center col-3"> 
-        <ul class="index list-group">
+        <ul class="list-group">
           <li>
             <a class="index" href="#Subtitle1">Subtitle1</a>
           </li>
