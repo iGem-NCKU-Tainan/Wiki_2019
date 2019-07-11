@@ -29,7 +29,7 @@ nav {
     height: auto;
 }
 nav::before {
-    content: "aaaaa"; 
+    content: ""; 
     width: 15vw;
     height: 3.5vw;
     background: #254F6E;

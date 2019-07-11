@@ -30,6 +30,7 @@ $(document).ready(function() {
     $(this).removeClass('open');
   });
   */
+  /*
   $('.dropdown').mouseover(function() {
     $(this).children('.dropdown-menu').show();
     console.log($(this).children('.dropdown-menu'));
@@ -52,6 +53,7 @@ $(document).ready(function() {
       $(this).hide();
     })
   });
+  */
   //scroll spy
   $('body').scrollspy({
     target: '.sidenav'
