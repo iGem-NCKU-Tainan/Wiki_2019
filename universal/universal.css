@@ -29,6 +29,9 @@ nav {
     height: auto;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    color:white;
+}
 .dropdown-menu {
     background-color: #fffdf6;
     border-radius: 0 0 .25rem .25rem;
@@ -81,12 +84,20 @@ nav {
     -o-transform: skew(20deg);
     background: #254F6E;
 }
+#breadtext a:hover{
+    color:rgb(99, 38, 38);
+}
+#breadtext a{
+    color:grey;
+}
+
 #breadtext{
     margin-left:8em;
-    color:white;
     font-style:none;
     transform: skew(60deg);
+    color:white;
 }
+
 /* Context */
 
 /* SideNav */
