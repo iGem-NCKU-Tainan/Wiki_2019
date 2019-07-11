@@ -28,28 +28,6 @@ nav {
     width: 15vw;
     height: auto;
 }
-nav::before {
-    content: ""; 
-    width: 15vw;
-    height: 3.5vw;
-    background: #254F6E;
-    position: absolute;
-    top: calc(100%);
-    left: 0;
-    color: white;
-    text-align: center;
-}
-nav::after {
-    content: ""; 
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: calc(100%);
-    left: 15vw;
-    color: white;
-    border-top: 3.5vw solid #254F6E;
-    border-right: 3.5vw solid transparent;
-}
 .dropdown-menu {
     background-color: #fffdf6;
     border-radius: 0 0 .25rem .25rem;
@@ -59,6 +37,25 @@ nav::after {
 
 .dropdown-menu a:hover { 
     background-color: #afcee2; 
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown-menu:before {
+    /*在menu跟dropdown中間加一塊透明的block*/
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 25px;
+    top: -25px;
+    left: 0;
+    right: 0;
+}
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    /*target active才不會讓滑鼠滑上去的時候沒改變*/
+    pointer-events: none;
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -74,11 +71,25 @@ nav::after {
     }
 
 }
+.breadshape{
+    width: 24em;
+    height: 2em;
+    margin-left:-3em;
+    -webkit-transform: skew(-60deg);
+    -moz-transform: skew(0deg);
+    -o-transform: skew(20deg);
+    background: #254F6E;
+}
+#breadtext{
+    margin-left:8em;
+    color:white;
+    font-style:none;
+    transform: skew(60deg);
+}
 /* Context */
 
 /* SideNav */
-.sidenav {
-}
+
 @media (min-width: 992px) { 
     .sidenav {
         height: 100vh;
@@ -91,6 +102,11 @@ nav::after {
     list-style-type: none;
     
 }
+
+.list-group{
+    position:fixed;
+}
+
 .index {
     font-size: 1.2em;
     color: grey;
@@ -99,6 +115,7 @@ nav::after {
     font-size: 2em;
     color: black;
 }
+
 /* main */
 main {
     width: 81.5%;
@@ -110,8 +127,10 @@ main {
     border-bottom-style:solid; 
     border-bottom-width:medium;
     margin-bottom: 5vh;
+    margin-top:10vh;
 }
 
 main section {
     padding: 5vh 10vw 5vh 0;
 }
+
