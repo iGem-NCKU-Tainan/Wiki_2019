@@ -30,30 +30,6 @@ $(document).ready(function() {
     $(this).removeClass('open');
   });
   */
-  $('.dropdown').mouseover(function() {
-    $(this).children('.dropdown-menu').show();
-    console.log($(this).children('.dropdown-menu'));
-  });
-
-  $('.dropdown').mouseout(function() {
-    $dropdown = $(this);
-    t = setTimeout(function() {
-      $dropdown.children('.dropdown-menu').hide();
-      console.log($dropdown.children('.dropdown-menu'));
-      $(this).children('.dropdown-menu').css("background-color","red")
-      console.log("mouseout");
-    }, 1000);
-
-    $('.dropdown-menu').on('mouseenter', function() {
-      $(this).show();
-      console.log("mousesent");
-      clearTimeout(t);
-    }).on('mouseleave', function() {
-      $(this).hide();
-    })
-  });
-  //scroll spy
-  $('body').scrollspy({
-    target: '.sidenav'
+  
     });
 });

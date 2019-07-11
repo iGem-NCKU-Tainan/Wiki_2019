@@ -19,9 +19,6 @@ p {
 nav {
     background-color: #254F6E;
 }
-header{
-
-}
 .navbar-brand {
     width: 10vw;
     height:10vh;
@@ -41,6 +38,25 @@ header{
 
 .dropdown-menu a:hover { 
     background-color: #afcee2; 
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown-menu:before {
+    /*在menu跟dropdown中間加一塊透明的block*/
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 25px;
+    top: -25px;
+    left: 0;
+    right: 0;
+}
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    /*target active才不會讓滑鼠滑上去的時候沒改變*/
+    pointer-events: none;
 }
 
 /* Large devices (desktops, 992px and up)*/
