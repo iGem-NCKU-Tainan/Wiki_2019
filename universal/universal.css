@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     position: relative;
     width:100%;
@@ -112,14 +115,11 @@ nav {
 }
 .sidenav ul {
     list-style-type: none;
+    position:fixed;
     
 }
 
-.list-group{
-    position:fixed;
-}
-
-.index {
+.sidenav a {
     font-size: 1.2em;
     color: grey;
 }
