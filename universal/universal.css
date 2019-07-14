@@ -21,6 +21,8 @@ p {
 
 nav {
     background-color: #254F6E;
+    opacity:0.96;
+    font-size:1.3em;
 }
 .navbar-brand {
     width: 10vw;
@@ -71,21 +73,16 @@ nav {
         flex-grow: 1;
         padding: 0 10% 0 15%;
     }
-    .vertical.divider {
-        width: 1px;
-        margin: .5rem 0;
-        background: white;
-    }
-
 }
 /*.breadshape{
     width: 24em;
-    height: 2em;
+    height: 2.3em;
     margin-left:-3em;
     -webkit-transform: skew(-50deg);
     -moz-transform: skew(0deg);
     -o-transform: skew(20deg);
     background: #254F6E;
+    opacity:0.96;
 }
 */
 .bread {
@@ -137,8 +134,6 @@ nav {
         height: 100vh;
         margin: 0;
     }
-    
-
 }
 .sidenav ul {
     list-style-type: none;
