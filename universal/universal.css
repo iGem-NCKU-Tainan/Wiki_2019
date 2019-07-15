@@ -40,7 +40,7 @@ nav {
 .dropdown-menu {
     background-color: #fffdf6;
     border-radius: 0 0 .25rem .25rem;
-    margin-top: .5rem;
+    margin-top: 1.05rem;
     border-style: none;
 }
 
@@ -53,7 +53,7 @@ nav {
 }
 .dropdown-menu:before {
     /*在menu跟dropdown中間加一塊透明的block*/
-    content: " ";
+    content: "";
     display: block;
     position: absolute;
     height: 25px;
@@ -74,7 +74,7 @@ nav {
         padding: 0 10% 0 15%;
     }
 }
-.breadshape{
+/*.breadshape{
     width: 24em;
     height: 2.3em;
     margin-left:-3em;
@@ -84,6 +84,31 @@ nav {
     background: #254F6E;
     opacity:0.96;
 }
+*/
+.bread {
+    height: 2.5em;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    
+}
+.bread .shape {
+    width: calc(20% - 2.5em);
+    height: 100%;
+    margin-right: 0px!important;
+    display: inline-block;
+    position: absolute;
+    background: #254F6E;
+}
+.bread::after {
+    content: ""; 
+    position: absolute;
+    left: calc(20% - 2.5em);
+    width: 0;
+    height: 0;
+    border-top: 2.5em solid #254F6E;
+    border-right: 2.5em solid transparent;
+}
 #breadtext a:hover{
     color:rgb(99, 38, 38);
 }
@@ -92,10 +117,7 @@ nav {
 }
 
 #breadtext{
-    margin-left:8em;
-    padding-top:0.35em;
     font-style:none;
-    transform: skew(50deg);
     color:white;
 }
 
@@ -105,6 +127,10 @@ nav {
 
 @media (min-width: 992px) { 
     .sidenav {
+    
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
         height: 100vh;
         margin: 0;
     }
@@ -126,19 +152,36 @@ nav {
 
 /* main */
 main {
-    width: 81.5%;
     padding-top: 12vh;
 }
+@media (min-width: 992px) { 
+    main {
+        -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+        max-width: 80%;
+        margin: 0;
+    }
 
+}
 .pageName {
     width: 100%;
     border-bottom-style:solid; 
     border-bottom-width:medium;
     margin-bottom: 5vh;
     margin-top:10vh;
+    padding-left: 5%;
 }
+/*md: destop*/
 
 main section {
-    padding: 5vh 10vw 5vh 0;
+    padding: 5vh 3vw 5vh 3vw;
 }
+@media (min-width: 992px) { 
+    .pageName {
+        padding-left: 0%;
+    }
+    main section {
+        padding: 5vh 10vw 5vh 0;
+    }
 
+}
