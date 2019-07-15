@@ -152,7 +152,6 @@ nav {
 
 /* main */
 main {
-    width: 81.5%;
     padding-top: 12vh;
 }
 @media (min-width: 992px) { 
@@ -170,9 +169,19 @@ main {
     border-bottom-width:medium;
     margin-bottom: 5vh;
     margin-top:10vh;
+    padding-left: 5%;
 }
+/*md: destop*/
 
 main section {
-    padding: 5vh 10vw 5vh 0;
+    padding: 5vh 3vw 5vh 3vw;
 }
+@media (min-width: 992px) { 
+    .pageName {
+        padding-left: 0%;
+    }
+    main section {
+        padding: 5vh 10vw 5vh 0;
+    }
 
+}
