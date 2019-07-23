@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    color: #3a3a3a;
 }
 body {
     position: relative;
@@ -9,11 +10,21 @@ body {
     font-family: "Segoe UI","微軟正黑體",sans-serif;
     overflow-y: scroll;
 }
-
+/* Page Name */
 .h1, h1 {
+    color: #3a3a3a;
     font-size:3.75em;
 }
+/* Subtitle */
+.h2, h2 {
+    color: #3a3a3a;
+}
+/* Sub-Subtitle */
+.h3, h3 {
+    color: #898989;
+}
 p {
+    color: #3a3a3a;
     word-wrap: break-word;
 }
 /* Navagation Bar */
@@ -154,15 +165,7 @@ nav {
 main {
     padding-top: 12vh;
 }
-@media (min-width: 992px) { 
-    main {
-        -ms-flex: 0 0 80%;
-        flex: 0 0 80%;
-        max-width: 80%;
-        margin: 0;
-    }
 
-}
 .pageName {
     width: 100%;
     border-bottom-style:solid; 
@@ -171,12 +174,20 @@ main {
     margin-top:10vh;
     padding-left: 5%;
 }
-/*md: destop*/
-
 main section {
-    padding: 5vh 3vw 5vh 3vw;
+    padding: 5vh 6vw 5vh 6vw;
 }
+main p {
+    white-space: pre-wrap;
+}
+/*lg: destop*/
 @media (min-width: 992px) { 
+    main {
+        -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+        max-width: 80%;
+        margin: 0;
+    }
     .pageName {
         padding-left: 0%;
     }

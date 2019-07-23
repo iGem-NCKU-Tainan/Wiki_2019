@@ -6,7 +6,9 @@
     <title>Snake Game</title>
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css"/>  
     <style>
-        
+        canvas {
+          background: black;
+        }
     </style>
 </head>
 <body data-spy="scroll" data-target=".sidenav"> 
@@ -17,10 +19,13 @@
     <script src="jquery-3.4.1.min.js"></script>
     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript">
+    draw();
     function draw(){
         var canvas = document.getElementById('game');
         if (canvas.getContext){
           var ctx = canvas.getContext('2d');
+          ctx.fillStyle="red";
+          ctx.fillRect(10,60,5,5);
         }
       }
         
