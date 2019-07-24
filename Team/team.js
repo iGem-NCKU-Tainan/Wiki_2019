@@ -1,10 +1,12 @@
 $( document ).ready(function() {
-   $(".photo-wrapper div").hover(function(){
-        $(this).children("img").toggleClass("d-none")
-    },function(){
-        $(this).children("img").toggleClass("d-none")
-    });
-
+  /* Only if the device is desktop, there are hover effect */ 
+  if($(window).width()>992) {
+    $(".photo-wrapper div").hover(function(){
+          $(this).children("img").toggleClass("d-none")
+      },function(){
+          $(this).children("img").toggleClass("d-none")
+      });
+  }
     $(".photo-wrapper div").click(function(){
         var intro = $(this).children(".intro").html();
         var src = $(this).children("img.hover").attr("src");
