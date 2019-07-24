@@ -17,6 +17,9 @@ $( document ).ready(function() {
     $(".dimmer").click(function(){
         closeDimmer();
     });
+    $("#dimmer-close").click(function(){
+        closeDimmer();
+    });
     $(".card").click(function(){
         event.stopPropagation();
     });
