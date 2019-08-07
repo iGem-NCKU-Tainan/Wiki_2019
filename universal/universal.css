@@ -1,47 +1,70 @@
+/* Compete with HQ */
+/*
+#mw-content-text p{
+    font-family: 'Raleway',"微軟正黑體",sans-serif;
+    font-size: 1rem;
+}
+#mw-content-text h1, h2, h3, h4, h5 {
+    font-family: 'Sansita',"微軟正黑體",sans-serif;
+}
+*/
 html {
     scroll-behavior: smooth;
-    color: #3a3a3a;
+    color: #2C2C2C;
 }
 body {
     position: relative;
     width:100%;
     height: auto;
-    background-color: #ECE2D0;
-    font-family: "Segoe UI","微軟正黑體",sans-serif;
+    background-color: #E3E5E8;
+    font-family: 'Raleway',"微軟正黑體",sans-serif;
     overflow-y: scroll;
 }
+/*Be selected*/
+::selection {
+    background-color: #8BBED5;
+  }
 /* Page Name */
 .h1, h1 {
-    color: #3a3a3a;
-    font-size:3.75em;
+    font-family: 'Sansita',"微軟正黑體",sans-serif;
+    color: #2C2C2C;
+    font-size:3.75rem;
 }
 /* Subtitle */
 .h2, h2 {
-    color: #3a3a3a;
+    font-family: 'Sansita',"微軟正黑體",sans-serif;
 }
 /* Sub-Subtitle */
 .h3, h3 {
-    color: #898989;
+    font-family: 'Sansita',"微軟正黑體",sans-serif;
 }
 p {
-    color: #3a3a3a;
     word-wrap: break-word;
 }
 /* Navagation Bar */
-
-
+.fixed-top {
+    top: 16px;
+}
 nav {
-    background-color: #254F6E;
+    background-color: #172544;
     opacity:0.96;
-    font-size:1.3em;
+    font-size:1.3rem;
+}
+.navbar {
+    padding: 0rem 1rem;
+}
+nav .fake {
+    width:56px;
+    height:40px;
 }
 .navbar-brand {
-    width: 10vw;
-    height:10vh;
+    width: 30vw;
+    height:auto;
+    margin-right: 0;
 }
 
 .navbar-brand img {
-    width: 15vw;
+    width: 100%;
     height: auto;
 }
 
@@ -51,7 +74,7 @@ nav {
 .dropdown-menu {
     background-color: #fffdf6;
     border-radius: 0 0 .25rem .25rem;
-    margin-top: 1.05rem;
+    margin-top: .5rem;
     border-style: none;
 }
 
@@ -67,11 +90,12 @@ nav {
     content: "";
     display: block;
     position: absolute;
-    height: 25px;
-    top: -25px;
+    height: 40px;
+    top: -30px;
     left: 0;
     right: 0;
 }
+
 .dropdown > .dropdown-toggle:active {
     /*Without this, clicking will make it sticky*/
     /*target active才不會讓滑鼠滑上去的時候沒改變*/
@@ -84,20 +108,13 @@ nav {
         flex-grow: 1;
         padding: 0 10% 0 15%;
     }
+    .navbar-brand {
+        width: 13vw;
+        height:auto;
+    }
 }
-/*.breadshape{
-    width: 24em;
-    height: 2.3em;
-    margin-left:-3em;
-    -webkit-transform: skew(-50deg);
-    -moz-transform: skew(0deg);
-    -o-transform: skew(20deg);
-    background: #254F6E;
-    opacity:0.96;
-}
-*/
 .bread {
-    height: 2.5em;
+    height: 2.5rem;
     margin: 0;
     padding: 0;
     position: relative;
@@ -105,24 +122,23 @@ nav {
     
 }
 .bread .shape {
-    width: calc(20% - 2.5em);
+    width: calc(20% - 2.5rem);
     height: 100%;
     margin-right: 0px!important;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    background: #254F6E;
+    background: #172544;
 }
 .bread::after {
     content: ""; 
     position: absolute;
-    left: calc(20% - 2.5em);
+    left: calc(20% - 2.5rem);
     width: 0;
     height: 0;
-    border-top: 2.5em solid #254F6E;
-    border-right: 2.5em solid transparent;
-}
-#breadtext a:hover{
-    color:rgb(99, 38, 38);
+    border-top: 2.5rem solid #172544;
+    border-right: 2.5rem solid transparent;
 }
 #breadtext a{
     color:grey;
@@ -131,6 +147,7 @@ nav {
 #breadtext{
     font-style:none;
     color:white;
+    margin: 0;
 }
 
 /* Context */
@@ -139,7 +156,6 @@ nav {
 
 @media (min-width: 992px) { 
     .sidenav {
-    
         -ms-flex: 0 0 20%;
         flex: 0 0 20%;
         max-width: 20%;
@@ -148,18 +164,19 @@ nav {
     }
 }
 .sidenav ul {
+    font-family: 'Sansita',"微軟正黑體",sans-serif;
     list-style-type: none;
     position:fixed;
-    
 }
 
 .sidenav a {
-    font-size: 1.2em;
-    color: grey;
+    font-size: 1.2rem;
+    color: #767676;
 }
 .sidenav a.active {
-    font-size: 2em;
-    color: black;
+    color: white;
+    background-color: #8BBED5;
+    border-radius: 1rem;
 }
 
 /* main */
@@ -172,7 +189,7 @@ main {
     border-bottom-style:solid; 
     border-bottom-width:medium;
     margin-bottom: 5vh;
-    margin-top:10vh;
+    margin-top:0;
     padding-left: 5%;
 }
 main section {
@@ -191,9 +208,15 @@ main p {
     }
     .pageName {
         padding-left: 0%;
+        margin-top:10vh;
     }
     main section {
         padding: 5vh 10vw 5vh 0;
     }
 
+}
+
+footer {
+    background-color: #767676;
+    color:white;
 }

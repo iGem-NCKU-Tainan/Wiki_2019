@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    //scroll spy
     $("a[href^='#']").click(function(e) {
         e.preventDefault();
         
