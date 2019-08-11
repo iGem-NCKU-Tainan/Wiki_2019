@@ -1,0 +1,292 @@
+html {
+    scroll-behavior: smooth;
+    color: #3a3a3a;
+}
+body {
+    position: relative;
+    width:100%;
+    height: auto;
+    background-color: #E3E5E8;
+    font-family: "Segoe UI","微軟正黑體",sans-serif;
+    overflow-y: scroll;
+}
+/* Page Name */
+.h1, h1 {
+    color: #3a3a3a;
+    font-size:3.75em;
+}
+/* Subtitle */
+.h2, h2 {
+    color: #3a3a3a;
+}
+/* Sub-Subtitle */
+.h3, h3 {
+    color: #898989;
+}
+p {
+    color: #3a3a3a;
+    word-wrap: break-word;
+}
+/* Navagation Bar */
+
+
+nav {
+    background-color: #254F6E;
+    opacity:0.96;
+    font-size:1.3em;
+}
+.navbar-brand {
+    width: 10vw;
+    height:10vh;
+}
+
+.navbar-brand img {
+    width: 15vw;
+    height: auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:white;
+}
+.dropdown-menu {
+    background-color: #fffdf6;
+    border-radius: 0 0 .25rem .25rem;
+    margin-top: 1.05rem;
+    border-style: none;
+}
+
+.dropdown-menu a:hover { 
+    background-color: #afcee2; 
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown-menu:before {
+    /*在menu跟dropdown中間加一塊透明的block*/
+    content: "";
+    display: block;
+    position: absolute;
+    height: 25px;
+    top: -25px;
+    left: 0;
+    right: 0;
+}
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    /*target active才不會讓滑鼠滑上去的時候沒改變*/
+    pointer-events: none;
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    .navbar-expand-lg .navbar-nav.navbar-nav {
+        flex-grow: 1;
+        padding: 0 10% 0 15%;
+    }
+}
+/*.breadshape{
+    width: 24em;
+    height: 2.3em;
+    margin-left:-3em;
+    -webkit-transform: skew(-50deg);
+    -moz-transform: skew(0deg);
+    -o-transform: skew(20deg);
+    background: #254F6E;
+    opacity:0.96;
+}
+*/
+.bread {
+    height: 2.5em;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    opacity:0.96;
+    
+}
+.bread .shape {
+    width: calc(20% - 2.5em);
+    height: 100%;
+    margin-right: 0px!important;
+    display: inline-block;
+    position: absolute;
+    background: #254F6E;
+}
+.bread::after {
+    content: ""; 
+    position: absolute;
+    left: calc(20% - 2.5em);
+    width: 0;
+    height: 0;
+    border-top: 2.5em solid #254F6E;
+    border-right: 2.5em solid transparent;
+}
+#breadtext a:hover{
+    color:rgb(99, 38, 38);
+}
+#breadtext a{
+    color:grey;
+}
+
+#breadtext{
+    font-style:none;
+    color:white;
+}
+
+.color-block{
+    width:100%;
+    height:200px;
+    background-color: #E3E5E8;
+    text-align: left;
+    padding-top:3rem;
+}
+
+.container{
+    margin-top:1rem;
+}
+
+.card-header{
+    display:center;
+    background-color: #E3E5E8;
+    padding:0;
+}
+.btn{
+    padding:0;  
+    padding:15px 0px 15px 0;
+    border-radius: 0;
+    font-weight: bold;
+    text-align: left;
+    display:inline-block;
+    width: 40vw;
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
+.card{
+    border:none;
+    background-color: #E4E5E6;
+}
+.card-body{
+    width: 99%;
+    margin:0 2rem 2rem 0rem;
+    padding:1rem 2rem 2rem 2rem;
+    box-shadow: 10px 10px 5px #888888;
+}
+#firstOne{
+    border-top: 1px solid #A6A7A7;
+}
+
+
+
+
+.mb-0{
+    border-bottom: 1px solid #A6A7A7;
+    border-top: 1px solid #A6A7A7;
+    position: relative;
+    text-align: left;
+    background: #E3E5E8;
+    cursor: pointer;
+}
+
+.mb-0:after,.mb-0:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #E3E5E8;
+    z-index:-2;
+}
+
+.mb-0:hover{
+    z-index:1;
+    background:transparent;
+}            
+
+.mb-0:before {
+    transition: .3s;
+    background: #DEC6C7;
+    z-index:-1;
+    border-radius: 4px;
+}          
+
+.mb-0:hover:after,.mb-0:hover:before {
+    width: 97%;
+}
+
+
+
+
+
+
+
+.accordion{
+    justify-content: center;
+    justify-items: center;
+    display: contents;
+    width:20%;
+    left:300px;
+}
+
+.proFont{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+
+
+.mb-0:hover >.plusClass:after{
+    display:none;
+}
+.mb-0:hover >.minusClass{
+    display:block;
+}
+.plusClass:after{
+    position: absolute;
+    font-family: sans-serif;
+    content: "+";
+    top:15%;
+    left:96%;
+
+}
+.minusClass:after{
+    position: absolute;
+    font-family: sans-serif;
+    content: "-";
+    top:14%;
+    left:96%;
+}
+
+.minusClass{
+    display: none;
+}
+
+/*
+.signClass.hidden:hover:after{
+    display:none;
+}
+*/
+
+/*
+.minusSign{
+    display: inline-block;
+    width:40px;
+    height: 20px;
+    display: none;
+}
+*/
+/*
+.minusSign::after{
+    position: absolute;
+    content: "-";
+    width:40px;
+    height: 40px;
+    top:6%;
+    left:95%;
+    display: hidden;
+    display:none;
+}
+*/
