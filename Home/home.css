@@ -8,7 +8,7 @@ body {
     position: relative;
     width:100%;
     height: auto;
-    background-color: #E3E5E8;
+    background-color: #f0f0f0;
     font-family: 'Raleway',"微軟正黑體",sans-serif;
     overflow-y: scroll;
 }
@@ -149,6 +149,7 @@ section {
 .wrapper {
     height: 100%;
 }
+/*
 #Project {
     background-color: grey;
 }
@@ -161,12 +162,12 @@ section {
 footer {
     background-color: gray;
 }
+*/
 .footer-wrapper {
     height: 40vh;
 }
 /* Logo Part */
 #Logo {
-    background-color: antiquewhite;
     position: relative;
 }
 .logo-wrapper {

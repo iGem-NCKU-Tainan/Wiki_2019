@@ -9,4 +9,9 @@ $(document).ready(function() {
             scrollTop: position
         }, 200);
     });
+
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery(); 
+    });
+
 });

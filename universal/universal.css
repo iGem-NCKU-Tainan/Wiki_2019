@@ -16,31 +16,49 @@ body {
     position: relative;
     width:100%;
     height: auto;
-    background-color: #E3E5E8;
+    background-color: #f0f0f0;
     font-family: 'Raleway',"微軟正黑體",sans-serif;
     overflow-y: scroll;
 }
 /*Be selected*/
 ::selection {
-    background-color: #8BBED5;
+    background-color: rgb(139, 190, 213);
   }
 /* Page Name */
 .h1, h1 {
     font-family: 'Sansita',"微軟正黑體",sans-serif;
     color: #2C2C2C;
     font-size:3.75rem;
+    font-weight: 800;
 }
 /* Subtitle */
 .h2, h2 {
     font-family: 'Sansita',"微軟正黑體",sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2vh;
 }
 /* Sub-Subtitle */
 .h3, h3 {
     font-family: 'Sansita',"微軟正黑體",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
-p {
+main p {
+    white-space: pre-wrap;
     word-wrap: break-word;
+    font-size: 1.1rem;
 }
+
+main a {
+    color: #070203;
+    text-decoration:underline;
+}
+main a:hover {
+    color: #8BBED5;
+    text-decoration:underline;
+}
+
 /* Navagation Bar */
 .fixed-top {
     top: 16px;
@@ -80,7 +98,8 @@ nav .fake {
 }
 
 .dropdown-menu a:hover { 
-    background-color: #afcee2; 
+    background-color: #8BBED5; 
+    color: white;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -144,7 +163,8 @@ nav .fake {
     border-right: 2.5rem solid transparent;
 }
 #breadtext a{
-    color:grey;
+    color: white;
+    font-size: 0.9rem
 }
 
 #breadtext{
@@ -173,6 +193,7 @@ nav .fake {
 }
 
 .sidenav a {
+    text-align: center;
     font-size: 1.2rem;
     color: #767676;
 }
@@ -198,8 +219,15 @@ main {
 main section {
     padding: 5vh 6vw 5vh 6vw;
 }
+main hr {
+    border-top: 1px solid #2C2C2C;
+    margin-right: 8vw;
+}
 main p {
-    white-space: pre-wrap;
+    
+}
+figure {
+    margin: 1vh 0 3vh 0;
 }
 /*lg: destop*/
 @media (min-width: 992px) { 
@@ -208,13 +236,14 @@ main p {
         flex: 0 0 80%;
         max-width: 80%;
         margin: 0;
+        padding-left: 6vw;
     }
     .pageName {
         padding-left: 0%;
         margin-top:10vh;
     }
     main section {
-        padding: 5vh 10vw 5vh 0;
+        padding: 1vh 10vw 1vh 0;
     }
 
 }
@@ -222,4 +251,6 @@ main p {
 footer {
     background-color: #767676;
     color:white;
+    /* make it a space between context and footer */
+    margin-top: 8vh;
 }
