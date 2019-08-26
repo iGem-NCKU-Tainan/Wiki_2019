@@ -1,8 +1,11 @@
 /* Compete with HQ */
 /*
+#mw-content-text {
+    background-color: #f0f0f0;
+    color: #2C2C2C;
+}
 #mw-content-text p{
     font-family: 'Raleway',"微軟正黑體",sans-serif;
-    font-size: 1rem;
 }
 #mw-content-text h1, h2, h3, h4, h5 {
     font-family: 'Sansita',"微軟正黑體",sans-serif;
@@ -24,10 +27,10 @@ body {
 ::selection {
     background-color: rgb(139, 190, 213);
   }
+/*add #mw-content-text in the front*/
 /* Page Name */
 .h1, h1 {
     font-family: 'Sansita',"微軟正黑體",sans-serif;
-    color: #2C2C2C;
     font-size:3.75rem;
     font-weight: 800;
 }
@@ -47,11 +50,11 @@ body {
 main p {
     white-space: pre-wrap;
     word-wrap: break-word;
+    text-align: left;
     font-size: 1.1rem;
 }
 
 main a {
-    color: #070203;
     text-decoration:underline;
 }
 main a:hover {
@@ -220,12 +223,12 @@ main section {
     padding: 5vh 6vw 5vh 6vw;
 }
 main hr {
-    border-top: 1px solid #2C2C2C;
-    margin-right: 8vw;
+    border-style: solid;
+    border-color: #2C2C2C;
+    margin-right: 3vw;
+    margin-left: 3vw;
 }
-main p {
-    
-}
+
 figure {
     margin: 1vh 0 3vh 0;
 }
@@ -238,6 +241,10 @@ figure {
         margin: 0;
         padding-left: 6vw;
     }
+    main hr {
+        margin-right: 7vw;
+        margin-left: 0vw;
+    }
     .pageName {
         padding-left: 0%;
         margin-top:10vh;
@@ -247,7 +254,7 @@ figure {
     }
 
 }
-
+/*footer*/
 footer {
     background-color: #767676;
     color:white;
