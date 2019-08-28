@@ -1,0 +1,112 @@
+{{Template:NCKU_Tainan/block_css}}
+{{Template:NCKU_Tainan/bootstrap_min_css}}
+{{Template:NCKU_Tainan/template_css}}
+{{Template:NCKU_Tainan/header}}
+{{Template:NCKU_Tainan/universal_css}}
+<html lang="en">
+<!--head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Universal</title>
+  <link rel="stylesheet" href="https://2019.igem.org/Team:NCKU_Tainan/css/4.3.1/bootstrap_min_css?action=raw&ctype=text/css"/>
+  <link rel="stylesheet" type="text/css" href="https://2019.igem.org/Team:NCKU_Tainan/css/universal?action=raw&ctype=text/css">
+</head-->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway|Sansita&display=swap" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".sidenav" data-offset="10">  
+  <div class="content container-fluid">
+    <div class="row">
+      <!--Sidebar (Remember to change the subtitle context, but don't change the id)-->
+      <aside class="sidenav d-none d-lg-flex flex-column justify-content-center align-items-center col-2"> 
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#Subtitle1">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Subtitle2">Secretion tag (<i>yebF</i>)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Subtitle3">Bacteriocin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Subtitle4">Tyrosine transporter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Subtitle5">FNR promoter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Subtitle6">Tyrosine ammonia-lyase</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Subtitle7">Knock out genes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Subtitle8"><i>p</i>-Cresol sensing system</a>
+          </li>
+        </ul>
+      </aside>
+      <main class="">
+      <!--The Page Name-->
+      <div class="pageName">
+        <h1>Design</h1>
+        <div class="Design"></div>
+      </div>
+      <section>
+        <h2 id ="Subtitle1">Overview</h2>
+        <!--remember to have 4 spaces in front of a paragraph-->
+        <p>    In order to achieve our goals, we designed our <i>E. coli</i> Nissle to have two functions.<br>The first function is to eliminate the <i>p</i>-Cresol producing bacteria, specifically <i>Clostridium</i>i strains, which we have done so by equipping our E. coli Nissle with a high specificity bacteriocin. The second one is to degrade the precursor of p-Cresol, tyrosine by diverting the original pathway. </p>
+        <p>    For biosafety reasons, we implement biocontainment by deletion one of our two genes candidates which are yadF gene and dapA gene. </p>
+        <p>    In an effort to prevent the accumulation of more uremic toxins due to the ingestion of our engineered E. coli Nissle inside the human body, we knocked out the tnaA gene</p>
+        <p>    During our research, we found out that Pseudomonas has the ability to sense p-Cresol. So we designed a p-Cresol (-GFP) reporter system by cloning Pseudomonas's p-Cresol sensing promoter to E. coli and culture it in our device for detection.</p>
+      </section>
+      <hr>
+      <section>
+        <h2 id ="Subtitle2">Secretion tag (yebF)</h2>
+        <p>    yebF is a well-known E. coli secretory protein with unknown function. With a size of only 12kDa, previous iGEM teams<sup><a href="#ref1">[1]</a></sup> and other researchers<sup><a href="#ref2">[2]</a></sup> have used it as a secretary tag for recombinant proteins and proven functional. So, we decided to fuse it with our bacteriocin to enable its secretion from our E. coli Nissle. </p>
+      </section>
+      <hr>
+      <section>
+        <h2 id ="Subtitle3">Bacteriocin</h2>
+        <p>    Previous researchp<sup><a href="#ref3">[3]</a></sup> reported that a bacteriocin-like gene was found in Clostridium butyricum MIYAIRI 588 (CBM588), a bacterium used in probiotics and was proven to have a bactericidal activity to certain strains of C. difficile. The bacteriocin (later called CBM-B) self-cleaves itself into two parts, but only the C-terminal region possesses the bactericidal activity.<sup><a href="ref3">[3]</a></sup></p>
+      </section>
+      <section>
+        <!--Subtitle use h2-->
+        <h2 id ="Subtitle4">Tyrosine transporter (tyrP)[4]</h2>
+        <!--If you want to divide it into two block use below part-->
+        <div class="container-fluid p-0" >
+          <div class="row no-gutters">
+            <div class="col-lg">
+              <p>    It’s the gene that is involved in transporting tyrosine across the cytoplasmic membrane, E.coli Nissle in our case.<br>Hence, we coded it from original E.coli MG1655 and designed a new biobrick which incorporated into our E.coli, allowing it to take in more tyrosine than Clostridium. By doing so, our E.coli can provide competition to Clostridium and reduce the absorption of additional tyrosine by Clostridium, which in turn reduces the amount of p-Cresol it produces.
+              </p>
+            </div>
+              <!--Wrong image-->
+              <div class="col-lg d-flex justify-content-center align-items-center">
+                  <figure class="d-flex flex-column justify-content-center align-items-center">
+                    <a href="https://2019.igem.org/wiki/images/7/74/T--NCKU_Tainan--Design_TAL_construct.png" target="_blank"><img src="https://2019.igem.org/wiki/images/7/74/T--NCKU_Tainan--Design_TAL_construct.png" alt="" title="" style="width:100%"></a>
+                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                  </figure>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section>
+          <h2 id ="">References</h2>
+            <ol>
+                <li><a>http://parts.igem.org/wiki/index.php?title=Part:BBa_K1659003</a></li>
+                <li>Seo, E., Weibel, S., Wehkamp, J., & Oelschlaeger, T. A. (2012). Construction of recombinant E. coli Nissle 1917 (EcN) strains for the expression and secretion of defensins. International Journal of Medical Microbiology : IJMM, 302(6), 276–287.
+                  </li>
+                <li>Nakanishi, S., & Tanaka, M. (2010). Sequence analysis of a bacteriocinogenic plasmid of Clostridium butyricum and expression of the bacteriocin gene in Escherichia coli. Anaerobe, 16(3), 253–257.</li>
+            </ol>
+      </section>
+    </main>
+  </div>
+  </div>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/jquery-3_4_1_min_js?action=raw&amp;ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/4.3.1/bootstrap_min_js?action=raw&amp;ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/Universal?action=raw&amp;ctype=text/javascript"></script>
+  </body>
+  </html>
+{{Template:NCKU_Tainan/footer}}
