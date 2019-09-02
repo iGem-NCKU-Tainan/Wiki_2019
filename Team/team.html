@@ -6,6 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Team</title>
   <link rel="stylesheet" href="https://2019.igem.org/Team:NCKU_Tainan/css/4.3.1/bootstrap_min_css?action=raw&ctype=text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Sansita&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="team.css">
 </head>
 <body class="">
@@ -88,15 +89,12 @@
     </nav>
     <div class="bread d-none d-lg-block">
       <div class="shape">
-        <p id="breadtext"><a href="#">Project</a> > <a href="#">Descroption</a></p>
+        <p id="breadtext"></p>
       </div>  
     </div>
   </header>
   <div id="carousel-team" class="carousel slide" data-ride="carousel">
-    <div class="mask"></div>
-    <div class="pageName d-flex justify-content-center align-items-center">
-      <div class="d-flex justify-content-center align-items-center"><h1>Team</h1></div>
-    </div>
+    <div class="pageName"><h1>Team</h1></div>
     <ol class="carousel-indicators">
       <li data-target="#carousel-team" data-slide-to="0" class="active"></li>
       <li data-target="#carousel-team" data-slide-to="1"></li>
@@ -126,63 +124,36 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <div class="main">
+  <div class="main team">
+    <section class="abstract">
+      <p>    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+    </section>
+    <hr class="abstract">
+    <!--PI-->
     <section class="PI-part">
       <h2>Principle Instructor</h2>
       <div class="photo-wrapper d-flex justify-content-center flex-wrap w-100">
-          <div class="intro-all">
-              <img src="photo/william.jpg" alt="" class="normal w-100">
-              <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-              <div class="intro d-none">
-                <h3 class="card-title">Hsu Tzu Huan</h3>
-                <p class="card-text">
-                  <b>Position</b>: Dry Team Member<br>
-                  <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                  <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                  <b>Fun Fact</b>: I often feel insecure<br></p>
-                </div>
-              </div>
-              <div class="intro-all">
-                <img src="photo/william.jpg" alt="" class="normal w-100">
-                <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                <div class="intro d-none">
-                  <h3 class="card-title">Hsu Tzu Huan</h3>
-                  <p class="card-text">
-                    <b>Position</b>: Dry Team Member<br>
-                    <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                    <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                    <b>Fun Fact</b>: I often feel insecure<br></p>
-                  </div>
-                </div>
-                <div class="intro-all">
-                  <img src="photo/william.jpg" alt="" class="normal w-100">
-                  <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                  <div class="intro d-none">
-                    <h3 class="card-title">Hsu Tzu Huan</h3>
-                    <p class="card-text">
-                      <b>Position</b>: Dry Team Member<br>
-                      <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                      <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                      <b>Fun Fact</b>: I often feel insecure<br></p>
-                    </div>
-                  </div>
-                  <div class="intro-all">
-                    <img src="photo/william.jpg" alt="" class="normal w-100">
-                    <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                    <div class="intro d-none">
-                      <h3 class="card-title">Hsu Tzu Huan</h3>
-                      <p class="card-text">
-                        <b>Position</b>: Dry Team Member<br>
-                        <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                        <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                        <b>Fun Fact</b>: I often feel insecure<br></p>
-                      </div>
-                    </div> 
+        <!--A person-->
+        <div class="intro-all">
+          <img src="photo/william.jpg" alt="" class="normal w-100">
+          <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
+          <div class="intro d-none">
+            <h3 class="card-title">I-Son Ng</h3>
+            <p class="card-text">
+              <b>Assistant Professor - Department of Chemical Engineering</b><br>
+              She is devoted to the study of synthetic biology, genetic and enzymatic engineering, biorefinery and bioremediation. She has developed a robust and efficient platform to explore the novel and functional enzymes by genetic and proteomics approach.<br>
+            </p>
+            <button class="btn btn-outline-dark btn-sm align-self-end mt-auto" onclick="closeDimmer()" aria-label="close">Close</button>
+          </div>
+        </div>
+        <!---->
       </div>
     </section>
+    <!--Advisor-->
     <section class="advisor-part">
       <h2>Advisor</h2>
       <div class="photo-wrapper d-flex justify-content-center flex-wrap w-100">
+        <!--A person-->
         <div class="intro-all">
           <img src="photo/william.jpg" alt="" class="normal w-100">
           <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
@@ -192,263 +163,52 @@
               <b>Position</b>: Dry Team Member<br>
               <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
               <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-              <b>Fun Fact</b>: I often feel insecure<br></p>
-            </div>
+              <b>Fun Fact</b>: I often feel insecure<br>
+            </p>
+            <button class="btn btn-outline-dark btn-sm align-self-end mt-auto" onclick="closeDimmer()" aria-label="close">Close</button>
           </div>
-          <div class="intro-all">
-            <img src="photo/william.jpg" alt="" class="normal w-100">
-            <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-            <div class="intro d-none">
-              <h3 class="card-title">Hsu Tzu Huan</h3>
-              <p class="card-text">
-                <b>Position</b>: Dry Team Member<br>
-                <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                <b>Fun Fact</b>: I often feel insecure<br></p>
-              </div>
-            </div>
-            <div class="intro-all">
-              <img src="photo/william.jpg" alt="" class="normal w-100">
-              <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-              <div class="intro d-none">
-                <h3 class="card-title">Hsu Tzu Huan</h3>
-                <p class="card-text">
-                  <b>Position</b>: Dry Team Member<br>
-                  <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                  <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                  <b>Fun Fact</b>: I often feel insecure<br></p>
-                </div>
-              </div>
-              <div class="intro-all">
-                <img src="photo/william.jpg" alt="" class="normal w-100">
-                <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                <div class="intro d-none">
-                  <h3 class="card-title">Hsu Tzu Huan</h3>
-                  <p class="card-text">
-                    <b>Position</b>: Dry Team Member<br>
-                    <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                    <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                    <b>Fun Fact</b>: I often feel insecure<br></p>
-                  </div>
-                </div> 
-                <div class="intro-all">
-                  <img src="photo/william.jpg" alt="" class="normal w-100">
-                  <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                  <div class="intro d-none">
-                    <h3 class="card-title">Hsu Tzu Huan</h3>
-                    <p class="card-text">
-                      <b>Position</b>: Dry Team Member<br>
-                      <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                      <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                      <b>Fun Fact</b>: I often feel insecure<br></p>
-                    </div>
-                  </div>
-                  <div class="intro-all">
-                    <img src="photo/william.jpg" alt="" class="normal w-100">
-                    <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                    <div class="intro d-none">
-                      <h3 class="card-title">Hsu Tzu Huan</h3>
-                      <p class="card-text">
-                        <b>Position</b>: Dry Team Member<br>
-                        <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                        <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                        <b>Fun Fact</b>: I often feel insecure<br></p>
-                      </div>
-                    </div>           
-                  </div>
-                </section>
-                <section class="tMember-part">
-                  <h2>Team Member</h2>
-                  <div class="photo-wrapper d-flex justify-content-center flex-wrap w-100">
-                    <div class="intro-all">
-                      <img src="photo/william.jpg" alt="" class="normal w-100">
-                      <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                      <div class="intro d-none">
-                        <h3 class="card-title">Hsu Tzu Huan</h3>
-                        <p class="card-text">
-                          <b>Position</b>: Dry Team Member<br>
-                          <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                          <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                          <b>Fun Fact</b>: I often feel insecure<br></p>
-                        </div>
-                      </div>
-                      <div class="intro-all">
-                        <img src="photo/william.jpg" alt="" class="normal w-100">
-                        <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                        <div class="intro d-none">
-                          <h3 class="card-title">Hsu Tzu Huan</h3>
-                          <p class="card-text">
-                            <b>Position</b>: Dry Team Member<br>
-                            <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                            <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                            <b>Fun Fact</b>: I often feel insecure<br></p>
-                          </div>
-                        </div>
-                        <div class="intro-all">
-                          <img src="photo/william.jpg" alt="" class="normal w-100">
-                          <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                          <div class="intro d-none">
-                            <h3 class="card-title">Hsu Tzu Huan</h3>
-                            <p class="card-text">
-                              <b>Position</b>: Dry Team Member<br>
-                              <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                              <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                              <b>Fun Fact</b>: I often feel insecure<br></p>
-                            </div>
-                          </div>
-                          <div class="intro-all">
-                            <img src="photo/william.jpg" alt="" class="normal w-100">
-                            <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                            <div class="intro d-none">
-                              <h3 class="card-title">Hsu Tzu Huan</h3>
-                              <p class="card-text">
-                                <b>Position</b>: Dry Team Member<br>
-                                <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                                <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                                <b>Fun Fact</b>: I often feel insecure<br></p>
-                              </div>
-                            </div>
-                            <div class="intro-all">
-                              <img src="photo/william.jpg" alt="" class="normal w-100">
-                              <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                              <div class="intro d-none">
-                                <h3 class="card-title">Hsu Tzu Huan</h3>
-                                <p class="card-text">
-                                  <b>Position</b>: Dry Team Member<br>
-                                  <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                                  <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                                  <b>Fun Fact</b>: I often feel insecure<br></p>
-                                </div>
-                              </div>
-                              <div class="intro-all">
-                                <img src="photo/william.jpg" alt="" class="normal w-100">
-                                <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                                <div class="intro d-none">
-                                  <h3 class="card-title">Hsu Tzu Huan</h3>
-                                  <p class="card-text">
-                                    <b>Position</b>: Dry Team Member<br>
-                                    <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                                    <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                                    <b>Fun Fact</b>: I often feel insecure<br></p>
-                                  </div>
-                                </div>
-                                <div class="intro-all">
-                                  <img src="photo/william.jpg" alt="" class="normal w-100">
-                                  <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                                  <div class="intro d-none">
-                                    <h3 class="card-title">Hsu Tzu Huan</h3>
-                                    <p class="card-text">
-                                      <b>Position</b>: Dry Team Member<br>
-                                      <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                                      <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                                      <b>Fun Fact</b>: I often feel insecure<br></p>
-                                    </div>
-                                  </div>
-                                  <div class="intro-all">
-                                    <img src="photo/william.jpg" alt="" class="normal w-100">
-                                    <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                                    <div class="intro d-none">
-                                      <h3 class="card-title">Hsu Tzu Huan</h3>
-                                      <p class="card-text">
-                                        <b>Position</b>: Dry Team Member<br>
-                                        <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                                        <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                                        <b>Fun Fact</b>: I often feel insecure<br></p>
-                                      </div>
-                                    </div>
-                                    <div class="intro-all">
-                                        <img src="photo/william.jpg" alt="" class="normal w-100">
-                                        <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                                        <div class="intro d-none">
-                                          <h3 class="card-title">Hsu Tzu Huan</h3>
-                                          <p class="card-text">
-                                            <b>Position</b>: Dry Team Member<br>
-                                            <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                                            <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                                            <b>Fun Fact</b>: I often feel insecure<br></p>
-                                          </div>
-                                        </div>
-                                        <div class="intro-all">
-                                            <img src="photo/william.jpg" alt="" class="normal w-100">
-                                            <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                                            <div class="intro d-none">
-                                              <h3 class="card-title">Hsu Tzu Huan</h3>
-                                              <p class="card-text">
-                                                <b>Position</b>: Dry Team Member<br>
-                                                <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                                                <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                                                <b>Fun Fact</b>: I often feel insecure<br></p>
-                                              </div>
-                                            </div>
-                                            <div class="intro-all">
-                                                <img src="photo/william.jpg" alt="" class="normal w-100">
-                                                <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                                                <div class="intro d-none">
-                                                  <h3 class="card-title">Hsu Tzu Huan</h3>
-                                                  <p class="card-text">
-                                                    <b>Position</b>: Dry Team Member<br>
-                                                    <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                                                    <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                                                    <b>Fun Fact</b>: I often feel insecure<br></p>
-                                                  </div>
-                                                </div>
-                                                <div class="intro-all">
-                                                    <img src="photo/william.jpg" alt="" class="normal w-100">
-                                                    <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                                                    <div class="intro d-none">
-                                                      <h3 class="card-title">Hsu Tzu Huan</h3>
-                                                      <p class="card-text">
-                                                        <b>Position</b>: Dry Team Member<br>
-                                                        <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                                                        <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                                                        <b>Fun Fact</b>: I often feel insecure<br></p>
-                                                      </div>
-                                                    </div>
-                                                    <div class="intro-all">
-                                                        <img src="photo/william.jpg" alt="" class="normal w-100">
-                                                        <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                                                        <div class="intro d-none">
-                                                          <h3 class="card-title">Hsu Tzu Huan</h3>
-                                                          <p class="card-text">
-                                                            <b>Position</b>: Dry Team Member<br>
-                                                            <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                                                            <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                                                            <b>Fun Fact</b>: I often feel insecure<br></p>
-                                                          </div>
-                                                        </div>
-                                    <div class="intro-all">
-                                      <img src="photo/william.jpg" alt="" class="normal w-100">
-                                      <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
-                                      <div class="intro d-none">
-                                        <h3 class="card-title">Hsu Tzu Huan</h3>
-                                        <p class="card-text">
-                                          <b>Position</b>: Dry Team Member<br>
-                                          <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
-                                          <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
-                                          <b>Fun Fact</b>: I often feel insecure<br></p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </section>
-                                </div>
-                                <div class="dimmer d-none justify-content-center align-items-center">
-                                  <div class="card mb-3" style="max-width: 540px;">
-                                    <button type="button" id="dimmer-close" class="close d-md-none" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <div class="row no-gutters">
-                                      <div class="col-md-4">
-                                        <img class="card-img" src="" alt="">
-                                      </div>
-                                      <div class="col-md-8">
-                                        <div class="intro card-body">
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div> 
-                                </div>
-                                <script src="https://2019.igem.org/Team:NCKU_Tainan/js/jquery-3_4_1_min_js?action=raw&ctype=text/javascript"></script>
-                                <script src="https://2019.igem.org/Team:NCKU_Tainan/js/4.3.1/bootstrap_min_js?action=raw&ctype=text/javascript"></script>
-                                <script src="team.js"></script>
-                              </body>
-                              </html>
+        </div>
+        <!---->
+      </div>           
+    </section>
+    <!--Team member-->
+    <section class="tMember-part">
+      <h2>Team Member</h2>
+      <div class="photo-wrapper d-flex justify-content-center flex-wrap w-100">
+        <!--A person-->
+        <div class="intro-all">
+          <img src="photo/william.jpg" alt="" class="normal w-100"><!--Team shirt-->
+          <img src="photo/fuji.jpg" alt="" class="hover d-none w-100">
+          <div class="intro d-none">
+            <h3 class="card-title">Hsu Tzu Huan</h3>
+            <p class="card-text">
+              <b>Position</b>: Dry Team Member<br>
+              <b>Major</b>: International Bachelor Degree Program on Energy Engineering<br>
+              <b>Favourite quote</b>: "Fourtune will come save the strong ones."<br>
+              <b>Fun Fact</b>: I often feel insecure<br>
+            </p>
+            <button class="btn btn-outline-dark btn-sm align-self-end mt-auto" onclick="closeDimmer()" aria-label="close">Close</button>
+          </div>
+        </div>
+        <!---->
+      </div>               
+      </section>
+    </div>
+    <!--Dimmer Part-->
+    <div class="dimmer d-none justify-content-center align-items-center">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img class="card-img" src="" alt="">
+          </div>
+          <div class="col-md-8 d-flex">
+            <div class="intro card-body d-flex flex-column align-self-stretch"></div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/jquery-3_4_1_min_js?action=raw&ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/4.3.1/bootstrap_min_js?action=raw&ctype=text/javascript"></script>
+    <script src="team.js"></script>
+</body>
+</html>

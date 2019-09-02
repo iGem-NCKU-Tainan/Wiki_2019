@@ -10,8 +10,4 @@ $(document).ready(function() {
         }, 200);
     });
 
-    $(document).ready(function() {
-        $("#lightgallery").lightGallery(); 
-    });
-
 });

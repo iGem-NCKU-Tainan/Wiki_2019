@@ -1,0 +1,142 @@
+{{Template:NCKU_Tainan/block_css}}
+{{Template:NCKU_Tainan/bootstrap_min_css}}
+{{Template:NCKU_Tainan/template_css}}
+{{Template:NCKU_Tainan/header}}
+{{Template:NCKU_Tainan/universal_css}}
+<html lang="en">
+<!--head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Universal</title>
+  <link rel="stylesheet" href="https://2019.igem.org/Team:NCKU_Tainan/css/4.3.1/bootstrap_min_css?action=raw&ctype=text/css"/>
+  <link rel="stylesheet" type="text/css" href="https://2019.igem.org/Team:NCKU_Tainan/css/universal?action=raw&ctype=text/css">
+</head-->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway|Sansita&display=swap" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".sidenav" data-offset="10">  
+  <div class="content container-fluid">
+    <div class="row">
+      <!--Sidebar (Remember to change the subtitle context, but don't change the id)-->
+      <aside class="sidenav d-none d-lg-flex flex-column justify-content-center align-items-center col-2"> 
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#Subtitle1">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Subtitle2">Bacteriocin Model</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Subtitle3"><i>p</i>-Cresol Sensing Model</a>
+          </li>
+        </ul>
+      </aside>
+      <main class="">
+      <!--The Page Name-->
+      <div class="pageName">
+        <h1>Model</h1>
+        <div class="divider"></div>
+      </div>
+      <section>
+        <h2 id ="Subtitle1">Overview</h2>
+        <!--remember to have 4 spaces in front of a paragraph-->
+        <p>    We aim to develop mathematical models that act as a bridge between the theoretical and the physical realisation of our biological work, to optimise our experiments and to understand our results.</p>
+        <p>    We demonstrated that our bacteriocin can specifically reduce <i>Clostridium difficile</i> population in human intestines. However, it is deemed difficult to purify bacteriocin after production due to technical limitations. That is why we modelled bacteriocin's effectiveness in reducing <i>Clostridium difficile</i> population in our experiments.</p>
+        <p>    To complement our <i>p</i>-Cresol biosensing system, we modelled the relationships between <i>p</i>-Cresol concentration, bacteria growth and fluorescent protein expression, then used the model to estimate the number of E. coli needed to measure blood <i>p</i>-Cresol level effectively.</p>
+        <math display="block">
+            <mi>P</mi>
+            <mo>=</mo>
+            <mrow>
+                <msub>
+                    <mi>P</mi>
+                    <mi>max</mi>
+                </msub>
+                <mo>&sdot;</mo>
+                <mfrac>
+                    <msup>
+                        <mfenced open="[" close="]">
+                            <mi>PC</mi>
+                        </mfenced>
+                        <mi>h</mi>
+                    </msup>
+                    <mrow>
+                        <msup>
+                            <mfenced open="[" close="]">
+                                <mi>PC</mi>
+                            </mfenced>
+                            <mi>h</mi>
+                        </msup>
+                        <mo>+</mo>
+                        <msup>
+                            <mi>K</mi>
+                            <mi>h</mi>
+                        </msup>
+                    </mrow>
+                </mfrac>
+            </mrow>
+        </math>
+    </section>
+      <hr>
+      <section>
+        <h2 id ="Subtitle2">Bacteriocin Model</h2>
+        <p><math display="block">
+            <mi>P</mi>
+            <mo>=</mo>
+            <mrow>
+                <msub>
+                    <mi>P</mi>
+                    <mi>max</mi>
+                </msub>
+                <mo>&sdot;</mo>
+                <mfrac>
+                    <msup>
+                        <mfenced open="[" close="]">
+                            <mi>PC</mi>
+                        </mfenced>
+                        <mi>h</mi>
+                    </msup>
+                    <mrow>
+                        <msup>
+                            <mfenced open="[" close="]">
+                                <mi>PC</mi>
+                            </mfenced>
+                            <mi>h</mi>
+                        </msup>
+                        <mo>+</mo>
+                        <msup>
+                            <mi>K</mi>
+                            <mi>h</mi>
+                        </msup>
+                    </mrow>
+                </mfrac>
+            </mrow>
+        </math></p>
+      </section>
+      <hr>
+      <section>
+        <h2 id ="Subtitle3"><i>p</i>-Cresol Sensing Model</h2>
+        <h3>Growth Model</h3>
+        <p></p>
+        <h3>Sensing Model</h3>
+        <p></p>
+      </section>
+      <section class="ref">
+          <h2>References</h2>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+      </section>
+    </main>
+  </div>
+  </div>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/jquery-3_4_1_min_js?action=raw&amp;ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/4.3.1/bootstrap_min_js?action=raw&amp;ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/Universal?action=raw&amp;ctype=text/javascript"></script>
+  </body>
+  </html>
+{{Template:NCKU_Tainan/footer}}

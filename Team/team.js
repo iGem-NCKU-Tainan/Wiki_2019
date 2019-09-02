@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $("#breadtext").html('<a href="https://2019.igem.org/Team:NCKU_Tainan/">Home</a> > <a>Team</a>')
   /* Only if the device is desktop, there are hover effect */ 
   if($(window).width()>992) {
     $(".photo-wrapper div").hover(function(){
@@ -19,9 +20,13 @@ $( document ).ready(function() {
     $(".dimmer").click(function(){
         closeDimmer();
     });
-    $("#dimmer-close").click(function(){
+    /*
+    $("button.dimmer-close").click(function(e){
+        console.log("close")
+        e.preventDefault();
         closeDimmer();
     });
+    */
     $(".card").click(function(){
         event.stopPropagation();
     });
@@ -32,6 +37,11 @@ $( document ).ready(function() {
         }
     });
     
+    // set the position of carousel
+    $('.carousel').css('margin-top', $('nav').height());
+    $(window).resize(function () {
+        $('.carousel').css('margin-top', $('nav').height());
+   });
 
 });
 
