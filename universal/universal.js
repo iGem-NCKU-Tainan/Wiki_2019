@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    //scroll spy
+    // scroll spy
     $("a[href^='#']").click(function(e) {
         e.preventDefault();
         
@@ -9,5 +9,16 @@ $(document).ready(function() {
             scrollTop: position
         }, 200);
     });
+    // 
+    /*$("figure .nav-pills a[href^='#']").click(function(e) {
+        e.preventDefault();
+        console.log("e prevent");
+    });
+    $('figure .nav-tabs a').on('click', function (e) {
+        e.preventDefault()
+        $('figure .nav-tabs a').removeClass("active");
+        $(this).tab('show')
+      })
+      */
 
 });

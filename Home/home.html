@@ -96,62 +96,107 @@
     </header>
     <main id="fullpage">
         <section id="Logo" class="section d-flex flex-column justify-content-around align-items-center">
-            <!--video id="movie" preload autoplay muted poster="example/poster.png"-->
-            <div class="logo-wrapper d-flex flex-column justify-content-center align-items-center">
-                <video id="Logo-video" preload muted poster="example/poster.png">
-                    <source src="example/lie.mp4" type="video/mp4" />
+            <div class="logo-wrapper center-adjust d-flex flex-column justify-content-center align-items-center">
+                <video id="Logo-video" preload muted poster="">
+                    <source src="https://2019.igem.org/wiki/images/e/ea/T--NCKU_Tainan--Home_logo_video.mp4" type="video/mp4" />
+                    <source src="example/Yif-Magic.ogv" type="video/ogg" />
+                    <source src="example/Yif-Magic.webm" type="video/web" />
+                    您的瀏覽器不支援HTML 5影片播放標籤video格式。
+                    Your browser doesn't support the video tag.
+                </video>
+                <a class="down bounce" href="#Game">
+                    <img src="https://2019.igem.org/wiki/images/thumb/f/ff/T--NCKU_Tainan--Arrow_down.png/236px-T--NCKU_Tainan--Arrow_down.png">
+                </a>
+            </div>
+            <!--div class="down-wrapper d-flex flex-column justify-content-center align-items-center">
+                
+            </div-->
+        </section>
+        <section id="Project" class="section">
+            <div class="container-fluid wrapper">
+                <div class="row wrapper">
+                    <div class="col-lg-7 center-adjust text-wrapper wrapper d-flex justify-content-center align-items-center ">
+                        <div class="text">
+                            <h2>Project</h2>
+                            <p>    Patients suffering from Chronic Kidney disease are unable to filter out uremic toxins inside the body due to a failing kidney. Accumulation of <i>p</i>-Cresol, one of the uremic toxins, have been associated with cardiovascular disease and worsening of Chronic Kidney Disease. To solve this problem, iGEM NCKU will be engineering <i>E. coli</i> Nissle, which is an FDA approved probiotic, to have two specific functions. First, to secrete bacteriocin and reduce the major gut <i>p</i>-Cresol producer, the <i>Clostridium</i> population. Second, to convert excess <i>p</i>-Cresol precursor, tyrosine into a harmless byproduct called <i>p</i>-Coumaric acid rather than <i>p</i>-Cresol. For biosafety concern, we knocked out the <i>yadF</i> gene to ensure <i>E. coli</i> will die when they enter the atmosphere. To provide additional aid in monitoring the level of <i>p</i>-Cresol in these patients’ body, we will also provide an open-source biosensing platform that uses live bacteria to detect specific compounds inside the blood.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 center-adjust img-wrapper d-flex justify-content-center align-items-center">
+                        <img class="device" src="device.png" alt="" title="">
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <section id="Video" class="section">
+            <div class="video-wrapper wrapper center-adjust d-flex justify-content-center align-items-center">
+                <video id="Intro-video" controls poster="">
+                    <source src="https://2019.igem.org/wiki/images/e/ea/T--NCKU_Tainan--Home_logo_video.mp4" type="video/mp4" />
                     <source src="example/Yif-Magic.ogv" type="video/ogg" />
                     <source src="example/Yif-Magic.webm" type="video/web" />
                     您的瀏覽器不支援HTML 5影片播放標籤video格式。
                     Your browser doesn't support the video tag.
                 </video>
             </div>
-            <div class="down-wrapper d-flex flex-column justify-content-center align-items-center">
-                <a class="down bounce" href="#Game">
-                    <span class="fas fa-angle-double-down" ></span>
-                </a>
-            </div>
-        </section>
-        <section id="Project" class="section">
-            <div class="container-fluid wrapper">
-                <div class="row wrapper">
-                    <div class="col-lg-6 text-wrapper wrapper d-flex justify-content-center align-items-center ">
-                        <div class="text">
-                            <h2>Project</h2>
-                            <p>
-                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 img-wrapper  d-flex justify-content-center align-items-end">
-                        <img class="device" src="device.png" alt="">
-                    </div> 
-                </div>
-            </div>
-        </section>
-        <section id="Video" class="section">
-            <div class="video-wrapper wrapper d-flex justify-content-center align-items-end">
-                <video id="Intro-video" controls poster="">
-                    <source src="https://youtu.be/mlHklH5VBtI" type="video/mp4" />
-                    <source src="example/Yif-Magic.ogv" type="video/ogg" />
-                    <source src="example/Yif-Magic.webm" type="video/web" />
-                    您的瀏覽器不支援HTML 5影片播放標籤video格式。
-                    Your browser doesn't support the video tag.
-            </video>
-        </div>
         </section>
         <section id="Game" class="section"></section>
         <footer class="section fp-auto-height">
-            <div class="footer-wrapper">
-                    
+            <!--htmlfooter start-->
+            <div class="container footer-container">
+      <div class="row footer-row">
+        <div class="col-12 col-md-6 colOne">
+          <!--icon of logo-->
+          <div id="gutImage">
+            <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/f/fe/T--NCKU_Tainan--Logotext_icon.png/499px-T--NCKU_Tainan--Logotext_icon.png"></a>
+          </div>
+          <!--icon of NCKUigem-->
+          <div>
+            <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/5/5b/T--NCKU_Tainan--NCKUigemtext_icon.png/428px-T--NCKU_Tainan--NCKUigemtext_icon.png"></a>
+          </div>
+          <!--icon of NCKU-->
+          <div>
+            <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/f/f3/T--NCKU_Tainan--NCKUtext_icon.png/499px-T--NCKU_Tainan--NCKUtext_icon.png"></a>
+          </div>
+          <!--icon of Diamond-->
+          <div>
+            <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/f/f1/T--NCKU_Tainan--Diamodtext_icon.png/499px-T--NCKU_Tainan--Diamodtext_icon.png"></a>
+          </div>
+        </div>
+        <div class="col-md-1 footer-col1" style='border-right:3px solid #ffffff;'></div>
+        <div class="col-md-1 footer-col1"></div>
+        <div class="col-12 col-md-4 colTwo">
+          <div class="col-12 col-md-12 col-two-icon">
+            <!--icon of phone-->
+            <div>
+              <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/b/b4/T--NCKU_Tainan--Phone_icon.png/600px-T--NCKU_Tainan--Phone_icon.png"></a>
             </div>
-        </footer>
+            <!--icon of mail-->
+            <div>
+              <a href="joechen199712@gmail.com"><img src="https://2019.igem.org/wiki/images/thumb/f/fe/T--NCKU_Tainan--Mail_icon.png/600px-T--NCKU_Tainan--Mail_icon.png"></a>
+            </div>
+            <!--icon of instagram-->
+            <div>
+              <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/4/44/T--NCKU_Tainan--Instagram_icon.png/600px-T--NCKU_Tainan--Instagram_icon.png"></a>
+            </div>
+            <!--icon of facebook-->
+            <div>
+              <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/e/ec/T--NCKU_Tainan--Facebook_icon.png/600px-T--NCKU_Tainan--Facebook_icon.png"></a>
+            </div>
+          </div>
+          <p class="col-12 footer-text">
+            mail:
+            <br>
+            phone : 06-2757575 ( 50311 )
+          </p>
+        </div>
+        <!--end of col-4-->
+      </div>
+    </div>
+    </footer>
     </main>
     <script src="https://2019.igem.org/Team:NCKU_Tainan/js/jquery-3_4_1_min_js?action=raw&ctype=text/javascript"></script>
     <script src="https://2019.igem.org/Team:NCKU_Tainan/js/4.3.1/bootstrap_min_js?action=raw&ctype=text/javascript"></script>
-    <script type="text/javascript" src="fullPage.js-master/vendors/scrolloverflow.min.js"></script>
-    <script type="text/javascript" src="fullPage.js-master/dist/fullpage.min.js"></script>
-    <script src="https://2019.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://2019.igem.org/Team:NCKU_Tainan/js/fullPage.js-master/vendors/scrolloverflow_min_js?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="https://2019.igem.org/Team:NCKU_Tainan/js/fullPage.js-master/dist/fullpage_min_js?action=raw&ctype=text/javascript"></script>
     <script src="home.js"></script>
 </body>
 </html>

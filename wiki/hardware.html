@@ -1,0 +1,124 @@
+{{Template:NCKU_Tainan/block_css}}
+{{Template:NCKU_Tainan/bootstrap_min_css}}
+{{Template:NCKU_Tainan/template_css}}
+{{Template:NCKU_Tainan/header}}
+{{Template:NCKU_Tainan/universal_css}}
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Sansita&display=swap" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".sidenav" data-offset="10">  
+    <div class="content container-fluid">
+        <div class="row">
+            <!--Sidebar (Remember to change the subtitle context, but don't change the id)-->
+            <aside class="sidenav d-none d-lg-flex flex-column justify-content-start align-items-center col-2"> 
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Subtitle1">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Subtitle2">Blood Separation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Subtitle3">p-Cresol Reader</a>
+                    </li>
+                </ul>
+            </aside>
+            <main class="">
+                <!--The Page Name-->
+                <div class="pageName">
+                    <h1>Hardware</h1>
+                    <div class="divider"></div>
+                </div>
+                <section>
+                    <!--If you want to use image use below-->
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center">
+                                    <a href="https://miro.medium.com/max/531/1*ifSob78knBe5rME04WHftg.png" target="_blank" style="width:50%"><img src="https://miro.medium.com/max/531/1*ifSob78knBe5rME04WHftg.png" alt="" title=""></a>
+                                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    In Taiwan, National Health Insurance doesn’t cover blood p-Cresol inspection fee. In addition, each examination is expensive, cost about 1500NTD (About 50 USD). To make p-Cresol examination more cost-effective and easy, our team designed a detector to achieve this goal with the help of synthetic biology.</p>
+                </section>
+                <hr>
+                <section>
+                    <h2 id ="Subtitle1">Device Overview</h2>
+                    <p>    Our device consists of two parts. In the first part, we pretreat whole blood to extract plasma for GFP reaction. In the second part, the presence of p-Cresol in plasma will induce p-cresol sensing E. coli to produce fluorescent protein which can be detected by photoresistor. From the GFP intensity, we will be able to indicate the p-Cresol concentration.</p>
+                </section>
+                <section>
+                    <h2 id ="Subtitle2">Blood Separation</h2>
+                    <p>    There are white blood cells in human’s blood which could be lethal for      E. coli. In order to make our p-Cresol sensing E. coli able to survive in blood sample and produce fluorescent protein, filtering out blood cells beforehand is necessary. We try two ways to achieve this goal while integrating all the steps we need. One is constructing a lab-on-chip centrifugal microfluidic system, the other one is using paper-based sensor.</p>
+                    <h3>A lab-on-chip centrifugal microfluidic system</h3>
+                    <p>    In microfluidic centrifugal platform, fluidic processing steps such as the mixing of reagents or the moving of samples can be automated simply by implementing different spinning profiles. Also, It can be easily operated by health professional’s in diagnostic centers. With the advantages mentioned above, we’re able to extract blood plasma and mix it with p-Cresol sensing E. coli easily and rapidly.</p>
+                    <!--image(below)-->
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center">
+                                    <a href="https://dynamicdnalabs.com/wp-content/uploads/2018/11/bacterial-plasmid.jpg" target="_blank" style="width:50%"><img src="https://dynamicdnalabs.com/wp-content/uploads/2018/11/bacterial-plasmid.jpg" alt="Trulli" title="Trulli" style="width:100%"></a>
+                                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    For the centrifugal platform, we choose a brushless motor instead of DC motor to reduce operational and mechanical noise, also to obtain higher torque to weight ratio. In addition, we combined three layers of acrylic as a chip holder where we can put our microfluidic chips.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center">
+                                    <a href="https://dynamicdnalabs.com/wp-content/uploads/2018/11/bacterial-plasmid.jpg" target="_blank" style="width:50%"><img src="https://dynamicdnalabs.com/wp-content/uploads/2018/11/bacterial-plasmid.jpg" alt="Trulli" title="Trulli" style="width:100%"></a>
+                                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center">
+                                    <a href="https://dynamicdnalabs.com/wp-content/uploads/2018/11/bacterial-plasmid.jpg" target="_blank" style="width:50%"><img src="https://dynamicdnalabs.com/wp-content/uploads/2018/11/bacterial-plasmid.jpg" alt="Trulli" title="Trulli" style="width:100%"></a>
+                                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    In the beginning, we used Polydimethylsiloxane (PDMS) to make microfluidic chips. We created acrylic molds to cast PDMS into desired shape, then we bond another layer of pdms onto it to cover the channels with the help of oxygen plasma treatment. From June to July, we made three different versions with minor changes solving the problems we faced.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg">
+                                <figure class="d-flex flex-column justify-content-center align-items-center">
+                                    <a href="https://dynamicdnalabs.com/wp-content/uploads/2018/11/bacterial-plasmid.jpg" target="_blank" style="width:50%"><img src="https://dynamicdnalabs.com/wp-content/uploads/2018/11/bacterial-plasmid.jpg" alt="Trulli" title="Trulli" style="width:100%"></a>
+                                    <figcaption>Fig.1 - In version 1, we found out that when we insert fluid into the chip, there would be bubbles stuck in the corner of the chamber. We solved it by filleting every corner in version 2. When testing version 1 & 2, the bottom of whole blood chamber wasn’t strong enough to endure the force sample creates when the spinner’s RPM reaches 2500 RPM, we tried to overcome this by reinforcing the bottom part of whole blood chamber in version 3.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    After we made the mold for version 3, we consulted with professor JUI-CHEN YANG. He suggested us to use slide glass instead of another layer of PDMS to cover the channel, which the bonding will be stronger compared to PDMS-PDMS bonding. So we tried but we haven’t tested it yet.</p>
+                    <p>    In addition to PDMS microfluidic chip, we made sculpted acrylic disc to replace microfluidic chip and chip holder. By doing so, we can eliminate the bonding problem and also decrease the loading on the motor.</p>
+                </section>
+                <section>
+                    <h2 id ="Subtitle3">Blood p-Cresol Reader</h2>
+                </section>
+                <section class="ref">
+                    <h2>References</h2>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/jquery-3_4_1_min_js?action=raw&amp;ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/4.3.1/bootstrap_min_js?action=raw&amp;ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/Universal?action=raw&amp;ctype=text/javascript"></script>
+</body>
+<script>
+    $( document ).ready(function() {
+        $("#breadtext").html('<a href="https://2019.igem.org/Team:NCKU_Tainan/Description">Project</a> > <a>Hardware</a>')
+    });
+</script>
+</html>
+{{Template:NCKU_Tainan/footer}}

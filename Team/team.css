@@ -264,6 +264,7 @@ body.blurring {
 .dimmer > .card {
   z-index: 10005;
   overflow: auto;
+  width: 50%;
 }
 .card-title {
   margin-bottom: .5rem;

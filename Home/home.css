@@ -39,7 +39,7 @@ p {
 }
 nav {
     background-color: #172544;
-    opacity:0.8;
+    opacity:0.96;
     font-size:1.3rem;
 }
 .navbar {
@@ -149,23 +149,6 @@ section {
 .wrapper {
     height: 100%;
 }
-/*
-#Project {
-    background-color: grey;
-}
-#Video {
-    background-color: ghostwhite;
-}
-#Game {
-    background-color: gainsboro;
-}
-footer {
-    background-color: gray;
-}
-*/
-.footer-wrapper {
-    height: 40vh;
-}
 /* Logo Part */
 #Logo {
     position: relative;
@@ -176,19 +159,20 @@ footer {
     height: 100vh;
 }
 #Logo-video {
+    max-width: 90%;
     width: auto;
-    height: 60%;
+    max-height: 60%;
+    height: auto;
 }
-.down-wrapper {
-    position: absolute;
-    width: 100%;
-    bottom: 5%;
-    right: 0;
-    left: 0;
+a.down {
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
 }
-
-.down {
+.down img {
     display: none;
+    width: 100%;
+    height: auto;
 }
 .bounce {
     animation: bounce 3s;
@@ -205,31 +189,103 @@ footer {
         transform: translateY(-12px);
     }
 }
-
-.fa-angle-double-down {
-    font-size: 50px;
-}
-/* nav */
-nav {
-    background-color: #172544;
-    opacity:0.8;
+/*nav*/
+header div.bread {
+    display: none!important;
 }
 /* Project */
-.text-wrapper {
-    padding-left: 10%;
-    height: 100vh;
-}
-.img-wrapper {
-    padding-right: 10%;
-    height: 100vh;
+.text-wrapper, .img-wrapper {
+    height: auto;
+    padding-left: 6vw;
+    padding-right: 6vw;
 }
 img.device {
     width: 70%;
     height: auto;
 }
-
-video#Intro-video {
-    margin-bottom: 5%;
-    width: auto;
-    height: 70%;
+/*large device like computer*/
+@media (min-width: 992px) { 
+    .text-wrapper {
+        height: 100vh;
+        padding-left: 6%;
+        padding-right: 1%;
+    }
+    .img-wrapper {
+        height: 100vh;
+        padding-right: 6%;
+        padding-left: 1%;
+    }
 }
+video#Intro-video {
+
+    max-width: 90%;
+    width: auto;
+    max-height: 70%;
+    height: auto;
+}
+/*footer start*/
+    /*footer start*/    
+    footer{
+        background: #4F545F;
+        width: 100%;
+        height:100%;
+    }
+    .footer-container{
+        padding: 1rem 0 2rem 0;
+    }
+    .footer-row{
+        margin:1rem 2rem;
+    }
+    footer .colOne{
+        display: flex;
+        justify-content: space-between;
+        padding:0;
+    }
+    footer .colTwo{
+        display: flex;
+        flex-direction: column;
+        padding:0;
+        margin:1rem 0;
+        height:50px;
+    }
+    footer .col-12{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .col-two-icon{
+        display: flex;
+        justify-content: space-between;
+        align-self: top;
+        padding:0;
+    }
+    .colOne img{
+        height:60px;
+        width: 60px;
+        margin:0;
+        padding:0;
+        margin:0 0 10px 0;
+    }
+    .colTwo img{
+        height:30px;
+        width: 30px;
+        margin:0;
+    }
+    .footer-text{
+        align-self: baseline;
+        color: white;
+        font-family: sans-serif;
+    }
+    footer a:link{
+        text-decoration: none;
+    }
+    /*large device like computer*/
+    @media (min-width: 992px) { 
+        .colOne img{
+            height:80px;
+            width: 80px;
+            margin:0;
+            padding:0;
+            margin:0;
+        }
+    }
+/*footer end*/

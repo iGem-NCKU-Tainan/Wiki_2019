@@ -4,47 +4,26 @@
 {{Template:NCKU_Tainan/header}}
 {{Template:NCKU_Tainan/universal_css}}
 <html lang="en">
-<!--head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Universal</title>
-  <link rel="stylesheet" href="https://2019.igem.org/Team:NCKU_Tainan/css/4.3.1/bootstrap_min_css?action=raw&ctype=text/css"/>
-  <link rel="stylesheet" type="text/css" href="https://2019.igem.org/Team:NCKU_Tainan/css/universal?action=raw&ctype=text/css">
-</head-->
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css?family=Raleway|Sansita&display=swap" rel="stylesheet">
-</head>
-<body data-spy="scroll" data-target=".sidenav" data-offset="10">  
+<body data-spy="scroll" data-target=".sidenav" data-offset="101">  
   <div class="content container-fluid">
     <div class="row">
       <!--Sidebar (Remember to change the subtitle context, but don't change the id)-->
-      <aside class="sidenav d-none d-lg-flex flex-column justify-content-center align-items-center col-2"> 
+      <aside class="sidenav d-none d-lg-flex flex-column justify-content-start align-items-center col-2"> 
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link" href="#Subtitle1">Overview</a>
+            <a class="nav-link" href="#Subtitle1">Reduce <i>p</i>-Cresol production</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Subtitle2">Secretion tag (<i>yebF</i>)</a>
+            <a class="nav-link" href="#Subtitle2">Convert tyrosine</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Subtitle3">Bacteriocin</a>
+            <a class="nav-link" href="#Subtitle3"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Subtitle4">Tyrosine transporter</a>
+            <a class="nav-link" href="#Subtitle4">Biosafety</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Subtitle5">FNR promoter</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Subtitle6">Tyrosine ammonia-lyase</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Subtitle7">Knock out genes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Subtitle8"><i>p</i>-Cresol sensing system</a>
+            <a class="nav-link" href="#Subtitle5"><i>p</i>-Cresol sensing system</a>
           </li>
         </ul>
       </aside>
@@ -52,53 +31,163 @@
       <!--The Page Name-->
       <div class="pageName">
         <h1>Design</h1>
-        <div class="Design"></div>
+        <div class="divider"></div>
       </div>
       <section>
-        <h2 id ="Subtitle1">Overview</h2>
-        <!--remember to have 4 spaces in front of a paragraph-->
-        <p>    In order to achieve our goals, we designed our <i>E. coli</i> Nissle to have two functions.<br>The first function is to eliminate the <i>p</i>-Cresol producing bacteria, specifically <i>Clostridium</i>i strains, which we have done so by equipping our E. coli Nissle with a high specificity bacteriocin. The second one is to degrade the precursor of p-Cresol, tyrosine by diverting the original pathway. </p>
-        <p>    For biosafety reasons, we implement biocontainment by deletion one of our two genes candidates which are yadF gene and dapA gene. </p>
-        <p>    In an effort to prevent the accumulation of more uremic toxins due to the ingestion of our engineered E. coli Nissle inside the human body, we knocked out the tnaA gene</p>
-        <p>    During our research, we found out that Pseudomonas has the ability to sense p-Cresol. So we designed a p-Cresol (-GFP) reporter system by cloning Pseudomonas's p-Cresol sensing promoter to E. coli and culture it in our device for detection.</p>
+        <p>    In order to achieve our goals, we designed our <i>E. coli</i> Nissle to have two functions. The first function is to eliminate the <i>p</i>-Cresol producing bacteria, specifically <i>Clostridium</i> strains, which we have done so by equipping our <i>E. coli</i> Nissle with a high specificity bacteriocin. The second one is to convert the precursor of <i>p</i>-Cresol, tyrosine by diverting the original pathway.</p>
+        <p>    For biosafety reasons, we implement biocontainment by deletion one of our two genes candidates which are <i>yadF</i> gene and  <i>dapA</i> gene.</p>
+        <p>    In an effort to prevent the accumulation of more uremic toxins due to the ingestion of our engineered <i>E. coli</i> Nissle inside the human body, we knocked out the <i>tnaA</i> gene.</p>
+        <p>    During our research, we found out that <i>Pseudomonas</i> has the ability to sense <i>p</i>-Cresol. So we designed a <i>p</i>-Cresol (-GFP) reporter system by cloning <i>Pseudomonas</i>'s <i>p</i>-Cresol sensing promoter to <i>E. coli</i> and culture it in our device for detection.</p>
+        <div class="container-fluid p-0">
+          <div class="row no-gutters">
+            <div class="col-lg ">
+              <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                <a href="https://2019.igem.org/wiki/images/6/6f/T--NCKU_Tainan--Design_overview.gif" target="_blank" style="width:80%"><img src="https://2019.igem.org/wiki/images/6/6f/T--NCKU_Tainan--Design_overview.gif" alt="" title="" style="width:100%"></a>
+                <figcaption>Fig1. The overview of Oh My Gut.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
       </section>
       <hr>
       <section>
-        <h2 id ="Subtitle2">Secretion tag (yebF)</h2>
-        <p>    yebF is a well-known E. coli secretory protein with unknown function. With a size of only 12kDa, previous iGEM teams<sup><a href="#ref1">[1]</a></sup> and other researchers<sup><a href="#ref2">[2]</a></sup> have used it as a secretary tag for recombinant proteins and proven functional. So, we decided to fuse it with our bacteriocin to enable its secretion from our E. coli Nissle. </p>
+        <h2 id ="Subtitle1">How can we reduce the population of the main uremic toxin producer?</h2>
+        <h3>Secretion tag <i>(yebF)</i></h3>
+        <p>    <i>yebF</i> is a well-known <i>E. coli</i> secretory protein with unknown function. With a size of only 12kDa, previous iGEM teams<sup>[<a target="_blank" href="#ref1">1</a>]</sup> and other researchers<sup>[<a target="_blank" href="#ref2">2</a>]</sup> have used it as a secretary tag for recombinant proteins and proven functional. So, we decided to fuse it with our bacteriocin to enable its secretion from our <i>E. coli</i> Nissle. </p>
+        <h3>Bacteriocin</h3>
+        <p>    Previous research<sup>[<a target="_blank" href="#ref3">3</a>]</sup> reported that a bacteriocin-like gene was found in <i>Clostridium</i> <i>butyricum</i> MIYAIRI 588 (CBM588), a bacterium used in probiotics and was proven to have a bactericidal activity to certain strains of  <i>C. difficile</i>. The bacteriocin (later called CBM-B) self-cleaves itself into two parts, but only the C-terminal region possesses the bactericidal activity.<sup>[<a target="_blank" href="#ref3">3</a>]</sup></p>
+        <p>    We designed three constructs, one full-length CBM-B fused with <i>yebF</i>, two constructs of C-terminal domain of CBM-B and <i>yebF</i> with two different linkers - a GS linker (three Glycine Serine repeat: GSGSGS) and a TB linker (thrombin cleavage site: LVPRGS).</p>
+        <div class="container-fluid p-0">
+          <div class="row no-gutters">
+            <div class="col-lg ">
+              <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                <a href="https://2019.igem.org/wiki/images/thumb/b/b0/T--NCKU_Tainan--Design_bacteriocin_construct.png/800px-T--NCKU_Tainan--Design_bacteriocin_construct.png" target="_blank" style="width:70%"><img src="https://2019.igem.org/wiki/images/thumb/b/b0/T--NCKU_Tainan--Design_bacteriocin_construct.png/800px-T--NCKU_Tainan--Design_bacteriocin_construct.png" alt="" title="" style="width:100%"></a>
+                <figcaption>Fig2. Plasmid design for eliminating the <i>p</i>-Cresol producing bacteria.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid p-0">
+          <div class="row no-gutters">
+            <div class="col-lg ">
+              <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                <a href="https://2019.igem.org/wiki/images/e/eb/T--NCKU_Tainan--Design_bacteriocin_mechanism.gif" target="_blank" style="width:70%"><img src="https://2019.igem.org/wiki/images/e/eb/T--NCKU_Tainan--Design_bacteriocin_mechanism.gif" alt="" title="" style="width:100%"></a>
+                <figcaption>Fig3. The mechanism of bacteriocin.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
       </section>
       <hr>
       <section>
-        <h2 id ="Subtitle3">Bacteriocin</h2>
-        <p>    Previous researchp<sup><a href="#ref3">[3]</a></sup> reported that a bacteriocin-like gene was found in Clostridium butyricum MIYAIRI 588 (CBM588), a bacterium used in probiotics and was proven to have a bactericidal activity to certain strains of C. difficile. The bacteriocin (later called CBM-B) self-cleaves itself into two parts, but only the C-terminal region possesses the bactericidal activity.<sup><a href="ref3">[3]</a></sup></p>
-      </section>
-      <section>
-        <!--Subtitle use h2-->
-        <h2 id ="Subtitle4">Tyrosine transporter (tyrP)[4]</h2>
-        <!--If you want to divide it into two block use below part-->
+        <h2 id ="Subtitle2">How can we convert tyrosine into useful substances?</h2>
+        <h3>Tyrosine transporter (<i>tyrP</i>)<sup>[<a target="_blank" href="#ref4">4</a>]</sup></h3>
         <div class="container-fluid p-0" >
           <div class="row no-gutters">
             <div class="col-lg">
-              <p>    It’s the gene that is involved in transporting tyrosine across the cytoplasmic membrane, E.coli Nissle in our case.<br>Hence, we coded it from original E.coli MG1655 and designed a new biobrick which incorporated into our E.coli, allowing it to take in more tyrosine than Clostridium. By doing so, our E.coli can provide competition to Clostridium and reduce the absorption of additional tyrosine by Clostridium, which in turn reduces the amount of p-Cresol it produces.
-              </p>
+              <p>    It’s the gene that is involved in transporting tyrosine across the cytoplasmic membrane, <i>E. coli</i> Nissle in our case.</p>
+              <p>    Hence, we coded it from original <i>E. coli</i> MG1655 and designed a new biobrick which incorporated into our <i>E. coli</i>, allowing it to take in more tyrosine than <i>Clostridium</i>. By doing so, our <i>E. coli</i> can provide competition to <i>Clostridium</i> and reduce the absorption of additional tyrosine by <i>Clostridium</i>, which in turn reduces the amount of <i>p</i>-Cresol it produces.</p>         
             </div>
-              <!--Wrong image-->
-              <div class="col-lg d-flex justify-content-center align-items-center">
-                  <figure class="d-flex flex-column justify-content-center align-items-center">
-                    <a href="https://2019.igem.org/wiki/images/7/74/T--NCKU_Tainan--Design_TAL_construct.png" target="_blank"><img src="https://2019.igem.org/wiki/images/7/74/T--NCKU_Tainan--Design_TAL_construct.png" alt="" title="" style="width:100%"></a>
-                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
-                  </figure>
-              </div>
+            <div class="col-lg d-flex justify-content-center align-items-center">
+              <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                <a href="https://2019.igem.org/wiki/images/thumb/2/2f/T--NCKU_Tainan--Design_tyrP_construct.png/800px-T--NCKU_Tainan--Design_tyrP_construct.png" target="_blank"><img src="https://2019.igem.org/wiki/images/thumb/2/2f/T--NCKU_Tainan--Design_tyrP_construct.png/800px-T--NCKU_Tainan--Design_tyrP_construct.png" alt="" title="" style="width:100%"></a>
+                <figcaption>Fig4. Plasmid design for inputting tyrosine</figcaption>
+              </figure>
             </div>
+          </div>
         </div>
+        <h3>FNR promoter</h3>
+        <p>    The FNR (Fumarate and Nitrate reductase Regulatory) protein of <i>E. coli</i> is an oxygen – responsive transcriptional regulator required for the switch from aerobic to anaerobic metabolism. Under anoxic conditions, the FNR protein binds to DNA target sites and controls the expression of the corresponding genes<sup>[<a target="_blank" href="#ref5">5</a>]</sup>.</p>
+        <p>    Previous iGEM team<sup>[<a target="_blank" href="#ref6">6</a>]</sup> used an artificial FNR promoter with two tandem FNR binding site, which has been reported to have a higher protein expression (1.8x) level under anaerobic condition<sup>[<a target="_blank" href="#ref7">7</a>]</sup>.</p>
+        <p>    We are concerned that TAL expression level may affect <i>E. coli</i> cell growth in normal condition because it converts amino acid into other non-nutrient compounds. Also, the target protein expression site is in our large intestine, where oxygen levels are low. So in the TAL construct, we decided to use the FNR promoter to prevent cell stress in normal condition.</p>
+        <p>    This is also the part that we are working on for part characterization. We will repeat the experiment from the 2013 TU-Eindhoven.</p>
+        <h3>Tyrosine ammonia-lyase (<i>sam8</i>)</h3>
+        <div class="container-fluid p-0" >
+          <div class="row no-gutters">
+            <div class="col-lg">
+              <p>    Tyrosine ammonia-lyase (TAL) is an enzyme that converts tyrosine into <i>p</i>-Coumaric acid. We will engineer <i>E. coli</i> Nissle to express both <i>tyrP</i> and TAL, to turn the excess tyrosine inside the gut to a substance useful for humans - <i>p</i>-Coumaric acid<sup>[<a target="_blank" href="#ref8">8</a>]</sup>. By reducing the total amount of <i>p</i>-Cresol precursor, tyrosine, we can thus reduce the amount of <i>p</i>-Cresol being produced by other gut flora.</p>   
+            </div>
+            <div class="col-lg d-flex justify-content-center align-items-center">
+              <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                <a href="https://2019.igem.org/wiki/images/7/74/T--NCKU_Tainan--Design_TAL_construct.png" target="_blank"><img src="https://2019.igem.org/wiki/images/7/74/T--NCKU_Tainan--Design_TAL_construct.png" alt="" title="" style="width:100%"></a>
+                <figcaption>Fig5. Plasmid design for converting tyrosine.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <p>    According to a research article that ranked different species of TAL<sup>[<a target="_blank" href="#ref9">9</a>]</sup>, TAL from <i>Saccharothrix espanaensis</i> has proven to have the highest conversion rate for tyrosine, and luckily, this enzyme has already been submitted as an iGEM biobrick <a href="http://parts.igem.org/Part:BBa_I742146" target="_blank">Part:BBa_I742146</a>. But the iGEM biobrick contains a native ribosome binding site (RBS) from the original bacteria. We decide to change the native RBS into a strong RBS in iGEM collection B0034 to <a href="https://2019.igem.org/Team:NCKU_Tainan/Improve" target="_blank">improve expression</a> in <i>E. coli</i> Nissle.</p>
+        <div class="container-fluid p-0">
+          <div class="row no-gutters">
+            <div class="col-lg ">
+              <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                <a href="https://2019.igem.org/wiki/images/c/c7/T--NCKU_Tainan--Design_TAL_mechanism.gif" target="_blank" style="width:70%"><img src="https://2019.igem.org/wiki/images/c/c7/T--NCKU_Tainan--Design_TAL_mechanism.gif" alt="" title="" style="width:100%"></a>
+                <figcaption>Fig6. The mechanism of tyrosine transporter and tyrosine ammonia lyase.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <h4>How do we test it?</h4>
+        <p>    In 2013, iGEM Uppsala has developed a method to measure TAL function<sup>[<a target="_blank" href="#ref10">10</a>]</sup>. By using nanodrop UV-Vis spectrum and n-octanol extraction, we can extract <i>p</i>-Coumaric acid from the growth medium of bacteria and use its absorbance profile to quantify it. We also performed Western Blot to detect the enzyme and verify the biobrick improvement.</p>
+      </section>
+      <hr>
+      <section>
+        <!--Subtitle use h2-->
+        <h2 id ="Subtitle3">Avoid some negative impacts on CKD patients</h2>
+        <h3>TnaA gene knocked out<sup>[<a target="_blank" href="#ref11">11</a>,<a target="_blank" href="#ref12">12</a>]</sup></h3>
+        <p>    A lot of bacteria have the ability to fermentate amino acids and one of those bacteria is <i>Escherichia coli</i>. <i>Escherichia coli</i> possesses the enzyme tryptophanase (<i>tnaA</i>) that catalyzes the fermentation of tryptophan to indole, which is a type of uremic toxins. To prevent the production of indole, we knocked out the <i>tnaA</i> gene.</p>
       </section>
       <section>
-          <h2 id ="">References</h2>
+        <h2 id ="Subtitle4">Biosafety</h2>
+        <h3><i>yadF</i> gene knocked out</h3>
+        <p>    The <i>yadF</i> gene of <i>Escherichia coli</i> encodes a β-class carbonic anhydrase (CA), an enzyme that assists rapid interconversion of CO<sub>2</sub> and water into carbonic acid, protons and bicarbonate ions. <i>E. coli</i> requires a constant supply of bicarbonate as a metabolic substrate during normal growth, however the low concentration of CO<sub>2</sub> in the air and its rapid diffusion from the cell means that bicarbonate needs to be made spontaneously in vivo to meet needs.<sup>[<a target="_blank" href="#ref13">13</a>]</sup> Subsequently, if this gene is knocked out, <i>E. coli</i> is unable to turn the CO<sub>2</sub> into bicarbonate fast enough before the CO<sub>2</sub> diffuses out and cause the cell to die.</p>
+        <p>    Thereby, we decided to use the <i>yadF</i> gene as a kill switch. Inside the gut where we want the <i>E. coli</i> to be able to survive, there is a high enough concentration of CO<sub>2</sub> in the atmosphere to diffuse into the cell continuously, giving the cell a chance to convert the CO<sub>2</sub> into the much-needed bicarbonate ions. However, when the E.coli exits the human body and into the air, the low concentration of CO<sub>2</sub> diffusing into the cell will result in death.</p>
+        <p>    We <a href="https://2019.igem.org/Team:NCKU_Tainan/Results" target="_blank">tested our knockout strain</a> by streaking it out on Cm plate and placing it in different conditions, one in a normal incubator at 37℃ to simulate the normal CO<sub>2</sub> concentration of the atmosphere, and one in a 5% CO<sub>2</sub> incubator at 37℃ to simulate the CO<sub>2</sub> concentration in the gut.</p>
+        <h3> <i>dapA</i> gene knocked out<sup>[<a target="_blank" href="#ref14">14</a>,<a target="_blank" href="#ref15">15</a>]</sup></h3>
+        <p>     <i>dapA</i> (4-hydroxy-tetrahydrodipicolinate synthase) is an enzyme necessary for cell wall synthesis. By deleting this gene, the bacteria will have to depend on exogenous diaminopimelate (DAP) for cell wall synthesis and growth, making it a kill switch as the bacteria will die without suppliance of DAP.</p>
+        <p>    To test whether <i>E. coli</i> can live with  <i>dapA</i> condition and vice versa, we made LB plate contained DAP and knocked out  <i>dapA</i> in <i>E. coli</i> Nissle additionally <i>E. coli</i> Mg1655 as our control. We tested through <a href="https://2019.igem.org/Team:NCKU_Tainan/Results" target="_blank">genotype check</a> with colony PCR and <a href="https://2019.igem.org/Team:NCKU_Tainan/Results" target="_blank">phenotype check</a> by comparing two plates:  <i>dapA</i> plate and normal LB plate.</p>
+      </section>
+      <section>
+        <h2 id ="Subtitle5"><i>p</i>-Cresol sensing system<sup>[<a target="_blank" href="#ref16">16</a>,<a target="_blank" href="#ref17">17</a>,<a target="_blank" href="#ref18">18</a>]</sup></h2>
+        <p>    For our device, we decided to make a sensor for sensing <i>p</i>-Cresol. According to our research, we have discovered a group of bacteria known as <i>Pseudomonas</i> can sense <i>p</i>-Cresol naturally. In a previous study, the capability of <i>Pseudomonas</i> to sense <i>p</i>-Cresol is commonly used in the detection of <i>p</i>-Cresol in the environment.</p>
+        <p>    Our construct is primarily centred on <i>Pseudomonas</i> fluorescens (PC24), because it has a gene cluster that consists of a positive inducible operon, <i>pchR</i>, which allows it to sense <i>p</i>-Cresol and promote the transcription of the downstream region to degrade the <i>p</i>-Cresol. <i>pchR</i> is the gene that translates into activator proteins that can bind with the inducer (<i>p</i>-Cresol) and leads to the conformation of the protein. As a result, the activator protein binds with <i>p</i>-Cresol and the eventual protein-<i>p</i>-Cresol complex will then bind onto the <i>p</i>-Cresol sensing region that is placed just downstream of <i>pchR</i> and start transcription of the gene downstream. We replaced the downstream region from the original degrading function of the operon with GFP, so that instead of degrading the <i>p</i>-Cresol it will light up. Finally, the operon is then placed into a plasmid and transformed into <i>E. coli</i> DH5a.</p>
+        <p>    To put it succinctly, we engineered an <i>E. coli</i> that can sense <i>p</i>-Cresol and illuminate under the induction of <i>p</i>-Cresol. Therefore, we can use this <i>E. coli</i> to create a biosensor to sense <i>p</i>-Cresol.</p>
+        <div class="container-fluid p-0">
+          <div class="row no-gutters">
+            <div class="col-lg ">
+              <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                <a href="https://2019.igem.org/wiki/images/9/9c/T--NCKU_Tainan--Design_sensing_mechanism.gif" target="_blank" style="width:70%"><img src="https://2019.igem.org/wiki/images/9/9c/T--NCKU_Tainan--Design_sensing_mechanism.gif" alt="" title="" style="width:100%"></a>
+                <figcaption>Fig7. The mechanism of <i>p</i>-Cresol sensing system.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ref">
+          <h2>References</h2>
             <ol>
-                <li><a>http://parts.igem.org/wiki/index.php?title=Part:BBa_K1659003</a></li>
-                <li>Seo, E., Weibel, S., Wehkamp, J., & Oelschlaeger, T. A. (2012). Construction of recombinant E. coli Nissle 1917 (EcN) strains for the expression and secretion of defensins. International Journal of Medical Microbiology : IJMM, 302(6), 276–287.
+                <li id="ref1"><a href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K1659003" target="_blank">http://parts.igem.org/wiki/index.php?title=Part:BBa_K1659003</a></li>
+                <li id="ref2">Seo, E., Weibel, S., Wehkamp, J., & Oelschlaeger, T. A. (2012). Construction of recombinant <i>E. coli</i> Nissle 1917 (EcN) strains for the expression and secretion of defensins. International Journal of Medical Microbiology : IJMM, 302(6), 276–287.
                   </li>
-                <li>Nakanishi, S., & Tanaka, M. (2010). Sequence analysis of a bacteriocinogenic plasmid of Clostridium butyricum and expression of the bacteriocin gene in Escherichia coli. Anaerobe, 16(3), 253–257.</li>
+                <li id="ref3">Nakanishi, S., & Tanaka, M. (2010). Sequence analysis of a bacteriocinogenic plasmid of <i>Clostridium</i> <i>butyricum</i> and expression of the bacteriocin gene in <i>Escherichia coli</i>. Anaerobe, 16(3), 253–257.</li>
+                <li id="ref4">Wout A. M. Wolken, Patrick M. Lucas, Aline Lonvaud-Funel, and Juke S. Lolkema1. 2006.
+                  The Mechanism of the Tyrosine Transporter TyrP Supports a Proton Motive Tyrosine Decarboxylation Pathway in Lactobacillus brevis</li>
+                <li id="ref5">Wikipedia Contributors. (2019, March 1). FNR regulon. Retrieved July 22, 2019, from Wikipedia website: https://en.wikipedia.org/wiki/FNR_regulon</li>
+                <li id="ref6"><a href="http://2013.igem.org/Team:TU-Eindhoven" target="_blank">http://2013.igem.org/Team:TU-Eindhoven</a></li>
+                <li id="ref7">Barnard, A. M. L., Green, J., & Busby, S. J. W. (2003). Transcription Regulation by Tandem-Bound FNR at <i>Escherichia coli</i> Promoters. Journal of Bacteriology, 185(20), 5993–6004.</li>
+                <li id="ref8">Ekinci Akdemir, F., Albayrak, M., Çalik, M., Bayir, Y., & Gülçin, İ. (2017). The Protective Effects of <i>p</i>-Coumaric Acid on Acute Liver and Kidney Damages Induced by Cisplatin. Biomedicines, 5(4), 18.</li>
+                <li id="ref9">Jendresen, C. B., Stahlhut, S. G., Li, M., Gaspar, P., Siedler, S., Förster, J., … Nielsen, A. T. (2015). Highly Active and Specific Tyrosine Ammonia-Lyases from Diverse Origins Enable Enhanced Production of Aromatic Compounds in Bacteria and Saccharomyces cerevisiae. Applied and Environmental Microbiology, 81(13), 4458–4476.</li>
+                <li id="ref10"><a href="http://2013.igem.org/Team:Uppsala/p-coumaric-acid" target="_blank">http://2013.igem.org/Team:Uppsala/p-coumaric-acid</a></li>
+                <li id="ref11">Li, Gang, and Kevin D Young. “Indole Production by the Tryptophanase TnaA in <i>Escherichia coli</i> Is Determined by the Amount of Exogenous Tryptophan.” Microbiology (Reading, England), vol. 159, no. Pt 2, 2013, pp. 402–10, www.ncbi.nlm.nih.gov/pubmed/23397453, 10.1099/mic.0.064139-0. Accessed 5 July 2019.</li>
+                <li id="ref12">Mandell, Daniel J., et al. “Biocontainment of Genetically Modified Organisms by Synthetic Protein Design.” Nature, vol. 518, no. 7537, 21 Jan. 2015, pp. 55–60, www.nature.com/articles/nature14121, 10.1038/nature14121. Accessed 5 July 2019.</li>
+                <li id="ref13">Merlin, C., Masters, M., McAteer, S., & Coulson, A. (2003). Why Is Carbonic Anhydrase Essential to <i>Escherichia coli</i>? Journal of Bacteriology, 185(21), 6415–6424. https://doi.org/10.1128/jb.185.21.6415-6424.2003</li>
+                <li id="ref14">InterPro EMBL-EBI. “4-Hydroxy-Tetrahydrodipicolinate Synthase, DapA (IPR005263) < InterPro < EMBL-EBI.” Ebi.Ac.Uk, 2019, www.ebi.ac.uk/interpro/entry/IPR005263. Accessed 5 July 2019.</li>
+                <li id="ref15">Rodionov, Dmitry & G Vitreschak, Alexey & Mironov, Andrey & Gelfand, Mikhail. (2004). Regulation of lysine biosynthesis and transport genes in bacteria: yet another RNA riboswitch?. Nucleic acids research. 31. 6748-57. 10.1093/nar/gkg900.</li>
+                <li id="ref16">Cho, Ah Ra, Eun Jin Lim, Yaligara Veeranagouda, and Kyoung Lee*
+                  Department of Microbiology, Changwon National University, Changwon-si, Kyongnam 641-773, Korea . Identification of a <i>p</i>-Cresol Degradation Pathway by a GFP-Based Transposon in <i>Pseudomonas</i> and Its Dominant Expression in Colonies</li>
+                <li id="ref17">Merike Jo ˜esaar, Eeva Heinaru, Signe Viggor, Eve Vedler & Ain Heinaru
+                  Institute of Molecular and Cell Biology, Tartu University, Tartu, Estonia. Diversity of the transcriptional regulation of the pch gene cluster in two indigenous <i>p</i>-Cresol-degradative strains of <i>Pseudomonas</i> fluorescens</li>
+                <li id="ref18">Jae Jun Jeong,13 Ji Hyun Kim,1 Chi-Kyung Kim,2 Ingyu Hwang3 and Kyoung Lee1
+                  3- and 4-alkylphenol degradation pathway in <i>Pseudomonas</i> sp. strain KL28: genetic organization of the lap gene cluster and substrate speciﬁcities of phenol hydroxylase and catechol 2,3-dioxygenase</li>
             </ol>
       </section>
     </main>
@@ -107,6 +196,13 @@
     <script src="https://2019.igem.org/Team:NCKU_Tainan/js/jquery-3_4_1_min_js?action=raw&amp;ctype=text/javascript"></script>
     <script src="https://2019.igem.org/Team:NCKU_Tainan/js/4.3.1/bootstrap_min_js?action=raw&amp;ctype=text/javascript"></script>
     <script src="https://2019.igem.org/Team:NCKU_Tainan/js/Universal?action=raw&amp;ctype=text/javascript"></script>
+  </script>
+  <script src="https://2019.igem.org/Team:NCKU_Tainan/js/Universal?action=raw&amp;ctype=text/javascript"></script>
+  <script>
+  $( document ).ready(function() {
+      $("#breadtext").html('<a href="https://2019.igem.org/Team:NCKU_Tainan/Description">Project</a> > <a>Design</a>')
+  });
+</script>
   </body>
   </html>
 {{Template:NCKU_Tainan/footer}}

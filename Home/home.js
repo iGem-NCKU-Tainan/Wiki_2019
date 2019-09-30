@@ -13,10 +13,8 @@ $(window).on("load", function(){
             e.preventDefault();
             fullpage_api.moveSectionDown();
         } catch(exp) {
-            alert('An error occurred and I need to write some code to handle this!');
             console.log(exp)
         }
-        //moveTo('Project', 0);
     });
 
     const logoVideo = document.querySelector("#Logo-video");
@@ -27,7 +25,7 @@ $(window).on("load", function(){
     },function(){
     })
     */
-    // after 7 sec autoplay
+    // after 2 sec autoplay
     window.setTimeout(playVideo, 2000);
     function playVideo(){
         logoVideo.play()
@@ -35,7 +33,7 @@ $(window).on("load", function(){
 
     // Display arrow down icon when video ended
     logoVideo.onended = function() {
-        $(".down").fadeIn()
+        $(".down img").fadeIn()
       };
 
     $("a.down").hover(function(){
@@ -43,6 +41,11 @@ $(window).on("load", function(){
     },function(){
         $(this).addClass("bounce")
     })
+    // set the position of wrappers
+    $('.center-adjust').css('padding-top', $('nav').height());
+    $(window).resize(function () {
+        $('.center-adjust').css('padding-top', $('nav').height());
+    });
 
 
   }); 
