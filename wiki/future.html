@@ -1,0 +1,86 @@
+{{Template:NCKU_Tainan/block_css}}
+{{Template:NCKU_Tainan/bootstrap_min_css}}
+{{Template:NCKU_Tainan/template_css}}
+{{Template:NCKU_Tainan/header}}
+{{Template:NCKU_Tainan/universal_css}}
+<html lang="en">
+<body data-spy="scroll" data-target=".sidenav" data-offset="101">  
+    <div class="content container-fluid">
+        <div class="row">
+            <!--Sidebar (Remember to change the subtitle context, but don't change the id)-->
+            <aside class="sidenav d-none d-lg-flex flex-column justify-content-start align-items-center col-2"> 
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Subtitle1"><i>p</i>-Cresol Reducing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Subtitle2">Blood Biomarker Detection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Subtitle3">CreSolution Biotechnologies</a>
+                    </li>
+                </ul>
+            </aside>
+            <main class="">
+                <!--The Page Name-->
+                <div class="pageName">
+                    <h1>Future</h1>
+                    <div class="divider"></div>
+                </div>
+                <section>
+                    <p>    We truly believe that our project can make a great impact on the world. Throughout our summer preparation, we realized that to make our project more complete and all-rounded, we will need more time for the lab work. We have listed the possible future plans for our project.</p>
+                    <p>    We split our plans into two major parts - <i>p</i>-Cresol accumulation reduction and blood biomarker detection.</p>
+                </section>
+                <hr>
+                <!--Sample section-->
+                <section>
+                    <!--section name-->
+                    <h2 id ="Subtitle1"><i>p</i>-Cresol Accumulation Reduction</h2>
+                    <h3>Bacteriocin</h3>
+                    <p>    After several attempts of constructing the <i><i>yebF</i></i>-CBM-B plasmid all ended up in frameshift mutation, we propose that this recombinant protein is toxic to <i>E. coli</i> itself. However, T7 polymerase driving CBM-B can be tolerated in <i>E. coli</i> BL21(DE3), showing that <i>E. coli</i> is able to heterogeneously express large amounts of this bacteriocin protein that originates from <i>Clostridium butyricum</i>.</p>
+                    <p>    Although purified bacteriocin can show significant inhibition of <i>Clostridium</i> growth, purified protein is not consistent with the goal of carrying forward the idea of live therapeutic. Hence, we will continue to try out other secretion systems inside <i>E. coli</i> in the future such as <i>hylA</i> secretion tag or Sec-/SRP- pathway<sup>[<a href="#ref">1</a>]</sup> to secrete the bacteriocin out of the cell.</p>
+                    <h3>Tyrosine ammonia-lyase & tyrosine transporter</h3>
+                    <p>    According to FDA Guidance on Live Biotherapeutic Organisms (<a href="https://www.fda.gov/files/vaccines,%20blood%20&%20biologics/published/Early-Clinical-Trials-With-Live-Biotherapeutic-Products--Chemistry--Manufacturing--and-Control-Information--Guidance-for-Industry.pdf" target="_blank">docket number FDA-2010-D-0500</a>)<sup>[<a href="#ref2">2</a>]</sup>, live therapeutics should not include antibiotic resistance genes as selection markers. All genetic manipulation must be fixed on the bacterial chromosome to prevent horizontal genetic transfer. We were inspired by research published in Nature Biotech<sup>[<a href="#ref3">3</a>]</sup>, that also uses <i>E. coli</i> Nissle as a chassis to manipulate metabolic pathways inside the human gut. They knocked-in the target genes using lambda Red recombineering into five different locations in <i>E. coli</i> Nissle’s chromosome. The finalized Cresolve bacteria will have the optimized TAL and <i>tyrP</i> gene inserted into the chromosome.</p>
+                    <p>    Also, there is still potential for the tyrosine degradation pathway. Research paper<sup>[<a href="#ref4">4</a>]</sup> and <a href="http://2013.igem.org/Team:Uppsala" target="_blank">iGEM Uppsala 2013</a> have reported that tyrosine ammonia-lyase should have a higher expression level in <i>E. coli</i> and thus able to consume higher amounts of tyrosine. We will further optimize the combination of promoters and ribosome binding sites for the enzyme involved in the tyrosine degradation pathway to increase the effectiveness of CreSolve.</p>
+                    <h3>Additional concerns towards <i>E. coli</i> Nissle</h3>
+                    <p>    When researching uremic toxin, we found that most <i>E. coli</i> strains carry <i>tnaA</i> gene, which encodes for tryptophanase, that is able to convert tryptophan into indole, one of the uremic toxins. So, if we are using <i>E. coli</i> Nissle to solve uremic toxin accumulation in CKD patients, we have to acknowledge this problem. The best way is to knock out the <i>tnaA</i> gene. However, during the summer, we are unable to construct a double mutant strain <i>E. coli</i> Nissle <i>tnaA</i><sup>-</sup> <i>can</i><sup>-</sup> due to limited time. We will continue this work in the future.</p>
+                </section>
+                <hr>
+                <section>
+                    <!--Subtitle use h2-->
+                    <h2 id ="Subtitle2">Blood Biomarker Detection</h2>
+                    <h3><i>p</i>-Cresol sensing bacteria</h3>
+                    <p>    Although this year we did not successfully construct a bacteria that is able to sense <i>p</i>-Cresol using the <i>pchR</i> regulon from <i>Pseudomonas fluorescens</i> PC24, there are other constructs, such as <i>dmpR</i> regulon, that have been proposed by <a href="http://2014.igem.org/Team:Evry" target="_blank">iGEM Evry 2014</a> that are able to sense phenolic compounds. Research<sup>[<a href="#ref7">7</a>]</sup> also has proven that <i>dmpR</i> can sense <i>p</i>-Cresol. We may incorporate these constructs into our CreSense bio-sensing platform, but the specificity of these sensing regulons is still of concern to us.</p>
+                </section>
+                <hr>
+                <section>
+                    <h2 id="Subtitle3">CreSolution Biotechnologies</h2>
+                    <p>    Oh My Gut project will be developed into a start-up company, named CreSolution Biotechnologies. CreSolution Biotechnologies will focus on 4 divisions, which are Living Therapeutics Division, Medical Diagnosis Device Division, CreSolution Cloud Services and will develop into CreSolution Clinic. CreSolution Biotechnologies aims to expand the area served to cover most of the countries around the world, starting by entering the United States, China and India, which represent the largest markets in the world. Further expansion will focus on the European Union and other Asia Pacific countries. CreSolution Biotechnologies aspire to change the public’s perspective on GMO, synthetic biology and genetic engineering, while providing solutions to improve and extend the lives of people by setting up an affordable healthcare platform to increase the accessibility to <b>ANYONE</b> who requires medical advice, attention and products.</p>
+                </section>
+                <section class="ref">
+                    <h2>References</h2>
+                    <ol>
+                        <!--id name must corespond -->
+                        <li id="ref1">Kleiner-Grote, G. R. M., Risse, J. M., & Friehs, K. (2018). Secretion of recombinant proteins from <i>E. coli</i>. <i>Engineering in Life Sciences</i>, 18(8), 532–550.</li>
+                        <li id="ref2">Early Clinical Trials with Live Biotherapeutic Products ... (n.d.). Retrieved from <a href="https://www.fda.gov/files/vaccines,%20blood%20&%20biologics/published/Early-Clinical-Trials-With-Live-Biotherapeutic-Products--Chemistry--Manufacturing--and-Control-Information--Guidance-for-Industry.pdf" target="_blank">https://www.fda.gov/downloads/BiologicsBloodVaccines/GuidanceComplianceRegulatoryInformation/Guidances/General/UCM292704.pdf</a>.</li>
+                        <li id="ref3">Isabella, V. M., Ha, B. N., Castillo, M. J., Lubkowicz, D. J., Rowe, S. E., Millet, Y. A., … Falb, D. (2018). Development of a synthetic live bacterial therapeutic for the human metabolic disease phenylketonuria. <i>Nature Biotechnology</i>, 36(9), 857–864.</li>
+                        <li id="ref4">Jendresen, C. B., Stahlhut, S. G., Li, M., Gaspar, P., Siedler, S., Förster, J., … Nielsen, A. T. (2015). Highly Active and Specific Tyrosine Ammonia-Lyases from Diverse Origins Enable Enhanced Production of Aromatic Compounds in Bacteria and Saccharomyces cerevisiae. <i>Applied and Environmental Microbiology</i>, 81(13), 4458–4476.</li>
+                        <li id="ref5">Sarand, I., Skarfstad, E., Forsman, M., Romantschuk, M., & Shingler, V. (2001). Role of the <i>dmpR</i>-Mediated Regulatory Circuit in Bacterial Biodegradation Properties in Methylphenol-Amended Soils. <i>Applied and Environmental Microbiology</i>, 67(1), 162–171.</li>
+                    </ol>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/jquery-3_4_1_min_js?action=raw&amp;ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/4.3.1/bootstrap_min_js?action=raw&amp;ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/Universal?action=raw&amp;ctype=text/javascript"></script>
+    <script>
+        // remember to edit this according to page
+        $( document ).ready(function() {
+            $("#breadtext").html('<a href="https://2019.igem.org/Team:NCKU_Tainan/Results">Results</a> > <a>Future</a>')
+        });
+    </script>
+</body>
+</html>
+{{Template:NCKU_Tainan/gotop}}
+{{Template:NCKU_Tainan/footer}}

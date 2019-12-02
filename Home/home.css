@@ -39,7 +39,150 @@ p {
 }
 nav {
     background-color: #172544;
-    opacity:0.8;
+    opacity:0.96;
+    font-size:1.3rem;
+}
+.navbar {
+    padding: 0rem 1rem;
+}
+nav .fake {
+    width:56px;
+    height:40px;
+}
+.navbar-brand {
+    width: 30vw;
+    height:auto;
+    margin-right: 0;
+}
+
+.navbar-brand img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:white;
+}
+.dropdown-menu {
+    background-color: #fffdf6;
+    border-radius: 0 0 .25rem .25rem;
+    margin-top: .5rem;
+    border-style: none;
+}
+
+.dropdown-menu a:hover { 
+    background-color: #afcee2; 
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown-menu:before {
+    /*在menu跟dropdown中間加一塊透明的block*/
+    content: "";
+    display: block;
+    position: absolute;
+    height: 40px;
+    top: -30px;
+    left: 0;
+    right: 0;
+}
+
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    /*target active才不會讓滑鼠滑上去的時候沒改變*/
+    pointer-events: none;
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    .navbar-expand-lg .navbar-nav.navbar-nav {
+        flex-grow: 1;
+        padding: 0 10% 0 15%;
+    }
+    .navbar-brand {
+        width: 13vw;
+        height:auto;
+    }
+}
+.bread {
+    height: 2.5rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    opacity:0.96;
+    background: #172544;
+}
+.bread .shape {
+    width: calc(20% - 2.5rem);
+    height: 100%;
+    margin-right: 0px!important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.bread::after {
+    content: ""; 
+    position: absolute;
+    left: calc(20% - 2.5rem);
+    width: 0;
+    height: 0;
+    border-top: 2.5rem solid #172544;
+    border-right: 2.5rem solid transparent;
+}
+#breadtext a{
+    color:grey;
+}
+
+#breadtext{
+    font-style:none;
+    color:white;
+    margin: 0;
+}
+
+/* home.css */
+/* template */
+html {
+    scroll-behavior: smooth;
+    color: #2C2C2C;
+}
+body {
+    position: relative;
+    width:100%;
+    height: auto;
+    background-color: #f0f0f0;
+    font-family: 'Raleway',"微軟正黑體",sans-serif;
+    overflow-y: scroll;
+}
+/*Be selected*/
+::selection {
+    background-color: #8BBED5;
+  }
+/* Page Name */
+.h1, h1 {
+    font-family: 'Sansita',"微軟正黑體",sans-serif;
+    color: #2C2C2C;
+    font-size:3.75rem;
+}
+/* Subtitle */
+.h2, h2 {
+    font-family: 'Sansita',"微軟正黑體",sans-serif;
+}
+/* Sub-Subtitle */
+.h3, h3 {
+    font-family: 'Sansita',"微軟正黑體",sans-serif;
+}
+p {
+    word-wrap: break-word;
+}
+/* Navagation Bar */
+.fixed-top {
+    top: 16px;
+}
+nav {
+    background-color: #172544;
+    opacity:0.96;
     font-size:1.3rem;
 }
 .navbar {
@@ -148,24 +291,7 @@ section {
 }
 .wrapper {
     height: 100%;
-}
-/*
-#Project {
-    background-color: grey;
-}
-#Video {
-    background-color: ghostwhite;
-}
-#Game {
-    background-color: gainsboro;
-}
-footer {
-    background-color: gray;
-}
-*/
-/* make the footer height fit current size
-.footer-wrapper {
-    height: 40vh;
+d0ad673c73fe008698d521c99a2eb36466967
 }
 */
 /* Logo Part */
@@ -176,25 +302,55 @@ footer {
     position: absolute;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 #Logo-video {
+    min-width: 100%;
     width: auto;
-    height: 60%;
+    min-height: 100%;
+    height: auto;
+    z-index: -1;
 }
-.down-wrapper {
-    position: absolute;
+img.big-logo {
+    height: 32%;
+    width: auto;
+    margin-bottom: 15px;
+}
+h1.pagename {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0;
+}
+hr.pagename {
+    width:90%;
+    padding-top:0;
+    border-top: 3px solid #2C2C2C;
+}
+p.pagename {
+    width: 70%;
+}
+a.down {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+.down img {
     width: 100%;
-    bottom: 5%;
-    right: 0;
-    left: 0;
+    height: auto;
 }
 .down {
     display: none;
+@media (min-width: 992px) { 
+    a.down {
+        position: absolute;
+        top: 80%;
+        left: calc(50% - 25px);
+    }
 }
 .bounce {
     animation: bounce 3s;
     animation-iteration-count: infinite;
-  }
+}
 @keyframes bounce {
     0%, 25%, 50%, 75%, 100% {
         transform: translateY(0);
@@ -206,32 +362,142 @@ footer {
         transform: translateY(-12px);
     }
 }
-
-.fa-angle-double-down {
-    font-size: 50px;
-}
-/* nav */
-nav {
-    background-color: #172544;
-    opacity:0.8;
+/*nav*/
+header div.bread {
+    display: none!important;
 }
 /* Project */
-.text-wrapper {
-    padding-left: 10%;
-    height: 100vh;
+.text-wrapper, .img-wrapper {
+    height: auto;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-bottom: 3%;
 }
-.img-wrapper {
-    padding-right: 10%;
-    height: 100vh;
+main .text-wrapper p{
+    font-size:1rem;
 }
 img.device {
     width: 70%;
     height: auto;
 }
-video#Intro-video {
-    margin-bottom: 5%;
+.img-full {
+    max-width: 100%;
     width: auto;
-    height: 70%;
+    max-height: 100%;
+    height: auto;
+}
+/*large device like computer*/
+@media (min-width: 992px) { 
+    .text-wrapper {
+        height: 100vh;
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-bottom: 0%;
+    }
+    .img-wrapper {
+        height: 100vh;
+        padding-right: 6%;
+        padding-left: 1%;
+    }
+    .video-wrapper {
+        height: 100vh;
+    }
+}
+/*Intro video*/
+video#Intro-video {
+    max-width: 95%;
+    width: auto;
+    max-height: 80%;
+    height: auto;
+}
+a.des-link {
+    max-width: 20%;
+    height: auto;
+}
+@media (min-width: 768px) {
+    a.des-link {
+        max-width: auto;
+        height: 20%;
+    }
+}
+.des-link div.close{
+    height: 42px;
+    width:  192px;
+    background-image: url("https://2019.igem.org/wiki/images/thumb/f/fb/T--NCKU_Tainan--Home_close.png/799px-T--NCKU_Tainan--Home_close.png");
+    background-size: contain;
+}
+.des-link div.open{
+    height: 42px;
+    width:  192px;
+    background-image: url("https://2019.igem.org/wiki/images/thumb/a/a5/T--NCKU_Tainan--Home_open.png/799px-T--NCKU_Tainan--Home_open.png");
+    background-size: contain;
+}
+/*footer start*/    
+footer{
+    background: #4F545F;
+    width: 100%;
+    height:100%;
+}
+.footer-container{
+    padding: 1rem 0 2rem 0;
+}
+.footer-row{
+    margin:1rem 2rem;
+}
+footer .colOne{
+    display: flex;
+    justify-content: space-between;
+    padding:0;
+}
+footer .colTwo{
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    margin:1rem 0;
+    height:50px;
+}
+footer .col-12{
+    padding-right: 0;
+    padding-left: 0;
+}
+.col-two-icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-self: top;
+    padding:0;
+}
+.colOne img{
+    height:70px;
+    width: 60px;
+    margin:0;
+    padding:0;
+    margin:0 0 10px 0;
+}
+.colTwo img{
+    height:30px;
+    width: 30px;
+    margin:0;
+}
+.footer-text{
+    align-self: baseline;
+    color: white;
+    font-family: sans-serif;
+}
+footer a:link{
+    text-decoration: none;
+}
+/*large device like computer*/
+@media (min-width: 992px) { 
+    .colOne img{
+        height:100px;
+        width: 80px;
+        margin:0;
+        padding:0;
+        margin:0;
+    }
+    .col-two-icon{
+        justify-content:space-between;
+    }
 }
 /*snake game css start*/
 canvas{
@@ -398,4 +664,5 @@ footer a:link{
         justify-content:space-between;
     }
 }
+/*footer end*/
 /*footer end*/
