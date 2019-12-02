@@ -119,7 +119,7 @@
                         <div class="text">
                             <h2>Project</h2>
                             <p>
-                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
                             </p>
                         </div>
                     </div>
@@ -137,13 +137,93 @@
                     <source src="example/Yif-Magic.webm" type="video/web" />
                     您的瀏覽器不支援HTML 5影片播放標籤video格式。
                     Your browser doesn't support the video tag.
-            </video>
-        </div>
+                </video>
+            </div>
         </section>
-        <section id="Game" class="section"></section>
+        <!--snake game html start here-->
+        <section id="Game" class="section">
+            <div class="snakeScore">
+                <div class="canvasSnake">
+                    <span class="scoreSpan">Current score:<strong id="current">&nbsp 0</strong></span>
+                    <sapn class="scoreSpan">Record:<strong id="recordScore">&nbsp 0</strong></sapn>
+                </div>
+            </div>
+            <div class="canvasSnake2">
+                <canvas id="snake" width="1000" height="400"></canvas>
+                <h2 id=snakeStory>All right reserved to NCKU Tainan,<br><br>Enjoy your game !</h2>
+                <input type="button" onclick="gameStart()" id="snakeButton2" value="Start">
+                <form name="snakeFormm" id="snakeForm">
+                    Team name:<br>
+                    <input type="text" name="team" value="NCKU">
+                    <br>
+                    <br>
+                    ID:
+                    <br>
+                    <input type="text" name="name" value="You Never Get Me">
+                    <br>
+                    <br>
+                    <input type="button" onclick="gameRecord()" id="snakeButton" value="Submit">
+                </form>
+            </div>
+            <div id="divImg">
+                <img src="C:\Users\JOE\Desktop\網頁檔案\fb背景.jpg" id="snakeImg" style="width:100%;height:620px;">
+            </div>
+        </section>
+        <!--snake game html end here-->
         <footer class="section fp-auto-height">
             <div class="footer-wrapper">
-                    
+                <footer>
+                    <div class="container footer-container">
+                        <div class="row footer-row">
+                            <div class="col-12 col-md-6 colOne">
+                                <!--icon of logo-->
+                                <div id="gutImage">
+                                    <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/f/fe/T--NCKU_Tainan--Logotext_icon.png/499px-T--NCKU_Tainan--Logotext_icon.png"></a>
+                                </div>
+                                <!--icon of NCKUigem-->
+                                <div>
+                                    <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/5/5b/T--NCKU_Tainan--NCKUigemtext_icon.png/428px-T--NCKU_Tainan--NCKUigemtext_icon.png"></a>
+                                </div>
+                                <!--icon of NCKU-->
+                                <div>
+                                    <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/f/f3/T--NCKU_Tainan--NCKUtext_icon.png/499px-T--NCKU_Tainan--NCKUtext_icon.png"></a>
+                                </div>
+                                <!--icon of Diamond-->
+                                <div>
+                                    <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/f/f1/T--NCKU_Tainan--Diamodtext_icon.png/499px-T--NCKU_Tainan--Diamodtext_icon.png"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-1 footer-col1" style='border-right:3px solid #ffffff;'></div>
+                            <div class="col-md-1 footer-col1"></div>
+                            <div class="col-12 col-md-4 colTwo">
+                                <div class="col-12 col-md-12 col-two-icon">
+                                    <!--icon of phone-->
+                                    <div>
+                                        <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/b/b4/T--NCKU_Tainan--Phone_icon.png/600px-T--NCKU_Tainan--Phone_icon.png"></a>
+                                    </div>
+                                    <!--icon of mail-->
+                                    <div>
+                                        <a href="joechen199712@gmail.com"><img src="https://2019.igem.org/wiki/images/thumb/f/fe/T--NCKU_Tainan--Mail_icon.png/600px-T--NCKU_Tainan--Mail_icon.png"></a>
+                                    </div>
+                                    <!--icon of instagram-->
+                                    <div>
+                                        <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/4/44/T--NCKU_Tainan--Instagram_icon.png/600px-T--NCKU_Tainan--Instagram_icon.png"></a>
+                                    </div>
+                                    <!--icon of facebook-->
+                                    <div>
+                                        <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/e/ec/T--NCKU_Tainan--Facebook_icon.png/600px-T--NCKU_Tainan--Facebook_icon.png"></a>
+                                    </div>
+                                </div>
+                                <p class="col-12 footer-text">
+                                    mail:
+                                    <br>
+                                    phone : 06-2757575 ( 50311 )
+                                </p>
+                            </div>
+                            <!--end of col-4-->
+                        </div>
+                    </div>
+                </footer>
             </div>
         </footer>
     </main>
