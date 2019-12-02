@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700,700i|Sansita:400,400i,700,700i,800,800i&display=swap" rel="stylesheet">
     <!--link type="text/css" rel="stylesheet" href="lightGallery-master/dist/css/lightgallery.css" --> 
     <style>
+        body {
+            background:#f0f0f0;
+        }
         * {box-sizing: border-box;}
         
         .img-magnifier-container {
@@ -16,24 +19,36 @@
         
         .img-magnifier-glass {
             position: absolute;
-            border: 3px solid #000;
+            border: 5px solid #8bbed5;
             border-radius: 50%;
             cursor: crosshair;
             /*Set the size of the magnifier glass:*/
-            width: 15vw;
-            height: 15vw;
+            width: 18vw;
+            height: 18vw;
         }
     </style>
 </head>
 <html>
 <main style="width: 100%; height: 20vw;"></main>
 <div class="img-magnifier-container">
-    <img id="myimage" src="description link-02.png" width="50%" height="auto" alt="Girl">
+    <img id="myimage" src="explore.png" width="50%" height="auto" alt="Girl">
 </div>
 <footer style="width: 100%; height: 20vw;"></footer>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 <script>
     /* Execute the magnify function: */
-    magnify("myimage", 1);
+    /* Execute the magnify function: */
+    window.onload = function() {
+        magnify("myimage", 1);
+        $( window ).resize(function() {
+            $(".img-magnifier-glass").remove();
+            console.log("視窗發生改變了喲！");
+            magnify("myimage", 1);
+        });
+    };
     /* Specify the id of the image, and the strength of the magnifier glass: */
     function magnify(imgID, zoom) {
         var img, glass, w, h, bw;
@@ -47,7 +62,7 @@
         img.parentElement.insertBefore(glass, img);
         
         /* Set background properties for the magnifier glass: */
-        glass.style.backgroundImage = "url('" + "description link-01.png" + "')";
+        glass.style.backgroundImage = "url('https://2019.igem.org/wiki/images/thumb/4/48/T--NCKU_Tainan--Description_links.png/800px-T--NCKU_Tainan--Description_links.png')";
         glass.style.backgroundRepeat = "no-repeat";
         glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
         bw = 3;
@@ -59,7 +74,7 @@
         img.addEventListener("mousemove", moveMagnifier);
         /* Click event */
         glass.addEventListener('click', linkFunction);
-
+        
         
         /*and also for touch screens:*/
         glass.addEventListener("touchmove", moveMagnifier);
@@ -82,8 +97,13 @@
             glass.style.top = (y - h) + "px";
             /* Display what the magnifier glass "sees": */
             glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+            /* Set the proper cursor of the magnifier glass: */
+            if ((x > img.width/9.9 && x < img.width/3.65 && y > img.height/2.75 && y < img.height/1.6)||(x > img.width/1.83 && x < img.width/1.39 && y > img.height/3.27 && y < img.height/1.95)||(x > img.width/4 && x < img.width/2.2 && y > img.height/1.57 && y < img.height/1.11)||(x > img.width/2.9 && x < img.width/1.97 && y > img.height/4.9 && y < img.height/2.25)||(x > img.width/1.35 && x < img.width/1.1 && y > img.height/1.96 && y < img.height/1.333)||(x > img.width/1.81 && x < img.width/1.42 && y > img.height/1.355 && y < img.height/1.07)) {
+                glass.style.cursor = "pointer";
+            }else {
+                glass.style.cursor = "crosshair";
+            }
             
-
         }
         function getCursorPos(e) {
             var a, x = 0, y = 0;
@@ -108,21 +128,35 @@
             console.log("y:" + pos.y);
             console.log(img.width);
             console.log(img.height);
-            if (x < img.width / 3 && y < img.height / 2) {
+            if (x > img.width/9.9 && x < img.width/3.65 && y > img.height/2.75 && y < img.height/1.6) {
                 console.log("Results");
+                glass.style.cursor = "pointer";
                 window.open("https://2019.igem.org/Team:NCKU_Tainan/Results");
-            }else if(x > img.width/3 && x< img.width/3*2 && y < img.height / 2) {
+            }else if(x > img.width/1.83 && x < img.width/1.39 && y > img.height/3.27 && y < img.height/1.95) {
                 console.log("Demonstrate");
+                glass.style.cursor = "pointer";
                 window.open("https://2019.igem.org/Team:NCKU_Tainan/Demonstrate");
-            }else if (x > img.width / 3 * 2 && y < img.height / 2) {
+            }else if (x > img.width/4 && x < img.width/2.2 && y > img.height/1.57 && y < img.height/1.11) {
                 console.log("Hardware");
+                glass.style.cursor = "pointer";
                 window.open("https://2019.igem.org/Team:NCKU_Tainan/Hardware");
-            }else if (x < img.width / 3 * 2 && y > img.height / 2) {
+            }else if (x > img.width/2.9 && x < img.width/1.97 && y > img.height/4.9 && y < img.height/2.25) {
                 console.log("HP");
+                glass.style.cursor = "pointer";
                 window.open("https://2019.igem.org/Team:NCKU_Tainan/Human_Practices");
+            }else if (x > img.width/1.35 && x < img.width/1.1 && y > img.height/1.96 && y < img.height/1.333) {
+                console.log("Design");
+                glass.style.cursor = "pointer";
+                window.open("https://2019.igem.org/Team:NCKU_Tainan/Design");
+            }else if (x > img.width/1.81 && x < img.width/1.42 && y > img.height/1.355 && y < img.height/1.07) {
+                console.log("Entrepreneurship");
+                glass.style.cursor = "pointer";
+                window.open("https://2019.igem.org/Team:NCKU_Tainan/Entrepreneurship");
+            }else {
+                glass.style.cursor = "crosshair";
             }
-
-
+            
+            
         }
     }
 </script>

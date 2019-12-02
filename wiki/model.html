@@ -1,142 +1,1128 @@
+
+<!--Edited OCT20 12:45pm-->
+
+
 {{Template:NCKU_Tainan/block_css}}
 {{Template:NCKU_Tainan/bootstrap_min_css}}
 {{Template:NCKU_Tainan/template_css}}
 {{Template:NCKU_Tainan/header}}
 {{Template:NCKU_Tainan/universal_css}}
 <html lang="en">
-<!--head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Universal</title>
-  <link rel="stylesheet" href="https://2019.igem.org/Team:NCKU_Tainan/css/4.3.1/bootstrap_min_css?action=raw&ctype=text/css"/>
-  <link rel="stylesheet" type="text/css" href="https://2019.igem.org/Team:NCKU_Tainan/css/universal?action=raw&ctype=text/css">
-</head-->
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css?family=Raleway|Sansita&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Sansita&display=swap" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target=".sidenav" data-offset="10">  
+<body data-spy="scroll" data-target=".sidenav" data-offset="101">  
   <div class="content container-fluid">
     <div class="row">
       <!--Sidebar (Remember to change the subtitle context, but don't change the id)-->
-      <aside class="sidenav d-none d-lg-flex flex-column justify-content-center align-items-center col-2"> 
+      <aside class="sidenav d-none d-lg-flex flex-column justify-content-start align-items-center col-2"> 
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link" href="#Subtitle1">Overview</a>
+            <a class="nav-link" href="#Subtitle1">Co-culture Model</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#Subtitle2">Bacteriocin Model</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Subtitle3"><i>p</i>-Cresol Sensing Model</a>
-          </li>
         </ul>
       </aside>
       <main class="">
-      <!--The Page Name-->
-      <div class="pageName">
-        <h1>Model</h1>
-        <div class="divider"></div>
-      </div>
-      <section>
-        <h2 id ="Subtitle1">Overview</h2>
-        <!--remember to have 4 spaces in front of a paragraph-->
-        <p>    We aim to develop mathematical models that act as a bridge between the theoretical and the physical realisation of our biological work, to optimise our experiments and to understand our results.</p>
-        <p>    We demonstrated that our bacteriocin can specifically reduce <i>Clostridium difficile</i> population in human intestines. However, it is deemed difficult to purify bacteriocin after production due to technical limitations. That is why we modelled bacteriocin's effectiveness in reducing <i>Clostridium difficile</i> population in our experiments.</p>
-        <p>    To complement our <i>p</i>-Cresol biosensing system, we modelled the relationships between <i>p</i>-Cresol concentration, bacteria growth and fluorescent protein expression, then used the model to estimate the number of E. coli needed to measure blood <i>p</i>-Cresol level effectively.</p>
-        <math display="block">
-            <mi>P</mi>
-            <mo>=</mo>
-            <mrow>
-                <msub>
-                    <mi>P</mi>
-                    <mi>max</mi>
-                </msub>
-                <mo>&sdot;</mo>
-                <mfrac>
-                    <msup>
-                        <mfenced open="[" close="]">
-                            <mi>PC</mi>
-                        </mfenced>
-                        <mi>h</mi>
-                    </msup>
-                    <mrow>
-                        <msup>
+        <!--The Page Name-->
+        <div class="pageName">
+          <h1>Model</h1>
+          <div class="divider"></div>
+        </div>
+        <section>
+          <h2>Overview</h2>
+          <p>    We aimed to develop mathematical models that act as a bridge between the theoretical and the physical realization of our biological work, to further optimize our experiments and understand our results.</p>
+          <p>    We <a href="https://2019.igem.org/Team:NCKU_Tainan/Demonstrate" target="_blank">demonstrated</a> that our <i>E. coli</i> can convert tyrosine - the precursor of <i>p</i>-Cresol, into <i>p</i>-Coumaric acid, a beneficial byproduct by diverting the original fermentation pathway. For that, we simulated the interactions between <i>E. coli</i> Nissle and <i>Clostridium difficile</i> (<i>C. difficile</i>) under <b>co-culture conditions</b>.</p>
+          <p>Our Goals:</p>
+          <ol>
+            <li><p>Better understand and improve our <b>CreSolve</b> therapeutic drug’s effects on reducing <i>p</i>-Cresol production.</p></li>
+            <li><p>Explore the effectiveness of bacteriocin on reducing <i>Clostridium difficile</i> population.</p></li>
+          </ol>
+        </section>
+        <hr>
+        <section>
+          <h2 id="Subtitle1">Co-culture Model</h2>
+          <div class="container-fluid p-0">
+            <div class="row no-gutters">
+              <div class="col-lg ">
+                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                  <!-- put link in href & src , width in a can adjust-->
+                  <a href="https://2019.igem.org/wiki/images/9/9c/T--NCKU_Tainan--Model_co-culture_big_pic.png" target="_blank" style="width:70%"><img src="https://2019.igem.org/wiki/images/9/9c/T--NCKU_Tainan--Model_co-culture_big_pic.png" alt="" title="" style="width:100%"></a>
+                  <figcaption>Fig. 1. Co-culture model overview</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <p>    <b>Oh My Gut’s <b>CreSolve</b></b> is engineered as a living therapeutic and so, it is vital to simulate our therapeutic drug’s efficiency in reducing excess tyrosine. However, due to time constraints, we were not able to perform a co-culture experiment to further validate our engineered <i>E. coli</i> Nissle. Therefore, to prove the feasibility of <b>CreSolve</b>, we built a series of co-culture model under two different conditions:</p>
+          <ol>
+            <li><p><i>C. difficile</i> and <b>CreSolve</b> are cultured under the same initial OD value of 0.06 (1 : 1).</p></li>
+            <li><p><b>CreSolve</b> cultured in a <i>C. difficile</i>-dominant environment (1:400)</p></li>
+          </ol>
+          <p>The following equations are used in the co-culture models:</p>
+          <div class="container-fluid p-0 justify-content-center align-items-center table-responsive">
+            <table class="table-bordered table-striped table" style="display: block;">
+              <caption>Table 1. Co-culture model equations </caption>
+              <thead style="border-bottom: 3px solid #767676;">
+                <tr>
+                  <th>Equations</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <math>
+                      <mfrac>
+                        <mrow>
+                          <mo mathvariant="italic">d</mo>
+                          <mfenced open="[" close="]"><mi mathvariant="italic">TAL</mi></mfenced>
+                        </mrow>
+                        <mrow>
+                          <mo mathvariant="italic">d</mo>
+                          <mi>t</mi>
+                        </mrow>
+                      </mfrac>
+                      <mo>=</mo>
+                      <msub>
+                        <mi>k</mi>
+                        <mn>1</mn>
+                      </msub>
+                      <mo>&InvisibleTimes;</mo>
+                      <mfenced open="[" close="]">
+                        <mi mathvariant="italic">Nissle</mi>
+                      </mfenced>
+                    </math>    
+                  </td>
+                  <td>We assumed that the rate of change of TAL (tyrosine ammonia lyase) concentration is proportional to <i>E. coli</i> Nissle cell density. <i>k</i><sub>1</sub> stands for a coefficient.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <math>
+                      <mfrac>
+                        <mrow>
+                          <mo mathvariant="italic">d</mo>
+                          <msub>
+                            <mfenced open="[" close="]"><mi mathvariant="italic">Tyr</mi></mfenced>
+                            <mi mathvariant="italic">outside</mi>
+                          </msub>
+                        </mrow>
+                        <mrow>
+                          <mo mathvariant="italic">d</mo>
+                          <mi>t</mi>
+                        </mrow>
+                      </mfrac>
+                      <mo>=</mo>
+                      <mrow>
+                        <mo>-</mo>
+                        <mfrac>
+                          <mrow>
+                            <msub>
+                              <mi>k</mi>
+                              <mi mathvariant="italic">cat1</mi>
+                            </msub>
+                            <mo>&InvisibleTimes;</mo>
+                            <msub>
+                              <mfenced open="[" close="]">
+                                <mi mathvariant="italic">TryP</mi>
+                              </mfenced>
+                              <mi mathvariant="italic">outside</mi>
+                            </msub>
+                            <mo>&InvisibleTimes;</mo>
+                            <msub>
+                              <mfenced open="[" close="]">
+                                <mi mathvariant="italic">Tyr</mi>
+                              </mfenced>
+                              <mi mathvariant="italic">outside</mi>
+                            </msub>
+                          </mrow>
+                          <mrow>
+                            <msub>
+                              <mi>K</mi>
+                              <mi mathvariant="italic">m1</mi>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                              <mfenced open="[" close="]">
+                                <mi mathvariant="italic">Tyr</mi>
+                              </mfenced>
+                              <mi mathvariant="italic">outside</mi>
+                            </msub>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                    </math>    
+                  </td>
+                  <td>Transportation of tyrosine into the cell through tyrosine transporter according to Michaelis-Menten equation. [<i>TryP]<sub>outside</sub></i> stands for the tyrosine transporter concentration; <i>k<sub>cat</sub></i><sub>1</sub> is the estimated turnover number of tyrosine transporter; <i>K<sub>m</sub></i><sub>1</sub> is the tyrosine concentration at which tyrosine transportation rate is at half-maximum.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <math>
+                      <mfrac>
+                        <mrow>
+                          <mo mathvariant="italic">d</mo>
+                          <msub>
+                            <mfenced open="[" close="]"><mi mathvariant="italic">Tyr</mi></mfenced>
+                            <mi mathvariant="italic">Nissle</mi>
+                          </msub>
+                        </mrow>
+                        <mrow>
+                          <mo mathvariant="italic">d</mo>
+                          <mi>t</mi>
+                        </mrow>
+                      </mfrac>
+                      <mo>=</mo>
+                      <mfrac>
+                        <mrow>
+                          <msub>
+                            <mi>k</mi>
+                            <mi mathvariant="italic">cat1</mi>
+                          </msub>
+                          <mo>&InvisibleTimes;</mo>
+                          <msub>
                             <mfenced open="[" close="]">
-                                <mi>PC</mi>
+                              <mi mathvariant="italic">TryP</mi>
                             </mfenced>
-                            <mi>h</mi>
-                        </msup>
-                        <mo>+</mo>
-                        <msup>
-                            <mi>K</mi>
-                            <mi>h</mi>
-                        </msup>
-                    </mrow>
-                </mfrac>
-            </mrow>
-        </math>
-    </section>
-      <hr>
-      <section>
-        <h2 id ="Subtitle2">Bacteriocin Model</h2>
-        <p><math display="block">
-            <mi>P</mi>
-            <mo>=</mo>
-            <mrow>
-                <msub>
-                    <mi>P</mi>
-                    <mi>max</mi>
-                </msub>
-                <mo>&sdot;</mo>
-                <mfrac>
-                    <msup>
-                        <mfenced open="[" close="]">
-                            <mi>PC</mi>
-                        </mfenced>
-                        <mi>h</mi>
-                    </msup>
-                    <mrow>
-                        <msup>
+                            <mi mathvariant="italic">cell</mi>
+                          </msub>
+                          <mo>&InvisibleTimes;</mo>
+                          <msub>
                             <mfenced open="[" close="]">
-                                <mi>PC</mi>
+                              <mi mathvariant="italic">Tyr</mi>
                             </mfenced>
-                            <mi>h</mi>
-                        </msup>
-                        <mo>+</mo>
-                        <msup>
+                            <mi mathvariant="italic">outside</mi>
+                          </msub>
+                        </mrow>
+                        <mrow>
+                          <msub>
                             <mi>K</mi>
-                            <mi>h</mi>
-                        </msup>
+                            <mi mathvariant="italic">m1</mi>
+                          </msub>
+                          <mo>+</mo>
+                          <msub>
+                            <mfenced open="[" close="]">
+                              <mi mathvariant="italic">Tyr</mi>
+                            </mfenced>
+                            <mi mathvariant="italic">outside</mi>
+                          </msub>
+                        </mrow>
+                      </mfrac>
+                      <mo>-</mo>
+                      <mfrac>
+                        <mrow>
+                          <msub>
+                            <mi>k</mi>
+                            <mi mathvariant="italic">cat2</mi>
+                          </msub>
+                          <mo>&InvisibleTimes;</mo>
+                          <msub>
+                            <mfenced open="[" close="]">
+                              <mi mathvariant="italic">TAL</mi>
+                            </mfenced>
+                            <mi mathvariant="italic">Nissle</mi>
+                          </msub>
+                          <mo>&InvisibleTimes;</mo>
+                          <msub>
+                            <mfenced open="[" close="]">
+                              <mi mathvariant="italic">Tyr</mi>
+                            </mfenced>
+                            <mi mathvariant="italic">Nissle</mi>
+                          </msub>
+                        </mrow>
+                        <mrow>
+                          <msub>
+                            <mi>K</mi>
+                            <mi mathvariant="italic">m2</mi>
+                          </msub>
+                          <mo>+</mo>
+                          <msub>
+                            <mfenced open="[" close="]">
+                              <mi mathvariant="italic">Tyr</mi>
+                            </mfenced>
+                            <mi mathvariant="italic">Nissle</mi>
+                          </msub>
+                        </mrow>
+                      </mfrac>
+                    </math>
+                  </td>
+                  <td>Change of tyrosine concentration in Nissle over time based on the transportation of tyrosine into the cell and the conversion of tyrosine into <i>p</i>-Coumaric acid by TAL. Both tyrosine transportation and <i>p</i>-Coumaric production are based on Michaelis-Menten equation. <i>k<sub>cat</sub></i><sub>2</sub> is the estimated turnover number of TAL; <i>K<sub>m</sub></i><sub>2</sub> is the tyrosine concentration at which tyrosine fermentation rate by TAL is at half-maximum.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <math>
+                      <mfrac>
+                        <mrow>
+                          <mo mathvariant="italic">d</mo>
+                          <msub>
+                            <mfenced open="[" close="]"><mi mathvariant="italic">PCA</mi></mfenced>
+                            <mi mathvariant="italic">tot</mi>
+                          </msub>
+                        </mrow>
+                        <mrow>
+                          <mo mathvariant="italic">d</mo>
+                          <mi>t</mi>
+                        </mrow>
+                      </mfrac>
+                      <mo>=</mo>
+                      <mrow>
+                        <mfrac>
+                          <mrow>
+                            <msub>
+                              <mi>k</mi>
+                              <mi mathvariant="italic">cat2</mi>
+                            </msub>
+                            <mo>&InvisibleTimes;</mo>
+                            <msub>
+                              <mfenced open="[" close="]">
+                                <mi mathvariant="italic">TAL</mi>
+                              </mfenced>
+                              <mi mathvariant="italic">tot</mi>
+                            </msub>
+                            <mo>&InvisibleTimes;</mo>
+                            <msub>
+                              <mfenced open="[" close="]">
+                                <mi mathvariant="italic">Tyr</mi>
+                              </mfenced>
+                              <mi mathvariant="italic">Nissle</mi>
+                            </msub>
+                          </mrow>
+                          <mrow>
+                            <msub>
+                              <mi>K</mi>
+                              <mi mathvariant="italic">m2</mi>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                              <mfenced open="[" close="]">
+                                <mi mathvariant="italic">Tyr</mi>
+                              </mfenced>
+                              <mi mathvariant="italic">Nissle</mi>
+                            </msub>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                    </math>
+                  </td>
+                  <td><i>p</i>-Coumaric production rate after tyrosine is imported through tyrosine transporter and converted by TAL. Based on Michaelis-Menten equation.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <math>
+                      <mfrac>
+                        <mrow>
+                          <mo mathvariant="italic">d</mo>
+                          <mfenced open="[" close="]"><mi mathvariant="italic">Nissle</mi></mfenced>
+                        </mrow>
+                        <mrow>
+                          <mo mathvariant="italic">d</mo>
+                          <mi>t</mi>
+                        </mrow>
+                      </mfrac>
+                      <mo>=</mo>
+                      <msub>
+                        <mi>&mu;</mi>
+                        <mn>1</mn>
+                      </msub>
+                      <mo>&sdot;</mo>
+                      <mfenced open="[" close="]"><mi mathvariant="italic">Nissle</mi></mfenced>
+                      <mo>&#8290;</mo>
+                      <mfrac>
+                        <mrow>
+                          <mn>1</mn>
+                          <mo>-</mo>
+                          <mfenced>
+                            <mrow>
+                              <mfenced open="[" close="]"><mi mathvariant="italic">Nissle</mi></mfenced>
+                              <mo>+</mo>
+                              <msub>
+                                <mi>&alpha;</mi>
+                                <mn>1</mn>
+                              </msub>
+                              <mo>&#8290;</mo>
+                              <mfenced open="[" close="]"><mi mathvariant="italic">CD</mi></mfenced>
+                            </mrow>
+                          </mfenced>
+                        </mrow>
+                        <msub>
+                          <mi>K</mi>
+                          <mn>1</mn>
+                        </msub>
+                      </mfrac>
+                    </math>
+                  </td>
+                  <td>Rate of Nissle cell density increase based on the competitive Lotka-Volterra equation<sup>[<a href="#ref1">1</a>]</sup>. &mu;<sub>1</sub> stands for the specific growth rate of Nissle, and <i>K</i><sub>1</sub> stands for carrying capacity<sup>[<a href="#ref2">2</a>]</sup>. &alpha;<sub>1</sub> represents the effect <i>C. difficile</i> has on Nissle.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <math>
+                      <mfrac>
+                        <mrow>
+                          <mo mathvariant="italic">d</mo>
+                          <mfenced open="[" close="]"><mi mathvariant="italic">PHPAD</mi></mfenced>
+                        </mrow>
+                        <mrow>
+                          <mo mathvariant="italic">d</mo>
+                          <mi>t</mi>
+                        </mrow>
+                      </mfrac>
+                      <mo>=</mo>
+                      <msub>
+                        <mi>k</mi>
+                        <mn>2</mn>
+                      </msub>
+                      <mo>&InvisibleTimes;</mo>
+                      <mfenced open="[" close="]">
+                        <mi mathvariant="italic">CD</mi>
+                      </mfenced>
+                    </math> 
+                  </td>
+                  <td>We assumed that the rate of change of <i>p-</i>HPA decarboxylase (<i>p-</i>Hydroxyphenylacetate decarboxylase) concentration is proportional to <i>C. difficile</i> cell density. <i>k</i><sub>2</sub> stands for a coefficient.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <math>
+                      <mfrac>
+                        <mrow>
+                          <mo mathvariant="italic">d</mo>
+                          <msub>
+                            <mfenced open="[" close="]"><mi mathvariant="italic">PHPAD</mi></mfenced>
+                            <mi mathvariant="italic">CD</mi>
+                          </msub>
+                        </mrow>
+                        <mrow>
+                          <mo mathvariant="italic">d</mo>
+                          <mi>t</mi>
+                        </mrow>
+                      </mfrac>
+                      <mo>=</mo>
+                      <mfrac>
+                        <mrow>
+                          <msub>
+                            <mi>k</mi>
+                            <mi mathvariant="italic">cat1</mi>
+                          </msub>
+                          <mo>&InvisibleTimes;</mo>
+                          <msub>
+                            <mfenced open="[" close="]">
+                              <mi mathvariant="italic">TryP</mi>
+                            </mfenced>
+                            <mi mathvariant="italic">cell</mi>
+                          </msub>
+                          <mo>&InvisibleTimes;</mo>
+                          <msub>
+                            <mfenced open="[" close="]">
+                              <mi mathvariant="italic">Tyr</mi>
+                            </mfenced>
+                            <mi mathvariant="italic">outside</mi>
+                          </msub>
+                        </mrow>
+                        <mrow>
+                          <msub>
+                            <mi>K</mi>
+                            <mi mathvariant="italic">m1</mi>
+                          </msub>
+                          <mo>+</mo>
+                          <msub>
+                            <mfenced open="[" close="]">
+                              <mi mathvariant="italic">Tyr</mi>
+                            </mfenced>
+                            <mi mathvariant="italic">outside</mi>
+                          </msub>
+                        </mrow>
+                      </mfrac>
+                      <mo>-</mo>
+                      <mfrac>
+                        <mrow>
+                          <msub>
+                            <mi>k</mi>
+                            <mi mathvariant="italic">cat3</mi>
+                          </msub>
+                          <mo>&InvisibleTimes;</mo>
+                          <msub>
+                            <mfenced open="[" close="]">
+                              <mi mathvariant="italic">PHPAD</mi>
+                            </mfenced>
+                            <mi mathvariant="italic">CD</mi>
+                          </msub>
+                          <mo>&InvisibleTimes;</mo>
+                          <msub>
+                            <mfenced open="[" close="]">
+                              <mi mathvariant="italic">Tyr</mi>
+                            </mfenced>
+                            <mi mathvariant="italic">CD</mi>
+                          </msub>
+                        </mrow>
+                        <mrow>
+                          <msub>
+                            <mi>K</mi>
+                            <mi mathvariant="italic">m3</mi>
+                          </msub>
+                          <mo>+</mo>
+                          <msub>
+                            <mfenced open="[" close="]">
+                              <mi mathvariant="italic">Tyr</mi>
+                            </mfenced>
+                            <mi mathvariant="italic">CD</mi>
+                          </msub>
+                        </mrow>
+                      </mfrac>
+                    </math>
+                  </td>
+                  <td>Change of tyrosine concentration in <i>C. difficile</i> over time based on the transportation of tyrosine into the cell and the conversion of tyrosine into <i>p</i>-Cresol by <i>p-</i>HPA decarboxylase. Both tyrosine transportation and <i>p</i>-Cresol production are based on Michaelis-Menten equation. <i>k<sub>cat</sub></i><sub>3</sub> is the estimated turnover number of <i>p-</i>HPA decarboxylase; <i>K<sub>m</sub></i><sub>3</sub> is the tyrosine concentration at which tyrosine fermentation rate by <i>p-</i>HPA decarboxylase is at half-maximum<sup>[<a href="#ref3">3</a>]</sup>.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <math>
+                      <mfrac>
+                        <mrow>
+                          <mo mathvariant="italic">d</mo>
+                          <msub>
+                            <mfenced open="[" close="]"><mi mathvariant="italic">PC</mi></mfenced>
+                            <mi mathvariant="italic">tot</mi>
+                          </msub>
+                        </mrow>
+                        <mrow>
+                          <mo mathvariant="italic">d</mo>
+                          <mi>t</mi>
+                        </mrow>
+                      </mfrac>
+                      <mo>=</mo>
+                      <mrow>
+                        <mfrac>
+                          <mrow>
+                            <msub>
+                              <mi>k</mi>
+                              <mi mathvariant="italic">cat3</mi>
+                            </msub>
+                            <mo>&InvisibleTimes;</mo>
+                            <msub>
+                              <mfenced open="[" close="]">
+                                <mi mathvariant="italic">PHPAD</mi>
+                              </mfenced>
+                              <mi mathvariant="italic">tot</mi>
+                            </msub>
+                            <mo>&InvisibleTimes;</mo>
+                            <msub>
+                              <mfenced open="[" close="]">
+                                <mi mathvariant="italic">Tyr</mi>
+                              </mfenced>
+                              <mi mathvariant="italic">CD</mi>
+                            </msub>
+                          </mrow>
+                          <mrow>
+                            <msub>
+                              <mi>K</mi>
+                              <mi mathvariant="italic">m3</mi>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                              <mfenced open="[" close="]">
+                                <mi mathvariant="italic">Tyr</mi>
+                              </mfenced>
+                              <mi mathvariant="italic">CD</mi>
+                            </msub>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                    </math>
+                  </td>
+                  <td><i>p</i>-Cresol production rate after tyrosine is imported through tyrosine transporter and converted by <i>p-</i>HPA decarboxylase. Based on Michaelis-Menten equation.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <math>
+                      <mfrac>
+                        <mrow>
+                          <mo mathvariant="italic">d</mo>
+                          <mfenced open="[" close="]"><mi mathvariant="italic">CD</mi></mfenced>
+                        </mrow>
+                        <mrow>
+                          <mo mathvariant="italic">d</mo>
+                          <mi>t</mi>
+                        </mrow>
+                      </mfrac>
+                      <mo>=</mo>
+                      <msub>
+                        <mi>&mu;</mi>
+                        <mn>2</mn>
+                      </msub>
+                      <mo>&sdot;</mo>
+                      <mfenced open="[" close="]"><mi mathvariant="italic">CD</mi></mfenced>
+                      <mo>&#8290;</mo>
+                      <mfrac>
+                        <mrow>
+                          <mn>1</mn>
+                          <mo>-</mo>
+                          <mfenced>
+                            <mrow>
+                              <mfenced open="[" close="]"><mi mathvariant="italic">CD</mi></mfenced>
+                              <mo>+</mo>
+                              <msub>
+                                <mi>&alpha;</mi>
+                                <mn>2</mn>
+                              </msub>
+                              <mo>&#8290;</mo>
+                              <mfenced open="[" close="]"><mi mathvariant="italic">Nissle</mi></mfenced>
+                            </mrow>
+                          </mfenced>
+                        </mrow>
+                        <msub>
+                          <mi>K</mi>
+                          <mn>2</mn>
+                        </msub>
+                      </mfrac>
+                    </math>
+                  </td>
+                  <td>Rate of <i>C. difficile</i> cell density increase based on competitive Lotka-Volterra equation. &mu;<sub>2</sub> stands for the specific growth rate of <i>C. difficile</i>, and <i>K</i><sub>2</sub> stands for carrying capacity<sup>[<a href="#ref4">4</a>]</sup>. &alpha;<sub>2</sub> represents the effect Nissle has on C. diff.</td>
+                </tr>  
+              </tbody>
+            </table>
+          </div>
+          <p>    The equations we used in the co-culture models are mostly based on Michaelis-Menten equation and competitive Lotka-Volterra equation. The Michaelis-Menten equation is commonly used in biochemistry to model enzyme kinetics. Under the assumption that enzyme concentration is much less than the substrate concentration, the rate of product formation is shown in the equation below:</p>
+          <p style="line-height: 0.1;" class="m-0">
+            <math display="block">
+              <mi>v</mi>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <mo mathvariant="italic">d</mo>
+                  <mfenced open="[" close="]"><mi>P</mi></mfenced>
+                </mrow>
+                <mrow>
+                  <mo mathvariant="italic">d</mo>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <msub>
+                <mi>V</mi>
+                <mi mathvariant="italic">max</mi>
+              </msub>
+              <mo>&InvisibleTimes;</mo>
+              <mfrac>
+                <mrow>
+                  <mfenced open="[" close="]"><mi>S</mi></mfenced>
+                </mrow>
+                <mrow>  
+                  <msub>
+                    <mi>K</mi>
+                    <mi>M</mi>
+                  </msub>
+                  <mo>+</mo>
+                  <mfenced open="[" close="]"><mi>S</mi></mfenced>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <msub>
+                <mi>k</mi>
+                <mi mathvariant="italic">cat</mi>
+              </msub>
+              <mo>&InvisibleTimes;</mo>
+              <msub>
+                <mfenced open="[" close="]"><mi>E</mi></mfenced>
+                <mn>0</mn>
+              </msub>
+              <mfrac>
+                <mrow>
+                  <mfenced open="[" close="]"><mi>S</mi></mfenced>
+                </mrow>
+                <mrow>
+                  <msub>
+                    <mi>K</mi>
+                    <mi>M</mi>
+                  </msub>
+                  <mo>+</mo>
+                  <mfenced open="[" close="]"><mi>S</mi></mfenced>
+                </mrow>
+              </mfrac>
+              
+              
+            </math>
+          </p>
+          <p>    <math><mi>v</mi></math> is the rate of enzymatic reactions (rate of product formation, <math><mfrac><mrow><mo mathvariant="italic">d</mo><mfenced open="[" close="]"><mi mathvariant="italic">P</mi></mfenced></mrow><mrow><mo mathvariant="italic">d</mo><mi>t</mi></mrow></mfrac></math>). [<i>S</i>] is the concentration of a substrate. <math><msub><mi>V</mi><mi>max</mi></msub></math> represents the maximum reaction rate achieved by the system. The value of Michaelis constant <math><msub><mi>K</mi><mi>m</mi></msub></math> is the substrate concentration at which the reaction rate reaches 1/2 <math><msub><mi>V</mi><mi>max</mi></msub></math>. <math><msub><mi>k</mi><mi>cat</mi></msub></math>, the turnover number, is the maximum number of substrate molecules converted to product per enzyme molecule per second.</p>
+          <p>    Though TryP is not an enzyme, the kinetics of membrane transport can also be described by Michaelis-Menten equation.</p>
+          <p>    The competitive Lotka-Volterra equation is similar to the logistic equations, which is a commonly used exponential population model, but with an additional term to account for the species' interactions:</p>
+          <p style="line-height: 0.1;" class="m-0">
+            <math display="block">
+              <mfrac>
+                <mrow>
+                  <mo mathvariant="italic">d</mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mn>1</mn>
+                  </msub>
+                </mrow>
+                <mrow>
+                  <mo mathvariant="italic">d</mo>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <msub>
+                <mi>r</mi>
+                <mn>1</mn>
+              </msub>
+              <mo>&InvisibleTimes;</mo>
+              <msub>
+                <mi>x</mi>
+                <mn>1</mn>
+              </msub>
+              <mfenced>
+                <mrow>
+                  <mn>1</mn>
+                  <mo>-</mo>
+                  <mfenced>
+                    <mfrac>
+                      <mrow>
+                        <msub>
+                          <mi>x</mi>
+                          <mn>1</mn>
+                        </msub>
+                        <mo>+</mo>
+                        <msub>
+                          <mi>&alpha;</mi>
+                          <mn>12</mn>
+                        </msub>
+                        <mo>&InvisibleTimes;</mo>
+                        <msub>
+                          <mi>x</mi>
+                          <mn>2</mn>
+                        </msub>
+                      </mrow>
+                      <mrow>
+                        <msub>
+                          <mi>K</mi>
+                          <mn>1</mn>
+                        </msub>
+                      </mrow>
+                    </mfrac>
+                  </mfenced>
+                </mrow>
+              </mfenced>
+            </math>
+          </p>
+          <p style="line-height: 0.1;" class="m-0">
+            <math display="block">
+              <mfrac>
+                <mrow>
+                  <mo mathvariant="italic">d</mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mn>2</mn>
+                  </msub>
+                </mrow>
+                <mrow>
+                  <mo mathvariant="italic">d</mo>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+              <mo>=</mo>
+              <msub>
+                <mi>r</mi>
+                <mn>2</mn>
+              </msub>
+              <mo>&InvisibleTimes;</mo>
+              <msub>
+                <mi>x</mi>
+                <mn>2</mn>
+              </msub>
+              <mfenced>
+                <mrow>
+                  <mn>1</mn>
+                  <mo>-</mo>
+                  <mfenced>
+                    <mfrac>
+                      <mrow>
+                        <msub>
+                          <mi>x</mi>
+                          <mn>2</mn>
+                        </msub>
+                        <mo>+</mo>
+                        <msub>
+                          <mi>&alpha;</mi>
+                          <mn>21</mn>
+                        </msub>
+                        <mo>&InvisibleTimes;</mo>
+                        <msub>
+                          <mi>x</mi>
+                          <mn>1</mn>
+                        </msub>
+                      </mrow>
+                      <mrow>
+                        <msub>
+                          <mi>K</mi>
+                          <mn>2</mn>
+                        </msub>
+                      </mrow>
+                    </mfrac>
+                  </mfenced>
+                </mrow>
+              </mfenced>
+            </math>
+          </p>
+          <p>    <math><mi>x</mi></math> is the population size of the two species. <math><mi>r</mi></math> is the specific growth rate. <math><mi>K</mi></math> is the carrying capacity, representing the maximum population size of the species that the environment can sustain indefinitely. The interaction between the two species is described by &alpha;<sub>12</sub> and &alpha;<sub>21</sub>, which stands for the effect species 2 has on the population of species 1 and the effect species 1 has on the population of species 2, respectively.</p>
+          <p>These are the parameters we used:</p>
+          <div class="container-fluid p-0 justify-content-center align-items-center">
+            <table class="table-bordered table-striped">
+              <caption>Table. 2. Co-culture model parameters</caption>
+              <thead>
+                <tr>
+                  <th>Parameters</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><i>k</i><sub>1</sub>= 0.01</td>
+                  <td>Coefficient for the proportional relationship between the changing rate of TAL concentration and Nissle cell density.</td>
+                </tr>
+                <tr>
+                  <td><i>k</i><sub>2</sub>= 0.01</td>
+                  <td>Coefficient for the proportional relationship between the changing rate of <i>p-</i>HPA decarboxylase concentration and <i>C. difficile</i> cell density.</td>
+                </tr>
+                <tr>
+                  <td>[<i>TryP</i>]<sub>outside</sub>=6.64*10<sup>-4</sup></td>
+                  <td>TyrP transport protein accessible to growth medium.</td>
+                </tr>
+                <tr>
+                  <td>[<i>TryP</i>]<sub>cell</sub>=0.151</td>
+                  <td>TyrP transport protein expression in cell.</td>
+                </tr>
+                <tr>
+                  <td><i>k</i><sub><i>cat</i>1</sub>=50 (s<sup>-1</sup>)</td>
+                  <td>The estimated turnover number of tyrosine transporter.</td>
+                </tr>
+                <tr>
+                  <td><i>k</i><sub><i>cat</i>2</sub>=0.015 (s<sup>-1</sup>)</td>
+                  <td> The estimated turnover number of TAL<sup>[<a href="#ref5">5</a>]</sup>.</td>
+                </tr>
+                <tr>
+                  <td><i>k</i><sub><i>cat</i>3</sub>=2.7 (s<sup>-1</sup>)</td>
+                  <td>The estimated turnover number of <i>p-</i>HPA decarboxylase<sup>[<a href="#ref3">3</a>]</sup>.</td>
+                </tr>
+                <tr>
+                  <td><i>K</i><sub><i>m</i>1</sub>=0.57 (&mu;M)</td>
+                  <td>The tyrosine concentration at which tyrosine transportation rate is at half-maximum.</td>
+                </tr>
+                <tr>
+                  <td><i>K</i><sub><i>m</i>2</sub>=15.5 (&mu;M)</td>
+                  <td>The tyrosine concentration at which tyrosine fermentation rate by TAL is at half-maximum.</td>
+                </tr>
+                <tr>
+                  <td><i>K</i><sub><i>m</i>3</sub>=2800 (&mu;M)</td>
+                  <td>The tyrosine concentration at which tyrosine fermentation rate by <i>p-</i>HPA decarboxylase is at half-maximum<sup>[<a href="#ref3">3</a>]</sup>.</td>
+                </tr>
+                <tr>
+                  <td>&alpha;1=0.1</td>
+                  <td>The effect <i>C. difficile</i> has on Nissle.</td>
+                </tr>
+                <tr>
+                  <td>&alpha;2=0.1</td>
+                  <td>The effect Nissle  has on <i>C. difficile</i>.</td>
+                </tr>
+                <tr>
+                  <td>&mu;1=0.82</td>
+                  <td>The specific growth rate of Nissle<sup>[<a href="#ref2">2</a>]</sup>.</td>
+                </tr>
+                <tr>
+                  <td>&mu;2=0.13</td>
+                  <td>The specific growth rate of <i>C. difficile</i><sup>[<a href="#ref4">4</a>]</sup>.</td>
+                </tr>
+                <tr>
+                  <td><i>K</i><sub>1</sub>=0.62</td>
+                  <td>The  carrying capacity of Nissle<sup>[<a href="#ref2">2</a>]</sup>.</td>
+                </tr>
+                <tr>
+                  <td><i>K</i><sub>2</sub>=1.75</td>
+                  <td>The carrying capacity of <i>C. difficile</i><sup>[<a href="#ref4">4</a>]</sup>.</td>
+                </tr>
+                <tr>
+                  <td>[<i>Tyr]<sub>Nissle</sub></i>=29 (&mu;M)</td>
+                  <td>The initial tyrosine concentration in a growing <i>E. coli</i> cell<sup>[<a href="#ref6">6</a>]</sup>.</td>
+                </tr>
+                <tr>
+                  <td>[<i>Tyr]<sub>CD</sub></i>=50 (&mu;M)</td>
+                  <td>The initial tyrosine concentration in a growing <i>C. difficile</i> cell. We estimated the number to be larger than [Tyr]Nissle.</td>
+                </tr>
+                <tr>
+                  <td>[<i>TAL]<sub>cell</sub></i></td>
+                  <td>The TAL concentration in an <i>E. coli</i> Nissle (<b>CreSolve</b>) cell.</td>
+                </tr>
+                <tr>
+                  <td>[<i>TAL]<sub>tot</sub></i>=0.0044*[<i>TAL]<sub>cell</sub></i></td>
+                  <td>The total TAL concentration both inside and outside <i>E. coli</i> Nissle (<b>CreSolve</b>). VcellVtot=0.0044.</td>
+                </tr>
+                <tr>
+                  <td>[<i>PHPAD]<sub>cell</sub></i></td>
+                  <td>The <i>p-</i>HPA decarboxylase concentration in a <i>C. difficile</i> cell.</td>
+                </tr>
+                <tr>
+                  <td>[<i>PHPAD]<sub>tot</sub></i>=0.0044*[<i>PHPAD]<sub>cell</sub></i></td>
+                  <td>The total <i>p-</i>HPA decarboxylase concentration both inside and outside a <i>C. difficile</i> cell. VcellVtot=0.0044.</td>
+                </tr>
+                <tr>
+                  <td>[<i>Tyr]<sub>outside</sub></i>=1000(&mu;M)</td>
+                  <td>The initial tyrosine concentration in the environment<sup>[<a href="#ref6">6</a>]</sup>.</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+          <p>The assumptions we made:</p>
+          <ol>
+            <li >The models are used to simulate <i>in vitro</i> co-culture experiment.</li>
+            <li >Expression of TAL is directly proportional to <i>E. coli</i> biomass.</li>
+            <li >Tyrosine can only be fermented to either <i>p</i>-Cresol or <i>p</i>-Coumaric acid.</li>
+            <li ><i>p</i>-Cresol can only be produced by <i>C. difficile</i> from tyrosine; <i>p</i>-Coumaric acid can only be produced by <i>E. coli</i> Nissle (<b>CreSolve</b>).</li>
+            <li >The tyrosine transporter in <i>C. difficile</i> and <i>E. coli</i> Nissle are the same (same function, same concentration in each cell, same transportation efficiency).</li>
+            <li >The tyrosine concentration in <i>C. difficile</i> ([<i>Tyr]<sub>CD</sub></i>) is larger than <i>E. coli</i> Nissle ([<i>Tyr]<sub>Nissle</sub></i>).</li>
+            <li >In tyrosine fermentation pathway of <i>C. difficile</i><sup>[<a href="#ref7">7</a>]</sup> (Fig. 2), the rate-determining stage is the conversation of <i>p-</i>HPA into <i>p</i>-Cresol. The <i>k<sub>m</sub></i><sub>3</sub> and  <i>k<sub>cat</sub></i>3 values in equation 7 and 8 are determined by the enzyme <i>p-</i>HPA decarboxylase<sup>[<a href="#ref3">3</a>]</sup>.</li>
+            <li ><i>C. difficile</i> and <i>E. coli</i> Nissle are grown under anaerobic conditions in BHI<sup>[<a href="#ref8">8</a>]</sup>.</li>
+            <li >The <i>p</i>-Cresol level is not high enough to inhibit the growth of <i>E. coli</i> Nissle<sup>[<a href="#ref8">8</a>]</sup>. </li>
+            <li >The effects of <i>C. difficile</i> and <i>E. coli</i> Nissle on each other (&alpha;<sub>1</sub> &alpha;<sub>2</sub>) are the same.</li>
+            <li >CFU counting by OD value: 10<sup>9</sup> CFU/mL/OD600 nm.</li>
+          </ol>
+          <div class="container-fluid p-0">
+            <div class="row no-gutters">
+              <div class="col-lg ">
+                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                  <!-- put link in href & src , width in a can adjust-->
+                  <a href="https://2019.igem.org/wiki/images/4/48/T--NCKU_Tainan--Model_co-culture_CDpathway.png" target="_blank" style="width:70%"><img src="https://2019.igem.org/wiki/images/4/48/T--NCKU_Tainan--Model_co-culture_CDpathway.png" alt="" title="" style="width:100%"></a>
+                  <figcaption>Fig. 2. Tyrosine fermentation pathway in <i>C. difficile</i>.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <h3>Co-culture model with the same OD value (1 : 1)</h3>
+          <p>    Under the first condition, <i>C. difficile</i> and <i>E. coli</i> Nissle are cultured under the same initial OD value of 0.06 (1 : 1), where the same initial amount of <i>C. difficile</i> and <i>E. coli</i> Nissle are used to simulate growth, tyrosine fermentation, <i>p</i>-Coumaric acid and <i>p</i>-Cresol productions. The growth model of both <b>CreSolve</b> and <i>C. difficile</i> co-culture, and <i>C. difficile</i> monoculture are then generated (Fig. 3). The results indicated that the addition of <b>CreSolve</b> slowed the growth of <i>C. difficile</i>.  In addition, during co-culture, overall tyrosine fermentation rate will decrease at a faster rate over time when compared with <i>C. difficile</i> monoculture alone (Fig. 4). From Fig. 5, the presence of <b>CreSolve</b> indeed lowered the production of <i>p</i>-Cresol by <i>C. difficile</i>. The tyrosine concentration decreases as expected (Fig. 4), and decrease of <i>p</i>-Cresol is shown (Fig. 5). With the modeling results, we then proceeded with a more realistic population ratio to further explore <b>CreSolve</b>’s effectiveness.</p>
+          <div class="container-fluid p-0">
+            <div class="row no-gutters">
+              <div class="col-lg ">
+                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                  <!-- put link in href & src , width in a can adjust-->
+                  <a href="https://2019.igem.org/wiki/images/8/85/T--NCKU_Tainan--Model_co-cul_1-1_growth.png" target="_blank" style="width:70%"><img src="https://2019.igem.org/wiki/images/8/85/T--NCKU_Tainan--Model_co-cul_1-1_growth.png" alt="" title="" style="width:100%"></a>
+                  <figcaption>Fig. 3. Simulated growth rate of <b>CreSolve</b> and <i>C. difficile</i> at 1:1.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid p-0">
+            <div class="row no-gutters">
+              <div class="col-lg ">
+                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                  <!-- put link in href & src , width in a can adjust-->
+                  <a href="https://2019.igem.org/wiki/images/2/20/T--NCKU_Tainan--Model_co-cul_1-1_tyrosine.png" target="_blank" style="width:70%"><img src="https://2019.igem.org/wiki/images/2/20/T--NCKU_Tainan--Model_co-cul_1-1_tyrosine.png" alt="" title="" style="width:100%"></a>
+                  <figcaption>Fig. 4. Tyrosine consumption by <i>C. difficile</i> monoculture compared with co-culture.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid p-0">
+            <div class="row no-gutters">
+              <div class="col-lg ">
+                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                  <!-- put link in href & src , width in a can adjust-->
+                  <a href="https://2019.igem.org/wiki/images/1/1f/T--NCKU_Tainan--Model_co-cul_1-1_production.png" target="_blank" style="width:70%"><img src="https://2019.igem.org/wiki/images/1/1f/T--NCKU_Tainan--Model_co-cul_1-1_production.png" alt="" title="" style="width:100%"></a>
+                  <figcaption>Fig. 5. <i>p</i>-Cresol production rate by <i>C. difficile</i> monoculture compared with co-culture.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <h3>Co-culture model with <b>CreSolve</b> cultured in a <i>C. difficile</i>-dominant environment (1:400)</h3>
+          <p>    In the second condition, we aim to know whether <b>CreSolve</b> is effective in a <i>C. difficile</i>-dominant environment. From Fig. 6, we can see that even though initial <b>CreSolve</b> population is far less than <i>C. difficile</i>, it still has a significant effect on <i>C. difficile</i> growth. The tyrosine concentration decreases faster as expected (Fig. 7), and significant decrease of <i>p</i>-Cresol is shown (Fig. 8). With this model, we are more certain that <b>CreSolve</b> is effective in decreasing the <i>p</i>-Cresol level of CKD patients.</p>
+          <div class="container-fluid p-0">
+            <div class="row no-gutters">
+              <div class="col-lg ">
+                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                  <!-- put link in href & src , width in a can adjust-->
+                  <a href="https://2019.igem.org/wiki/images/7/75/T--NCKU_Tainan--Model_co-cul_1-00025_growth.png" target="_blank" style="width:70%"><img src="https://2019.igem.org/wiki/images/7/75/T--NCKU_Tainan--Model_co-cul_1-00025_growth.png" alt="" title="" style="width:100%"></a>
+                  <figcaption>Fig. 6. Simulated growth rate of <i>C. difficile</i> and <b>CreSolve</b> at 400:1.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid p-0">
+            <div class="row no-gutters">
+              <div class="col-lg ">
+                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                  <!-- put link in href & src , width in a can adjust-->
+                  <a href="https://2019.igem.org/wiki/images/0/07/T--NCKU_Tainan--Model_co-cul_1-00025_tyrosine.png" target="_blank" style="width:70%"><img src="https://2019.igem.org/wiki/images/0/07/T--NCKU_Tainan--Model_co-cul_1-00025_tyrosine.png" alt="" title="" style="width:100%"></a>
+                  <figcaption>Fig. 7. Tyrosine consumption by <i>C. difficile</i> monoculture compared with co-culture (400:1).</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid p-0">
+            <div class="row no-gutters">
+              <div class="col-lg ">
+                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                  <!-- put link in href & src , width in a can adjust-->
+                  <a href="https://2019.igem.org/wiki/images/d/d6/T--NCKU_Tainan--Model_co-cul_1-00025_production.png" target="_blank" style="width:70%"><img src="https://2019.igem.org/wiki/images/d/d6/T--NCKU_Tainan--Model_co-cul_1-00025_production.png" alt="" title="" style="width:100%"></a>
+                  <figcaption>Fig. 8. <i>p</i>-Cresol production rate by <i>C. difficile</i> monoculture compared with co-culture (400:1).</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+        <hr>
+        <section>
+          <h2 id ="Subtitle2">Bacteriocin Model</h2>
+          <div class="container-fluid p-0">
+            <div class="row no-gutters">
+              <div class="col-lg ">
+                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                  <!-- put link in href & src , width in a can adjust-->
+                  <a href="https://2019.igem.org/wiki/images/5/55/T--NCKU_Tainan--Model_Bacteriocin_big_pic.png" target="_blank" style="width:70%"><img src="https://2019.igem.org/wiki/images/5/55/T--NCKU_Tainan--Model_Bacteriocin_big_pic.png" alt="" title="" style="width:100%"></a>
+                  <figcaption>Fig B1. Bacteriocin model overview</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <p class= "justify-content-center">    Since the <i>Clostridium</i> cluster is one of the major <i>p</i>-Cresol producers, besides changing the tyrosine fermentation pathway, we also aim to reduce the population of <i>Clostridium</i> spp. in the future. To show the killing efficiency of bacteriocin CBM-B, we modeled the relationship between <i>C. difficile</i> survival rate and CBM-B concentration.</p>
+          <p class= "justify-content-center">    As our model of the net growth rate of <i>C. difficile</i> population <math><mi>&psi;</mi></math>, when exposed to CBM-B concentration <math><mi>a</mi></math>, we assumed the following relationship:</p>          
+          <p style="line-height: 0.1;" class="m-0">
+            <math display="block">
+              <mo>&psi;</mo>
+              <mfenced>
+                <mi>a</mi>
+              </mfenced>
+              <mo>=</mo>
+              <msub>
+                <mo>&psi;</mo>
+                <mi  mathvariant="italic">max</mi>
+              </msub>
+              <mo>-</mo>
+              <mo>&mu;</mo>
+              <mfenced>
+                <mi>a</mi>
+              </mfenced>
+            </math>
+          </p>
+          <p><math><msub><mo>&psi;</mo><mi mathvariant="italic">max</mi></msub></math> is the growth rate of the <i>C. difficile</i> population in the absence of CBM-B, and <math><mo>&mu;</mo><mfenced><mi>a</mi></mfenced></math> is the survival rate of the <i>C. difficile</i> population exposed to CBM-B concentration <math><mi>a</mi></math>, which we assume to be a Hill function:</p>
+          <!--Hill equation-->
+          <p style="line-height: 0.1;" class="m-0">
+            <math display="block">
+              <mi>&mu;</mi>
+              <mfenced>
+                <mi>a</mi>
+              </mfenced>
+              <mo>=</mo>
+              <msub>
+                <mi>E</mi>
+                <mi mathvariant="italic">max</mi>
+              </msub>
+              <mo>&InvisibleTimes;</mo>
+              <mfrac>
+                <msup>
+                  <mfenced>
+                    <mrow>
+                      <mi>a</mi>
+                      <mo>/</mo>
+                      <msub>
+                        <mi mathvariant="italic">EC</mi>
+                        <mn mathvariant="italic">50</mn>
+                      </msub>
                     </mrow>
-                </mfrac>
-            </mrow>
-        </math></p>
-      </section>
-      <hr>
-      <section>
-        <h2 id ="Subtitle3"><i>p</i>-Cresol Sensing Model</h2>
-        <h3>Growth Model</h3>
-        <p></p>
-        <h3>Sensing Model</h3>
-        <p></p>
-      </section>
-      <section class="ref">
+                  </mfenced>
+                  <mi>&kappa;</mi>                                                   
+                </msup>
+                <mrow>
+                  <mn>1</mn>
+                  <mo>+</mo>
+                  <msup>
+                    <mfenced>
+                      <mrow>
+                        <mi>a</mi>
+                        <mo>/</mo>
+                        <msub>
+                          <mi mathvariant="italic">EC</mi>
+                          <mn mathvariant="italic">50</mn>
+                        </msub>
+                      </mrow>
+                    </mfenced>
+                    <mi>&kappa;</mi>                                                   
+                  </msup>
+                </mrow>
+              </mfrac>
+            </math>
+          </p>
+          <p class= "justify-content-center">    The reason why we choose the Hill equation for this model is that according to our research, applications of bacteriocins are being tested to assess their application as a narrow-spectrum antibiotic<sup>[<a href="#ref9">9</a>]</sup>, and pharmacodynamic models of antibiotics are often based on the Hill equation<sup>[<a href="#ref10">10</a>]</sup>. Therefore, we consider it is suitable to use the Hill equation for our CBM-B effectivity model.</p>
+          <p class= "justify-content-center">    The Hill equation is commonly used in biochemistry, which refers to the binding of ligands to macromolecules. In pharmacology, it is extensively used to describe the drug concentration–effect relationship. In the equation above, <math><msub><mi>E</mi><mi>max</mi></msub></math> designates the maximum CBM-B-mediated survival rate, <math><msub><mi>EC</mi><mn>50</mn></msub></math>is the CBM-B concentration at which the survival rate is at half of its maximum, <math><msub><mi>E</mi><mi>max</mi></msub><mo>/</mo><mn>2</mn></math>, and <math><mi>&kappa;</mi></math> denotes the Hill coefficient, which determines the steepness of the sigmoid relationship between <math><mi>&mu;</mi></math> and <math><mi>a</mi></math>.</p>
+          <p>    Hill coefficient describes the cooperativity of ligand binding in the following way:</p>
+          <ul class="list-indent disc">
+            <li><p><math><mi>&kappa;</mi><mo>></mo><mn>0</mn></math> (Positively cooperative binding): Once one ligand molecule is bound to the enzyme, its affinity for other ligand molecules increases.</p></li>
+            <li><p><math><mi>&kappa;</mi><mo>&lt;</mo><mn>0</mn></math> (Negatively cooperative binding): Once one ligand molecule is bound to the enzyme, its affinity for other ligand molecules decreases</p></li>
+            <li><p><math><mi>&kappa;</mi><mo>=</mo><mn>0</mn></math> (Noncooperative binding): The affinity of the enzyme for a ligand molecule is not dependent on whether or not other ligand molecules are already bound.</p></li>
+          </ul>
+          <p>    CBM-B’s mechanism of reducing <i>C. difficile</i> population is far more complicated than just a single ligand-receptor interaction. Therefore, the  in this model can be seen as a coefficient reflecting the extent of cooperativity among multiple ligand binding sites, which eventually causes the reduction of <i>C. difficile</i> and inhibits the colony’s growth. This model explored how bacteriocin will definitely increase our <b>CreSolve</b>’s values.</p>
+          <h3>Bacteriocin dynamics</h3>
+          <p>    From the graph below, when <math><msub><mi>EC</mi><mn>50</mn></msub></math> value is fixed, the slope becomes steeper as the  value increases (Fig B1). Similar trend can be found with fixed  value and varied <math><msub><mi>EC</mi><mn>50</mn></msub></math> value (Fig B2). Larger  value and larger <math><msub><mi>EC</mi><mn>50</mn></msub></math> value both indicate the increasing interaction strength of bacteriocin on <i>C. difficile</i>.</p>
+          <p>    After fitting with experimental data provided by our PI - Dr. I-Hsiu Huang, we obtained a <math><mi>&kappa;</mi></math> value around 11, which shows that bacteriocin CBM-B reduces <i>C. difficile</i> efficiently. It also proves that CBM-B is a good choice for us when engineering a <i>p</i>-Cresol-reducing Nissle.</p>
+          <p>     <math><mi>&kappa;</mi></math> = 11 is then used to simulate the time and concentration of bacteriocin required to perform effectively (Fig B3). It shows that when bacteriocin concentration is higher than 1 <math><mi>&mu;</mi><mi>g</mi><mo>/</mo><mi>ml</mi></math>, <i>C. difficile</i> survival rate reaches a plateau everytime, which indicates that no matter how high the concentration is, it still takes time for bacteriocin to work. At 6 hr, the <i>C. difficile</i> survival rate nearly reaches 1. Therefore, we speculate that the time bacteriocin CBM-M needs to fully kill <i>C. difficile</i> is 6 hours.</p>
+          <div class="container-fluid p-0">
+            <div class="row no-gutters">
+              <div class="col-lg ">
+                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                  <a href="https://2019.igem.org/wiki/images/f/f0/T--NCKU_Tainan--Model_BacteriocinK.png" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/f/f0/T--NCKU_Tainan--Model_BacteriocinK.png" alt="" title="" style="width:100%"></a>
+                  <figcaption>Fig. 10. Bacteriocin efficiency with varying Hill coefficient <math><mi>&kappa;</mi></math>.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid p-0">
+            <div class="row no-gutters">
+              <div class="col-lg ">
+                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                  <a href="https://2019.igem.org/wiki/images/thumb/2/2e/T--NCKU_Tainan--Model_BacteriocinEC50.png/800px-T--NCKU_Tainan--Model_BacteriocinEC50.png" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/thumb/2/2e/T--NCKU_Tainan--Model_BacteriocinEC50.png/800px-T--NCKU_Tainan--Model_BacteriocinEC50.png" alt="" title="" style="width:100%"></a>
+                  <figcaption>Fig. 11. Bacteriocin efficiency at <math><mi>&kappa;</mi></math>= 11 with varying <math><msub><mi>EC</mi><mn>50</mn></msub></math> values.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid p-0">
+            <div class="row no-gutters">
+              <div class="col-lg ">
+                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                  <a href="https://2019.igem.org/wiki/images/thumb/e/ea/T--NCKU_Tainan--Model_Bacteriocin_efficiency.png/800px-T--NCKU_Tainan--Model_Bacteriocin_efficiency.png" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/thumb/e/ea/T--NCKU_Tainan--Model_Bacteriocin_efficiency.png/800px-T--NCKU_Tainan--Model_Bacteriocin_efficiency.png" alt="" title="" style="width:100%"></a>
+                  <figcaption>Fig. 12. Bacteriocin efficiency at <math><mi>&kappa;</mi></math> = 11 with varying interaction times.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="ref">
           <h2>References</h2>
-            <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ol>
-      </section>
-    </main>
+          <ol>
+            <li id="ref1">Bomze, I. M. (1983). Lotka-Volterra equation and replicator dynamics: A two-dimensional classification. <i>Biological Cybernetics, 48</i>(3), 201–211. doi: 10.1007/bf00318088</li>
+            <li id="ref2">Newbold, C. J. (n.d.). Microbial feed additives for ruminants. <i>Biotechnology in Animal Feeds and Animal Feeding</i>, 259–278. doi: 10.1002/9783527615353.ch13</li>
+            <li id="ref3">Selmer, T., & Andrei, P. I. (2001). <i>p-</i>Hydroxyphenylacetate decarboxylase from <i>Clostridium</i> difficile. <i>European Journal of Biochemistry, 268</i>(5), 1363–1372. doi: 10.1046/j.1432-1327.2001.02001.x</li>
+            <li id="ref4">Pettit, L. J., Browne, H. P., Yu, L., Smits, W., Fagan, R. P., Barquist, L., … Lawley, T. D. (2014). Functional genomics reveals that <i>Clostridium</i> difficile Spo0A coordinates sporulation, virulence and metabolism. <i>BMC Genomics, 15</i>(1), 160. doi: 10.1186/1471-2164-15-160</li>
+            <li id="ref5">Berner, M., Krug, D., Bihlmaier, C., Vente, A., Muller, R., & Bechthold, A. (2006). Genes and Enzymes Involved in Caffeic Acid Biosynthesis in the Actinomycete <i>Saccharothrix espanaensis</i>. <i>Journal of Bacteriology, 188</i>(7), 2666–2673. doi: 10.1128/jb.188.7.2666-2673.2006</li>
+            <li id="ref6">Bennett BD, Kimball EH, Gao M, Osterhout R, Van Dien SJ, Rabinowitz JD. Absolute metabolite concentrations and implied enzyme active site occupancy in <i>Escherichia coli</i>. <i>Nat. Chem. Biol. 2009 Aug;5</i>(8):593–9.</li>
+            <li id="ref7">Liu, D., Wei, Y., Liu, X., Zhou, Y., Jiang, L., Yin, J., … Zhang, Y. (2018). Indoleacetate decarboxylase is a glycyl radical enzyme catalysing the formation of malodorant skatole. <i>Nature Communications, 9</i>(1). doi: 10.1038/s41467-018-06627-x</li>
+            <li id="ref8">Passmore, I. J., Letertre, M. P. M., Preston, M. D., Bianconi, I., Harrison, M. A., Nasher, F., … Dawson, L. F. (2018). Para-cresol production by <i>Clostridium</i> difficile affects microbial diversity and membrane integrity of Gram-negative bacteria. <i>PLOS Pathogens, 14</i>(9). doi: 10.1371/journal.ppat.1007191</li>
+            <li id="ref9">Kligler, B., & Cohrssen, A. (2008, November 1). Probiotics. Retrieved from https://www.aafp.org/afp/2008/1101/p1073.html.</li>
+            <li id="ref10">Cotter, P. D., Ross, R. P., & Hill, C. (2012). Bacteriocins — a viable alternative to antibiotics? <i>Nature Reviews Microbiology, 11</i>(2), 95–105. doi: 10.1038/nrmicro2937</li>
+          </ol>
+        </section>
+      </main>
+    </div>
   </div>
-  </div>
-    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/jquery-3_4_1_min_js?action=raw&amp;ctype=text/javascript"></script>
-    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/4.3.1/bootstrap_min_js?action=raw&amp;ctype=text/javascript"></script>
-    <script src="https://2019.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/Universal?action=raw&amp;ctype=text/javascript"></script>
-  </body>
-  </html>
+  <script src="https://2019.igem.org/Team:NCKU_Tainan/js/jquery-3_4_1_min_js?action=raw&amp;ctype=text/javascript"></script>
+  <script src="https://2019.igem.org/Team:NCKU_Tainan/js/4.3.1/bootstrap_min_js?action=raw&amp;ctype=text/javascript"></script>
+  <script src="https://2019.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script src="https://2019.igem.org/Team:NCKU_Tainan/js/Universal?action=raw&amp;ctype=text/javascript"></script>
+  <script>
+    $( document ).ready(function() {
+      $("#breadtext").html('<a href="https://2019.igem.org/Team:NCKU_Tainan/Description">Project</a> > <a>Model</a>')
+    });
+  </script>
+</body>
+</html>
+{{Template:NCKU_Tainan/gotop}}
 {{Template:NCKU_Tainan/footer}}
+
+<!-- Created with LOVE, from iGEM NCKU Tainan 2019. -->

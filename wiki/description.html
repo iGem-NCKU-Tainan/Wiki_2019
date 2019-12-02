@@ -3,12 +3,13 @@
 {{Template:NCKU_Tainan/template_css}}
 {{Template:NCKU_Tainan/header}}
 {{Template:NCKU_Tainan/universal_css}}
+{{Template:NCKU_Tainan/magnifier_css}}
 <html lang="en">
-<body data-spy="scroll" data-target=".sidenav" data-offset="10">  
+<body data-spy="scroll" data-target=".sidenav" data-offset="101">
     <div class="content container-fluid">
         <div class="row">
             <!--Sidebar (Remember to change the subtitle context, but don't change the id)-->
-            <aside class="sidenav d-none d-lg-flex flex-column justify-content-start align-items-center col-2"> 
+            <aside class="sidenav d-none d-lg-flex flex-column justify-content-start align-items-center col-2">
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link" href="#Subtitle1">Background</a>
@@ -20,7 +21,7 @@
                         <a class="nav-link" href="#Subtitle3">Inspiration</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Subtitle4">Our Project</a>
+                        <a class="nav-link" href="#Subtitle4">Project Overview</a>
                     </li>
                 </ul>
             </aside>
@@ -32,47 +33,94 @@
                 </div>
                 <section>
                     <h2 id ="Subtitle1">Project Background</h2>
-                    <!--remember to have 4 spaces in front of a paragraph-->
-                    <p>    Chronic Kidney Disease (CKD) is a type of kidney disease where the kidney gradually loses its function over time. Despite how fast medical technology is improving, there is currently still no cure for CKD and no means to revert it. However, medical professionals agree that early diagnosis and timely treatment can help relieve the symptoms as well as reducing the risk for CKD to deteriorate.</p>
-                    <p>    Presently, chronic kidney disease is classified as a worldwide health crisis, as it is estimated that 10% of the population worldwide is suffering from any form or level of CKD, coupled with an ever-increasing number of people acquiring this disease every year<sup>[<a href="#ref1">1</a>]</sup>. Besides that, there are millions of people who die each year because they do not have access to affordable and efficient treatment.</p>
-                    <h3>Why do we care about <i>p</i>-Cresol?</h3>
-                    <p>    It is a known fact that the kidneys of CKD patients cannot perform their work well, thus are unable to filter out several types of uremic solutes efficiently and effectively out of their body, leading to the accumulation of these unwanted waste substances in the human circulatory system.</p>
-                    <p>    <i>p</i>-Cresol is an uremic toxin to which many researches have attributed it with many biological and biochemical toxic effects. In addition, increased level of <i>p</i>-Cresol in CKD patients are often related to the worsening of their condition<sup>[<a href="#ref2">2</a>]</sup>. Besides that, the accumulation of <i>p</i>-Cresol inside the blood may contribute to the acquiring of atherosclerosis and thrombosis in patients with uremia<sup>[<a href="#ref3">3</a>]</sup>. Research has also shown that higher levels of <i>p</i>-Cresol has been associated with increased cardiovascular mortality<sup>[<a href="#ref4">4</a>]</sup>.</p>
-                    <h3>Where does <i>p</i>-Cresol come from?</h3>
-                    <p>    <i>p</i>-Cresol finds its origin in the intestine where the gut bacteria metabolizes excess dietary aromatic amino acids, such as tyrosine and tryptophan<sup>[<a href="#ref5">5</a>,<a href="#ref6">6</a>]</sup>. The human gut microbiota plays an important role in human health and disease. For instance, the microbiota contributes to various metabolic functions, such as fermentation of non-digestible dietary compounds in the large intestines. Predominantly in the distal part of the colon, the aromatic amino acids such as tyrosine and tryptophan are converted into phenolic compounds, like <i>p</i>-Cresol and phenol.</p>
-                    <h3>How they deal with <i>p</i>-Cresol nowadays?</h3>
-                    <p>    As 90% of the <i>p</i>-Cresol is often reported as an albumin-bound compound, the artificial removal methods currently employed in the medical field, like removal by dialysis, which primarily replaces the filtration capacity of the kidney, is limited to the unbound fraction<sup>[<a href="#ref7">7</a>]</sup>. The other current treatment includes an orally administered spherical carbon adsorbent AST-120. It reduces serum levels of uremic toxins in CKD patients by adsorbing the indoxyl sulfate and <i>p</i>-Cresol. However, the effect of AST-120 has been ambivalent. There are trials that were not able to demonstrate a beneficial effect of AST-120 on progression on CKD<sup>[<a href="#ref8">8</a>]</sup>. AST-120 trials conducted in Japan contradict and show that AST-120 delays dialysis initiation in CKD patients<sup>[<a href="#ref9">9</a>]</sup>.</p>
+                    <p> Chronic kidney disease (CKD) is a disease where the kidney gradually loses its function over time. Without any noticeable symptoms, CKD has long been called a "silent killer". Despite how fast medical technology is improving, there is currently still no cure for CKD and no means to revert it. However, medical professionals agree that early diagnosis and timely treatment can help relieve the symptoms as well as reducing the risk for CKD to deteriorate.</p>
+                    <div class="container-fluid p-0" >
+                        <div class="row no-gutters">
+                            <div class="col-lg-8">
+                                <p> Presently, chronic kidney disease is classified as a worldwide health crisis, as it is estimated that 10% of the population worldwide is suffering from any form or level of CKD<sup>[<a href="#ref1">1</a>]</sup>. Chronic kidney disease is the 6<sup>th</sup> fastest growing cause of death globally, causing at least 2.4 milion deaths per year<sup>[<a href="#ref2">2</a>]</sup>. CKD is associated with tremendous economic burden. High-income countries spent 5% of their medicare expenditures for CKD treatment and US alone spent 64 billion <sup>[<a href="#ref3">3</a>]</sup>.</p>
+                            </div>
+                            <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-4">
+                                    <a href="https://2019.igem.org/wiki/images/1/1b/T--NCKU_Tainan--Description_kidney.gif" target="_blank"><img src="https://2019.igem.org/wiki/images/1/1b/T--NCKU_Tainan--Description_kidney.gif" alt="" title="" style="width:100%"></a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>CKD and <i>p</i>-Cresol</h3>
+                    <p> It is a known fact that the kidneys of CKD patients cannot perform well, thus are unable to filter out several types of uremic solutes efficiently and effectively out of their body, leading to the accumulation of these unwanted waste substances in the human circulatory system.</p>
+                    <div class="container-fluid p-0" >
+                        <div class="row no-gutters">
+                            <div class="col-lg-8">
+                                <p> <i>p</i>-Cresol is a uremic toxin that research have attributed with many biological and biochemical toxic effects. In addition, an increased level of <i>p</i>-Cresol in CKD patients is often related to the worsening of their condition and is associated with cardiovascular mortality<sup>[<a href="#ref3">3</a>,<a href="#ref4">4</a>]</sup>. Besides, the accumulation of <i>p</i>-Cresol inside the blood may contribute to the development of atherosclerosis and thrombosis in patients with uremia<sup>[<a href="#ref5">5</a>]</sup>. In one of the studies, <i>p</i>-Cresol has been found to have a hazard ratio of 2.28<sup>[<a href="#ref6">6</a>]</sup>. This means that patients with high blood <i>p</i>-Cresol level has a higher mortality rate.</p>
+                            </div>
+                            <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/7/7d/T--NCKU_Tainan--Description_cresolbomb.gif" target="_blank"><img src="https://2019.igem.org/wiki/images/7/7d/T--NCKU_Tainan--Description_cresolbomb.gif" alt="" title="" style="width:100%"></a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p> <i>p</i>-Cresol finds its origin in the colon where the gut bacteria including the <i>Clostridium</i> cluster metabolizes excess dietary aromatic amino acids, such as tyrosine<sup>[<a href="#ref7">7</a>,<a href="#ref8">8</a>]</sup>. The human gut microbiota plays an important role in human health. For instance, the microbiota contributes to various metabolic functions, such as fermentation of non-digestible dietary compounds in the large intestines. Predominantly in the distal part of the colon, the aromatic amino acids like tyrosine is converted into phenolic compounds, like <i>p</i>-Cresol.</p>
+                    <p> As 90% of the <i>p</i>-Cresol is often reported as an albumin-bound compound, the artificial removal methods currently employed in the medical field, like removal by dialysis, is limited to the unbound fraction<sup>[<a href="#ref9">9</a>]</sup>. The other current treatment includes an orally administered spherical carbon adsorbent AST-120. It reduces serum levels of uremic toxins in CKD patients by adsorbing the indoxyl sulfate and <i>p</i>-Cresol. However, the effect of AST-120 has been ambivalent. There are trials that were not able to demonstrate a beneficial effect of AST-120 on progression on CKD<sup>[<a href="#ref10">10</a>]</sup>. AST-120 trials conducted in Japan contradict and show that AST-120 delays dialysis initiation in CKD patients<sup>[<a href="#ref11">11</a>]</sup>.</p>
                 </section>
                 <hr>
                 <section>
-                    <h2 id ="Subtitle2">Why Oh My Gut?</h2>
-                    <p>    Unlike other treatments for the disease that focuses on treating the side complications of uremic toxin accumulation, iGEM NCKU Tainan 2019 tackles the problem from the root - the accumulation of uremic toxins. The current treatment for <i>p</i>-Cresol accumulation that adsorbs <i>p</i>-Cresol directly does not show satisfying results. Therefore, Oh My Gut proposes a synthetic biology approach to avoid <i>p</i>-Cresol production. We believe that targeting the root of the problem is going to bring a greater effect in solving this issue.</p>
-                    <h2>What Oh My Gut proposes?</h2>
-                    <p>    Oh My Gut wants to slow down the accumulation of <i>p</i>-Cresol in CKD patients’ blood and at the same time to raise awareness on the importance of treatment against <i>p</i>-Cresol accumulation. To reach these goals, iGEM NCKU Tainan 2019 engineered <i>E. coli</i> Nissle 1917, which is an FDA approved probiotic. This engineered <i>E. coli</i> will be able to convert tyrosine, the precursor to <i>p</i>-Cresol, into a beneficial byproduct by diverting the original fermentation pathway. This product, <i>p</i>-Coumaric acid is an antioxidant with many beneficial health aspects. It has been shown that it reduces the risk of one of our greatest modern western diseases, atherosclerosis<sup>[<a href="#ref10">10</a>]</sup>. As quantification of uremic toxins is uncommon in the healthcare providers due to the high cost, we will also design an economically affordable blood <i>p</i>-Cresol reader that use live bacteria for detection to be placed at the healthcare providers and reach more patients.</p>
+                    <h2 id ="Subtitle2">Oh My Gut</h2>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/a/ae/T--NCKU_Tainan--Description_ohmygut.gif" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/a/ae/T--NCKU_Tainan--Description_ohmygut.gif" alt="" title="" style="width:100%"></a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p> Unlike other treatments for the disease that focuses on treating the side complications of chronic kidney disease, iGEM NCKU-Tainan 2019 tackles the problem from the root - the accumulation of uremic toxins. The current treatments for <i>p</i>-Cresol accumulation which include haemodialysis and AST-120 do not show satisfying results. Therefore, Oh My Gut proposes a synthetic biology approach to a comprehensive solution to CKD. We believe that targeting the root of the problem is going to bring a greater effect in solving this issue.</p>
+                    <p> <b>Oh My Gut</b> wants to slow down the accumulation of <i>p</i>-Cresol in CKD patients’ blood and at the same time to raise awareness on the importance of treatment against <i>p</i>-Cresol accumulation. To reach these goals, iGEM NCKU-Tainan 2019 engineered <i>E. coli</i> Nissle 1917<sup>[<a href="#ref12">12</a>]</sup>, which is an FDA-approved probiotic. This engineered <i>E. coli</I> is able to convert tyrosine, the precursor to <i>p</i>-Cresol, into a beneficial byproduct by diverting the original fermentation pathway. This product, <i>p</i>-Coumaric acid is an antioxidant that benefits our health. It has been shown that it reduces the risk of atherosclerosis, which is one of the side complications of CKD<sup>[<a href="#ref13">13</a>]</sup>. As quantification of uremic toxins is uncommon due to high cost, we also designed CreSense - an affordable blood <i>p</i>-Cresol reader that uses live bacteria for detection to be placed at the healthcare service providers and reach more patients.</p>
                 </section>
                 <hr>
                 <section>
                     <!--Subtitle use h2-->
                     <h2 id ="Subtitle3">What is our inspiration?</h2>
-                    <p>    Taiwan is crowned the “Kingdom of Dialysis”. The prevalence of Chronic Kidney Disease (CKD) is around 10%-11% of the population. CKD remains Taiwan's most costly disease for 4 years successively. CKD treatment in Taiwan cost 1.6 billion USD in 2018 alone. As iGEM NCKU Tainan 2019 aims to solve a local problem and thus we decided in pursuing this area. Throughout our brainstorming sessions, we realized that <i>p</i>-Cresol accumulation has not been paid enough attention in the past. Now, It has been proven to be associated with the worsening of CKD and many other side complications. Currently, the only approach to solve this problem is AST-120 but it did not demonstrate a satisfying result. With synthetic biology, we will be able to look deeper into the problem and solve it from the root. Prevent the production of <i>p</i>-Cresol in the first place is believed to be a more effective way to stop the accumulation of <i>p</i>-Cresol.</p>
+                    <p> Taiwan is crowned the “Kingdom of Dialysis”. The national prevalence of Chronic Kidney Disease (CKD) is approximately 11.9% of the population. CKD remains Taiwan's most costly disease for 4 years in a row. CKD treatment in Taiwan cost 1.6 billion USD in 2016 alone<sup>[<a href="#ref14">14</a>]</sup>. On a larger scale, 850 million people worldwide are estimated to have chronic kidney disease.</p>
+                    <div class="container-fluid p-0" >
+                        <div class="row no-gutters">
+                            <div class="col-lg-5 d-flex justify-content-center align-items-center">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/2/28/T--NCKU_Tainan--Description_taiwan.png" target="_blank"><img src="https://2019.igem.org/wiki/images/2/28/T--NCKU_Tainan--Description_taiwan.png" alt="" title="" style="width:100%"></a>
+                                </figure>
+                            </div>
+                            <div class="col-lg-7">
+                                <p> This year, iGEM NCKU-Tainan begins from solving a local problem to finally making a global impact. Throughout our brainstorming sessions, we realized that <i>p</i>-Cresol accumulation has not been paid enough attention in the past. Now, it has been proven to be associated with the worsening of CKD and many other side complications. Currently, the only approach to solve this problem is AST-120 but it did not demonstrate a satisfying result. With synthetic biology, we are able to look deeper into the problem and solve it from the root. Reducing the production of <i>p</i>-Cresol in the first place is believed to be a more effective way to slow down the accumulation of <i>p</i>-Cresol.</p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <hr>
                 <section>
                     <h2 id="Subtitle4">What we have done?</h2>
+                    <div class="img-magnifier-container">
+                        <img id="myimage" src="https://2019.igem.org/wiki/images/a/a7/T--NCKU_Tainan--Description_explore.png" width="100%" height="auto" alt="">
+                    </div>
                 </section>
                 <section class="ref">
-                    <h2>Reference</h2>
+                    <h2>References</h2>
                     <ol>
-                        <li id="ref1">World Kidney Day: Chronic Kidney Disease. 2015; Retrieved from <a href="https://www.worldkidneyday.org/facts/chronic-kidney-disease/">https://www.worldkidneyday.org/facts/chronic-kidney-disease/</a></li>
-                        <li id="ref2">Brocca, A., Virzì, G. M., Cal, M. D., Cantaluppi, V., & Ronco, C. (2013). Cytotoxic Effects of <i>p</i>-Cresol in Renal Epithelial Tubular Cells. <i>Blood Purification</i>, 36(3-4), 219–225. doi: 10.1159/000356370</li>
-                        <li id="ref3">Chang, M.-C., Chang, H.-H., Chan, C.-P., Yeung, S.-Y., Hsien, H.-C., Lin, B.-R., … Jeng, J.-H. (2014). <i>p</i>-Cresol Affects Reactive Oxygen Species Generation, Cell Cycle Arrest, Cytotoxicity and Inflammation/Atherosclerosis-Related Modulators Production in Endothelial Cells and Mononuclear Cells. <i>PLoS ONE</i>, 9(12). doi: 10.1371/journal.pone.0114446</li>
-                        <li id="ref4">Peng, Y.-S., Lin, Y.-T., Wang, S.-D., Hung, K.-Y., Chen, Y., & Wang, S.-M. (2013). <i>p</i>-Cresol induces disruption of cardiomyocyte adherens junctions. <i>Toxicology</i>, 306, 176–184. doi: 10.1016/j.tox.2013.02.015</li>
-                        <li id="ref5">Smith, E., & G. T. Macfarlane. (1997). Formation of Phenolic and Indolic Compounds by Anaerobic Bacteria in the Human Large Intestine. <i>Microbial Ecology</i>, 33(3), 180-188. Retrieved from <a href="http://www.jstor.org/stable/4251487">http://www.jstor.org/stable/4251487</a></li>
-                        <li id="ref6">Saito, Y., Sato, T., Nomoto, K., & Tsuji, H. (2018). Identification of phenol- and <i>p</i>-Cresol-producing intestinal bacteria by using media supplemented with tyrosine and its metabolites. FEMS Microbiology Ecology, 94(9). doi: 10.1093/femsec/fiy125</li>
-                        <li id="ref7">Ketteler, M. (2006). Kidney failure and the gut: <i>p</i>-Cresol and the dangers from within. <i>Kidney International</i>, 69(6), 952–953. doi: 10.1038/sj.ki.5000236</li>
-                        <li id="ref8">Hatakeyama, S., Yamamoto, H., Okamoto, A., Imanishi, K., Tokui, N., Okamoto, T., … Ohyama, C. (2012). Effect of an Oral Adsorbent, AST-120, on Dialysis Initiation and Survival in Patients with Chronic Kidney Disease. <i>International Journal of Nephrology</i>, 2012, 1–8. doi: 10.1155/2012/376128</li>
-                        <li id="ref9">Schulman, G., Berl, T., Beck, G. J., Remuzzi, G., Ritz, E., Arita, K., … Shimizu, M. (2014). Randomized Placebo-Controlled EPPIC Trials of AST-120 in CKD. <i>Journal of the American Society of Nephrology</i>, 26(7), 1732–1746. doi: 10.1681/asn.2014010042</li>
-                        <li id="ref10">Zang, L.-Y., Cosma, G., Gardner, H., Shi, X., Castranova, V., & Vallyathan, V. (2000). Effect of antioxidant protection by <i>p</i>-Coumaric acid on low-density lipoprotein cholesterol oxidation. <i>American Journal of Physiology-Cell Physiology</i>, 279(4). doi: 10.1152/ajpcell.2000.279.4.c954</li>
+                        <li id="ref1">World Kidney Day: Chronic Kidney Disease. 2015; Retrieved from <a href="https://www.worldkidneyday.org/facts/chronic-kidney-disease/" target="_blank">https://www.worldkidneyday.org/facts/chronic-kidney-disease/</a></li>
+                        <li id="ref2">(2019, March 1). Retrieved from https://www.kidney.ca/file/2019-WKD-Media-Release.pdf?erid=0</li>
+                        <li id="ref3">Luyckx, V. A., Tonelli, M., & Stanifer, J. W. (2018). The global burden of kidney disease and the sustainable development goals. <i>Bulletin of the World Health Organization</i>, 96(6). doi: 10.2471/blt.17.206441</li>
+                        <li id="ref4">Brocca, A., Virzì, G. M., Cal, M. D., Cantaluppi, V., & Ronco, C. (2013). Cytotoxic Effects of <i>p</i>-Cresol in Renal Epithelial Tubular Cells. <i>Blood Purification</i>, 36(3-4), 219–225. doi: 10.1159/000356370</li>
+                        <li id="ref5">Peng, Y.-S., Lin, Y.-T., Wang, S.-D., Hung, K.-Y., Chen, Y., & Wang, S.-M. (2013). <i>p</i>-Cresol induces disruption of cardiomyocyte adherens junctions. <i>Toxicology</i>, 306, 176–184. doi: 10.1016/j.tox.2013.02.015</li>
+                        <li id="ref6">Chang, M.-C., Chang, H.-H., Chan, C.-P., Yeung, S.-Y., Hsien, H.-C., Lin, B.-R., … Jeng, J.-H. (2014). <i>p</i>-Cresol Affects Reactive Oxygen Species Generation, Cell Cycle Arrest, Cytotoxicity and Inflammation/Atherosclerosis-Related Modulators Production in Endothelial Cells and Mononuclear Cells. <i>PLoS ONE</i>, 9(12). doi: 10.1371/journal.pone.0114446</li>
+                        <li id="ref7">Bammens, B., Evenepoel, P., Keuleers, H., Verbeke, K., & Vanrenterghem, Y. (2006). Free serum concentrations of the protein-bound retention solute <i>p</i>-Cresol predict mortality in hemodialysis patients. <i>Kidney International</i>, 69(6), 1081–1087. doi: 10.1038/sj.ki.5000115</li>
+                        <li id="ref8">Smith, E., & G. T. Macfarlane. (1997). Formation of Phenolic and Indolic Compounds by Anaerobic Bacteria in the Human Large Intestine. <i>Microbial Ecology</i>, 33(3), 180-188. Retrieved from <a href="http://www.jstor.org/stable/4251487" target="_blank">http://www.jstor.org/stable/4251487</a></li>
+                        <li id="ref9">Saito, Y., Sato, T., Nomoto, K., & Tsuji, H. (2018). Identification of phenol- and <i>p</i>-Cresol-producing intestinal bacteria by using media supplemented with tyrosine and its metabolites. FEMS Microbiology Ecology, 94(9). doi: 10.1093/femsec/fiy125</li>
+                        <li id="ref10">Ketteler, M. (2006). Kidney failure and the gut: <i>p</i>-Cresol and the dangers from within. <i>Kidney International</i>, 69(6), 952–953. doi: 10.1038/sj.ki.5000236</li>
+                        <li id="ref11">Hatakeyama, S., Yamamoto, H., Okamoto, A., Imanishi, K., Tokui, N., Okamoto, T., … Ohyama, C. (2012). Effect of an Oral Adsorbent, AST-120, on Dialysis Initiation and Survival in Patients with Chronic Kidney Disease. <i>International Journal of Nephrology</i>, 2012, 1–8. doi: 10.1155/2012/376128</li>
+                        <li id="ref12">Schulman, G., Berl, T., Beck, G. J., Remuzzi, G., Ritz, E., Arita, K., … Shimizu, M. (2014). Randomized Placebo-Controlled EPPIC Trials of AST-120 in CKD. <i>Journal of the American Society of Nephrology</i>, <i>26</i>(7), 1732–1746. doi: 10.1681/asn.2014010042</li>
+                        <li id="ref13">Zang, L.-Y., Cosma, G., Gardner, H., Shi, X., Castranova, V., & Vallyathan, V. (2000). Effect of antioxidant protection by <i>p</i>-Coumaric acid on low-density lipoprotein cholesterol oxidation. <i>American Journal of Physiology-Cell Physiology</i>, 279(4). doi: 10.1152/ajpcell.2000.279.4.c954</li>
+                        <li id="ref14">Wen, C. P., Cheng, T. Y. D., Tsai, M. K., Chang, Y. C., Chan, H. T., Tsai, S. P., … Wen, S. F. (2008). All-cause mortality attributable to chronic kidney disease: a prospective cohort study based on 462 293 adults in Taiwan. <i>Lancet (London, England)</i>, <i>371</i>(9631), 2173–2182. <a href="https://doi.org/10.1016/S0140-6736(08)60952-6" target="_blank" >https://doi.org/10.1016/S0140-6736(08)60952-6</a></li>
+                        <li>Flaticon, the largest database of free vector icons. (n.d.). Retrieved from <a href="https://www.flaticon.com/home">https://www.flaticon.com/home</a>.</li>
                     </ol>
                 </section>
             </main>
@@ -80,14 +128,13 @@
     </div>
     <script src="https://2019.igem.org/Team:NCKU_Tainan/js/jquery-3_4_1_min_js?action=raw&amp;ctype=text/javascript"></script>
     <script src="https://2019.igem.org/Team:NCKU_Tainan/js/4.3.1/bootstrap_min_js?action=raw&amp;ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/magnifier?action=raw&amp;ctype=text/javascript"></script>
     <script src="https://2019.igem.org/Team:NCKU_Tainan/js/Universal?action=raw&amp;ctype=text/javascript"></script>
-</script>
-<script src="https://2019.igem.org/Team:NCKU_Tainan/js/Universal?action=raw&amp;ctype=text/javascript"></script>
-<script>
-$( document ).ready(function() {
-    $("#breadtext").html('<a href="https://2019.igem.org/Team:NCKU_Tainan/Description">Project</a> > <a>Description</a>')
-});
-</script>
+    <script>
+        $( document ).ready(function() {
+            $("#breadtext").html('<a href="https://2019.igem.org/Team:NCKU_Tainan">Home</a> > <a>Description</a>')
+        });
+    </script>
 </body>
 </html>
 {{Template:NCKU_Tainan/footer}}

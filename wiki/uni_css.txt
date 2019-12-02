@@ -1,0 +1,130 @@
+<html>
+<style>
+/* Context */
+
+/* SideNav */
+
+@media (min-width: 992px) { 
+    .sidenav {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+        height: 100vh;
+        margin: 0;
+        padding-top: 25vh;
+    }
+}
+.sidenav ul {
+    font-family: 'Sansita',"微軟正黑體",sans-serif;
+    list-style-type: none;
+    position:fixed;
+}
+
+.sidenav a {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #767676;
+}
+.sidenav a.active {
+    color: white;
+    background-color: #8BBED5;
+    border-radius: 1rem;
+}
+
+/* main */
+main {
+    padding-top: 12vh;
+}
+
+.pageName {
+    width: 100%;
+    border-bottom-style:solid; 
+    border-bottom-width:medium;
+    margin-bottom: 5vh;
+    margin-top:0;
+    padding-left: 5%;
+}
+main section {
+    padding: 5vh 6vw 5vh 6vw;
+}
+main hr {
+    border-style: solid;
+    border-color: #2C2C2C;
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
+main .ref ol {
+    margin-left: 1.1em;
+}
+.ref h2 {
+    font-weight: normal;
+}
+.ref ol {
+    font-size: 0.9rem;
+}
+figure {
+    margin: 1vh 0 3vh 0;
+}
+main table {
+    background-color:#f0f0f0;
+    font-size: 0.9rem;
+    color: #2c2c2c;
+    margin: 0 auto;
+}
+main table caption {
+    font-size: 0.9rem;
+    color: #2c2c2c;
+    text-align: center;
+}
+main table td, main table th {
+    padding: .5rem;
+}
+.table-bordered td, .table-bordered th {
+    border: 2px solid #767676;
+}
+.accordion button {
+    border-style: unset;
+}
+.accordion>.card .card-header {
+     margin-bottom: 0px;
+}
+/*lg: destop*/
+@media (min-width: 992px) { 
+    main {
+        -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+        max-width: 80%;
+        margin: 0;
+        padding-left: 6vw;
+    }
+    main hr {
+        margin-right: 7vw;
+        margin-left: 0vw;
+    }
+    .pageName {
+        padding-left: 0%;
+        margin-top:2vh;
+    }
+    main section {
+        padding: 1vh 10vw 1vh 0;
+    }
+
+}
+/*ul, ol*/
+main ol, main ul {
+    font-family: 'Nunito',"微軟正黑體",sans-serif;
+    font-size: 1.1rem;
+}
+main ul.list-indent{
+        padding-left: 1.5em;
+}
+main ul.disc{
+    list-style-image: none;
+    list-style-type: disc;
+}
+/*math*/
+.MathJax {
+    font-size: 1.5rem !important;
+}
+</style>
+</html>

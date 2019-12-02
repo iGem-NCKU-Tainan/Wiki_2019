@@ -1,0 +1,124 @@
+{{Template:NCKU_Tainan/block_css}}
+{{Template:NCKU_Tainan/bootstrap_min_css}}
+{{Template:NCKU_Tainan/template_css}}
+{{Template:NCKU_Tainan/header}}
+{{Template:NCKU_Tainan/universal_css}}
+<html lang="en">
+<body data-spy="scroll" data-target=".sidenav" data-offset="101">  
+    <div class="content container-fluid">
+        <div class="row">
+            <!--Sidebar (Remember to change the subtitle context, but don't change the id)-->
+            <aside class="sidenav d-none d-lg-flex flex-column justify-content-start align-items-center col-2"> 
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Subtitle1">Laboratory Safety</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Subtitle2">Project Safety</a>
+                    </li>
+                </ul>
+            </aside>
+            <main class="">
+                <!--The Page Name-->
+                <div class="pageName">
+                    <h1>Safety</h1>
+                    <div class="divider"></div>
+                </div>
+                <section>
+                        <p>    The general public has many misconceptions when it comes to genetically modified organisms (GMOs), which then leads to a lot of fear and stigma. In terms of gaining widespread acceptance for synthetic biology applications in daily life, there is still much effort to be made. Since the advent of synthetic biology, scientists have been working hard to implement safeguards in their genetically modified organisms. When it comes to biotherapeutics, or any product of genetic engineering that will be consumed by humans, safety has never been more important.</p>
+                </section>
+                <section>
+                    <h2 id="Subtitle1">Laboratory Safety</h2>
+                    <p>    The iGEM NCKU-Tainan team is in full compliance with the safety and security rules of the iGEM competition.</p>
+                    <p>    The team was included in the laboratories of Prof. Masa Hashimoto and Prof. I-Hsiu Huang, which contains equipment for both Biosafety Level 1 and 2. Before we started our work in the lab, all team members had to receive training and pass different safety tests provided by our university. We also received training from our advisors on how to use the machinery in the lab (i.e. thermocycler, electroporation machine) and also on the use of chemicals (i.e. <i>p</i>-Cresol, staining reagents). At all times, a supervisor or instructor was present when work was conducted in the laboratory.</p>
+                </section>
+                <section>
+                    <h2 id="Subtitle2">Project Safety</h2>
+                    <h3><i>Escherichia coli</i> Nissle 1917</h3>
+                    <p>    In order to make our biotherapeutic safe for human consumption, we used <i>E. coli</i> Nissle 1917 as our chassis. <i>Escherichia coli</i> Nissle 1917 is a nonpathogenic <i>E. coli</i> strain isolated by Alfred Nissle in 1917. It is one of the best examined probiotic strains, used in many gastrointestinal disorders including diarrhea, uncomplicated diverticular disease and ulcerative colitis (UC). It has proven to have an intestinal anti-inflammatory effect without major immunotoxic properties. A clinical study to evaluate the clearance of <i>E. coli</i> Nissle has proven that all subjects cleared <i>E. coli</i> Nissle with a median clearance of 1 week making it beneficial for therapeutic probiotic because it is not expected to colonize the gut for a long time. The safety, tolerability, and efficacy of consuming <i>E. coli</i> Nissle have also been evaluated and research has shown that daily treatment with <i>E. coli</i> Nissle for chronic disorders is feasible.</p>
+                    <h3>Kill Switch</h3>
+                    <p>    In order to make our live therapeutic safe for human consumption, we added a kill switch into our <i>E .coli</i> Nissle in the form of gene knockouts. We used Lambda Red Recombineering system, which  is based on homologous recombination, to perform gene knockouts. By using lambda red genes and hijacking <i>E .coli</i> Nissle’s own recombineering system, we are able to replace the target DNA  region with a DNA fragment of our choosing. Electroporation was then used to deliver DNA fragments and plasmids into the bacteria (link to protocols).</p>
+                    <p>    We amplified the Chloramphenicol Resistance (CmR) Cassette from pKD3 plasmid using Amplification PCR, and used that fragment to replace the target gene. The resistance cassette is flanked by FRT sites, which then allows the removal of the cassettes with the help of pCP20, an FLP helper plasmid. Before we electroporated the CmR cassette into <i>E .coli</i> Nissle, we electroporated in pKD46, a recombinase helper plasmid.</p>
+                    <p>    We experimented with two different gene knockouts, <i>can</i> gene knockout and <i>dapA</i> gene knockout, and compared its effectiveness.</p>
+                    <h4><i>dapA</i> Gene Knock Out</h4>
+                    <p>    <i>dapA</i> encodes for 4-hydroxy-tetrahydrodipicolinate synthase, an enzyme necessary for cell wall synthesis. By knocking out this gene, the bacteria will have to depend on exogenous diaminopimelate (DAP) for cell wall assembly and growth, making it a potential kill switch as the bacteria will not survive without suppliance of exogenous DAP.</p>
+                    <p>    We confirmed that we have successfully replaced the <i>dapA</i> gene with CmR cassette using colony PCR. The size of CmR cassette inserted between the homology arms is approximately 1600 base pairs.</p>
+                    <div class="container-fluid pb-1">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/1/17/T--NCKU_Tainan--Dap_PCR_2.jpg" target="_blank" style="width:95%"><img src="https://2019.igem.org/wiki/images/1/17/T--NCKU_Tainan--Dap_PCR_2.jpg" alt="" title="" style="width:100%"></a>
+                                </figure>
+                                <figcaption>Fig. 1. (a) Schematics showing <i>dapA</i> knockout strategy (b) Confirmation of <i>dapA</i> knockout in <i>E .coli</i> Nissle via colony PCR. M: Marker; Lane 1: Wild Type (no bands); Lane 2: Δ<i>dapA</i>::CmR 1 (1.6kb); Lane 2: Δ<i>dapA</i>::CmR 2 (1.6kb)</figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    To further confirm our mutant <i>E .coli</i> works as a kill switch, we did a phenotype test by streaking out bacteria on different plates.</p>
+                    <div class="container-fluid pb-1">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/c/ce/T--NCKU_Tainan--dapa-plate.png" target="_blank" style="width:95%"><img src="https://2019.igem.org/wiki/images/c/ce/T--NCKU_Tainan--dapa-plate.png" alt="" title="" style="width:100%"></a>
+                                </figure>
+                                <figcaption>Fig. 2. Confirmation of <i>dapA</i> knockout in <i>E .coli</i> Nissle. <i>E .coli</i> Nissle and other strains were streaked onto agar plates containing (A) just Lysogeny Broth (LB); (B) 0.1M DAP; (C) Chloramphenicol (Cm) and 0.1M DAP for phenotyping.</figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    As seen in Fig. 2, without exogenous DAP, Δ<i>dapA</i>::CmR is unable to grow. And since it can survive on Cm plates, we can confirm that it contains the CmR cassette.</p>
+                    <p>    However, we realized that we would have to think of a way to provide exogenous DAP in our capsule to prevent our <i>E .coli</i> from dying before it reaches the gut. After deliberating the cost-performance ratio, we decided it wasn’t a good fit for what we had in mind. Thus, we did not continue on with replacing the CmR cassette with FRT sites.</p>
+                    <h4><i>can</i> Gene Knock Out</h4>
+                    <p>    The <i>can</i> gene of <i>E .coli</i> encodes for carbonic anhydrase (CA), an enzyme that assists rapid interconversion of CO<sub>2</sub> and water into carbonic acid, protons and bicarbonate ions. <i>E .coli</i> requires a constant supply of bicarbonate as a metabolic substrate during normal growth. So, if this gene is knocked out, <i>E .coli</i> is unable to turn the CO<sub>2</sub> into bicarbonate fast enough before the CO<sub>2</sub> diffuses out and causes cell death. Inside the gut, where we want the <i>E .coli</i> to survive, the CO<sub>2</sub> concentration is high enough (ranging from 5% to 29%) to allow the spontaneous conversion of CO<sub>2</sub> into bicarbonate ions. However, when the <i>E .coli</i> exits the human body, the lowered concentration of CO<sub>2</sub> will result in its death.</p>
+                    <p>    We confirmed that we have successfully replaced the <i>can</i> gene with CmR cassette using colony PCR. The size of CmR cassette inserted between the homology arms is approximately 1400 base pairs. The size of FRT sites inserted between the homology arms is approximately 500 base pairs.</p>
+                    <div class="container-fluid pb-1">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/8/8b/T--NCKU_Tainan--Can_PCR_2.jpg" target="_blank" style="width:95%"><img src="https://2019.igem.org/wiki/images/8/8b/T--NCKU_Tainan--Can_PCR_2.jpg" alt="" title="" style="width:100%"></a>
+                                </figure>
+                                <figcaption>Fig. 3. (a) Schematics showing <i>can</i> knockout strategy (b) Confirmation of <i>can</i> knockout in <i>E .coli</i> Nissle via colony PCR. M: Marker; Lane 1: Wild Type (~1.1kb), Lane 2: Δ<i>can</i>::CmR 1 (~1.4kb), Lane 3: Δ<i>can</i>::CmR 2 (~1.4kb), Lane 4: Δ<i>can</i>::FRT 1 (~500bp), Lane 5: Δ<i>can</i>::FRT 2 (~500bp)</figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    To further confirm our mutant <i>E .coli</i> works as a kill switch, we did a phenotype test by streaking our bacteria on different plates and placing them in different conditions.</p>
+                   <div class="container-fluid pb-1">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <!-- put link in href & src , width in a can adjust-->
+                                    <a href="https://2019.igem.org/wiki/images/e/ec/T--NCKU_Tainan--can-plate.png" target="_blank" style="width:95%"><img src="https://2019.igem.org/wiki/images/e/ec/T--NCKU_Tainan--can-plate.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption>Fig. 4. Confirmation of <i>can</i> knockout in <i>E .coli</i> Nissle. <i>E .coli</i> Nissle and other strains were streaked onto agar plates and placed in (A) 0.04% CO<sub>2</sub>; (B) 5% CO<sub>2</sub>; (C) 5% CO<sub>2</sub> and contains Chloramphenicol (Cm) for phenotyping.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    As shown in Fig. 4, Δ<i>can</i>::CmR and Δ<i>can</i>::FRT requires a higher CO<sub>2</sub> level to survive. When streaked on Cm plates, Δ<i>can</i>::CmR is still able to grow while Δ<i>can</i>::FRT is unable to grow, thus proving that we have succeeded in knocking out the <i>can</i> gene and replacing it with CmR cassette and FRT sites respectively.</p>
+                    <p>    Thereby, we will use the <i>can</i> gene knockout as our kill switch.</p>
+                </section>
+                <section class="ref">
+                    <h2>References</h2>
+                    <ol>
+                        <li id="ref1">Ulrich Sonnenborn & Jürgen Schulze (2009) The non-pathogenic <i>Escherichia coli</i> strain Nissle 1917 – features of a versatile probiotic, Microbial Ecology in Health and Disease, 21:3-4, 122-158, DOI: 10.3109/08910600903444267</li>
+                        <li id="ref2">Kurtz, Caroline B., et al. “An Engineered E. Coli Nissle Improves Hyperammonemia and Survival in Mice and Shows Dose-Dependent Exposure in Healthy Humans.” Science Translational Medicine, vol. 11, no. 475, 16 Jan. 2019, p. eaau7975, stm.sciencemag.org/content/11/475/eaau7975.full, 10.1126/scitranslmed.aau7975.</li>
+                        <li id="ref3">Scaldaferri, Franco, et al. “Role and Mechanisms of Action OfEscherichia ColiNissle 1917 in the Maintenance of Remission in Ulcerative Colitis Patients: An Update.” World Journal of Gastroenterology, vol. 22, no. 24, 2016, p. 5505, <a target="_blank" href="www.ncbi.nlm.nih.gov/pmc/articles/PMC4917610/">www.ncbi.nlm.nih.gov/pmc/articles/PMC4917610/</a>, 10.3748/wjg.v22.i24.5505. Accessed 12 Aug. 2019.</li>
+                        <li id="ref4">Kurtz, Caroline, et al. “Translational Development of Microbiome-Based Therapeutics: Kinetics of <i>E. Coli</i> Nissle and Engineered Strains in Humans and Nonhuman Primates.” Clinical and Translational Science, vol. 11, no. 2, 1 Dec. 2017, pp. 200–207, 10.1111/cts.12528. Accessed 12 Aug. 2019.</li>
+                        <li id="ref5">Merlin, C., Masters, M., McAteer, S., & Coulson, A. (2003). Why Is Carbonic Anhydrase Essential to <i>Escherichia coli</i>? <i>Journal of Bacteriology, 185</i>(21), 6415–6424. <a target="_blank" href="https://doi.org/10.1128/jb.185.21.6415-6424.2003">https://doi.org/10.1128/jb.185.21.6415-6424.2003</a></li>
+                        <li id="ref6">Hashimoto, M., & Kato, J.-I. (2003). Indispensability of the <i>Escherichia coli</i> Carbonic Anhydrases YadF and CynT in Cell Proliferation at a Low CO<sub>2</sub> Partial Pressure. <i>Bioscience, Biotechnology, and Biochemistry, 67</i>(4), 919–922. doi: 10.1271/bbb.67.919</li>
+                        <li id="ref7">InterPro EMBL-EBI. “4-Hydroxy-Tetrahydrodipicolinate Synthase, DapA (IPR005263) < InterPro < EMBL-EBI.” Ebi.Ac.Uk, 2019, <a target="_blank" href="www.ebi.ac.uk/interpro/entry/IPR005263">www.ebi.ac.uk/interpro/entry/IPR005263</a>. Accessed 5 July 2019.</li>
+                        <li id="ref8">Rodionov, Dmitry & G Vitreschak, Alexey & Mironov, Andrey & Gelfand, Mikhail. (2004). Regulation of lysine biosynthesis and transport genes in bacteria: yet another RNA riboswitch?. Nucleic acids research. 31. 6748-57. 10.1093/nar/gkg900.</li>
+                        <li id="ref9">Massip, C., Branchu, P., Bossuet-Greif, N., Chagneau, C. V., Gaillard, D., Martin, P., … Oswald, E. (2019). Deciphering the interplay between the genotoxic and probiotic activities of <i>Escherichia coli</i> Nissle 1917. <i>PLOS Pathogens, 15</i>(9), e1008029. <a target="_blank" href="https://doi.org/10.1371/journal.ppat.1008029">https://doi.org/10.1371/journal.ppat.1008029</a></li>
+                    </ol>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/jquery-3_4_1_min_js?action=raw&amp;ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/4.3.1/bootstrap_min_js?action=raw&amp;ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/Universal?action=raw&amp;ctype=text/javascript"></script>
+    <script>
+        $( document ).ready(function() {
+            $("#breadtext").html('<a href="https://2019.igem.org/Team:NCKU_Tainan/Description">Project</a> > <a>Safety</a>')
+        });
+    </script>
+</body>
+</html>
+{{Template:NCKU_Tainan/footer}}

@@ -6,131 +6,152 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Math</title>
     <link rel="stylesheet" type="text/css" href="home.css">
+    <style>
+        .MathJax {
+            font-size: 1.5rem!important; 
+        }
+    </style>
 </head>
 <body>
+    <math display="block">
+        <mo>&psi;</mo>
+        <mfenced>
+            <mi>a</mi>
+        </mfenced>
+        <mo>=</mo>
+        <msub>
+            <mo>&psi;</mo>
+            <mi>max</mi>
+        </msub>
+        <mo>-</mo>
+        <mo>&mu;</mo>
+        <mfenced>
+            <mi>a</mi>
+        </mfenced>
+    </math>
+    <p>     
+        <p>    As our model of the net growth rate of C. difficile population, <math><mo>&psi;</mo></math>,exposed to CBM-B concentration, a, we assumed the following relationship:</p>
         <math display="block">
+            <mo>&psi;</mo>
+            <mfenced>
+                <mi>a</mi>
+            </mfenced>
+            <mo>=</mo>
+            <msub>
                 <mo>&psi;</mo>
-                <mfenced>
-                    <mi>a</mi>
-                </mfenced>
-                <mo>=</mo>
+                <mi>max</mi>
+            </msub>
+            <mo>-</mo>
+            <mo>&mu;</mo>
+            <mfenced>
+                <mi>a</mi>
+            </mfenced>
+        </math>
+        
+        <math display="block">
+            <mi>P</mi>
+            <mo>=</mo>
+            <mrow>
                 <msub>
-                    <mo>&psi;</mo>
+                    <mi>P</mi>
                     <mi>max</mi>
                 </msub>
-                <mo>-</mo>
-                <mo>&mu;</mo>
-                <mfenced>
-                        <mi>a</mi>
-                </mfenced>
-            </math>
-        <p>     
-            <p>    As our model of the net growth rate of C. difficile population, <math><mo>&psi;</mo></math>,exposed to CBM-B concentration, a, we assumed the following relationship:</p>
-            <math display="block">
-                <mo>&psi;</mo>
-                <mfenced>
-                    <mi>a</mi>
-                </mfenced>
-                <mo>=</mo>
-                <msub>
-                    <mo>&psi;</mo>
-                    <mi>max</mi>
-                </msub>
-                <mo>-</mo>
-                <mo>&mu;</mo>
-                <mfenced>
-                        <mi>a</mi>
-                </mfenced>
-            </math>
-                
-                <math display="block">
-                        <mi>P</mi>
-                        <mo>=</mo>
-                        <mrow>
-                            <msub>
-                                <mi>P</mi>
-                                <mi>max</mi>
-                            </msub>
-                            <mo>&sdot;</mo>
-                            <mfrac>
-                                <msup>
-                                    <mfenced open="[" close="]">
-                                        <mi>PC</mi>
-                                    </mfenced>
-                                    <mi>h</mi>
-                                </msup>
-                                <mrow>
-                                    <msup>
-                                        <mfenced open="[" close="]">
-                                            <mi>PC</mi>
-                                        </mfenced>
-                                        <mi>h</mi>
-                                    </msup>
-                                    <mo>+</mo>
-                                    <msup>
-                                        <mi>K</mi>
-                                        <mi>h</mi>
-                                    </msup>
-                                </mrow>
-                            </mfrac>
-                        </mrow>
-                    </math>
-                <!--Haldane equation-->
-                <math display="block">
-                    <mn>&mu;</mn><mo>=</mo>
+                <mo>&sdot;</mo>
+                <mfrac>
+                    <msup>
+                        <mfenced open="[" close="]">
+                            <mi>PC</mi>
+                        </mfenced>
+                        <mi>h</mi>
+                    </msup>
                     <mrow>
-                        <mfrac>
+                        <msup>
+                            <mfenced open="[" close="]">
+                                <mi>PC</mi>
+                            </mfenced>
+                            <mi>h</mi>
+                        </msup>
+                        <mo>+</mo>
+                        <msup>
+                            <mi>K</mi>
+                            <mi>h</mi>
+                        </msup>
+                    </mrow>
+                </mfrac>
+            </mrow>
+        </math>
+        <!--Haldane equation-->
+        <math display="block">
+            <mn>&mu;</mn><mo>=</mo>
+            <mrow>
+                <mfrac>
+                    <mrow>
+                        <msub>
+                            <mi>&mu;</mi>
+                            <mi>max</mi>
+                        </msub>
+                        <mo>&sdot;</mo>
+                        <mi>S</mi>
+                    </mrow>
+                    <mrow>
+                        <mfenced open="[" close="]">
                             <mrow>
                                 <msub>
-                                    <mi>&mu;</mi>
-                                    <mi>max</mi>
+                                    <mi>K</mi>
+                                    <mi>S</mi>
                                 </msub>
-                                <mo>&sdot;</mo>
+                                <mo>+</mo>
                                 <mi>S</mi>
-                            </mrow>
-                            <mrow>
-                                <mfenced open="[" close="]">
+                                <mo>+</mo>
+                                <mfenced>
                                     <mrow>
+                                        <msup>
+                                            <mi>S</mi>
+                                            <mn>2</mn>
+                                        </msup>
+                                        <mo>/</mo>
                                         <msub>
-                                                <mi>K</mi>
-                                                <mi>S</mi>
+                                            <mi>K</mi>
+                                            <mi>i</mi>
                                         </msub>
-                                        <mo>+</mo>
-                                        <mi>S</mi>
-                                        <mo>+</mo>
-                                        <mfenced>
-                                            <mrow>
-                                                <msup>
-                                                    <mi>S</mi>
-                                                    <mn>2</mn>
-                                                </msup>
-                                                <mo>/</mo>
-                                                <msub>
-                                                    <mi>K</mi>
-                                                    <mi>i</mi>
-                                                </msub>
-                                            </mrow>
-                                        </mfenced>
                                     </mrow>
-                                </mfenced> 
+                                </mfenced>
                             </mrow>
-                        </mfrac>
+                        </mfenced> 
                     </mrow>
-                </math>
-                <!--Hill equation-->
-                <math display="block">
-                  <mi>&mu;</mi>
-                  <mfenced>
-                      <mi>a</mi>
-                  </mfenced>
-                  <mo>=</mo>
-                  <mrow>
-                      <msub>
-                          <mi>E</mi>
-                          <mi>max</mi>
-                      </msub>
-                      <mo>&InvisibleTimes;</mo>
-                      <mfrac>
+                </mfrac>
+            </mrow>
+        </math>
+        <!--Hill equation-->
+        <math display="block">
+            <mi>&mu;</mi>
+            <mfenced>
+                <mi>a</mi>
+            </mfenced>
+            <mo>=</mo>
+            <mrow>
+                <msub>
+                    <mi>E</mi>
+                    <mi>max</mi>
+                </msub>
+                <mo>&InvisibleTimes;</mo>
+                <mfrac>
+                    <msup>
+                        <mfenced>
+                            <mrow>
+                                <mi>a</mi>
+                                <mo>/</mo>
+                                <msub>
+                                    <mi>EC</mi>
+                                    <mn>50</mn>
+                                </msub>
+                            </mrow>
+                        </mfenced>
+                        <mi>&kappa;</mi>                                                   
+                    </msup>
+                    <mrow>
+                        <mn>1</mn>
+                        <mo>+</mo>
                         <msup>
                             <mfenced>
                                 <mrow>
@@ -144,50 +165,316 @@
                             </mfenced>
                             <mi>&kappa;</mi>                                                   
                         </msup>
-                        <mrow>
-                            <mn>1</mn>
-                            <mo>+</mo>
-                            <msup>
-                                <mfenced>
-                                    <mrow>
-                                        <mi>a</mi>
-                                        <mo>/</mo>
-                                        <msub>
-                                            <mi>EC</mi>
-                                            <mn>50</mn>
-                                        </msub>
-                                    </mrow>
-                                </mfenced>
-                                <mi>&kappa;</mi>                                                   
-                            </msup>
-                        </mrow>
-                      </mfrac>
-                  </mrow>  
-                </math>
-                <math display="block">
-                        <mn>P</mn>
-                        <mo>=</mo>
-                        <mrow>
-                            <msub>
-                                <mi>&#x1D453;<!--mathematic italic small f--></mi>
-                                <mi>ss</mi>
-                            </msub>
-                            <mo>&sdot;</mo>
-                                <mi>&mu;</mi>
-                                <mo>&sdot;</mo>
-                                <mfenced>
-                                    <mrow>
-                                        <mn>1</mn>
-                                        <mo>+</mo>
-                                        <mfrac>
-                                            <mi>&mu;</mi>
-                                            <mi>m</mi>
-                                        </mfrac>
-                                    </mrow>
-                                </mfenced>
-                        </mrow>
-                    </math>
-            </p>
+                    </mrow>
+                </mfrac>
+            </mrow>  
+        </math>
+        <math display="block">
+            <mn>P</mn>
+            <mo>=</mo>
+            <mrow>
+                <msub>
+                    <mi>&#x1D453;<!--mathematic italic small f--></mi>
+                    <mi>ss</mi>
+                </msub>
+                <mo>&sdot;</mo>
+                <mi>&mu;</mi>
+                <mo>&sdot;</mo>
+                <mfenced>
+                    <mrow>
+                        <mn>1</mn>
+                        <mo>+</mo>
+                        <mfrac>
+                            <mi>&mu;</mi>
+                            <mi>m</mi>
+                        </mfrac>
+                    </mrow>
+                </mfenced>
+            </mrow>
+        </math>
+    </p>
+    <p>
+        <!--first eq-->
+        <math display="block">
+            <mrow>
+                <mfrac>
+                    <mrow>
+                        <mo>d</mo>
+                        <mfenced open="[" close="]"><mi>TAL</mi></mfenced>
+                    </mrow>
+                    <mrow>
+                        <mo>d</mo>
+                        <mi>t</mi>
+                    </mrow>
+                </mfrac>
+                <mo>=</mo>
+                <msub>
+                    <mi>k</mi>
+                    <mn>3</mn>
+                </msub>
+                <mo>&InvisibleTimes;</mo>
+                <msub>
+                    <mfenced open="[" close="]">
+                        <mi>Nissle</mi>
+                    </mfenced>
+                    <mi>biomass</mi>
+                </msub>
+            </mrow>
+        </math>
+    </p>
+    <!--sec eq-->
+    <math>
+        <mfrac>
+            <mrow>
+                <mo>d</mo>
+                <msub>
+                    <mfenced open="[" close="]"><mi>Tyr</mi></mfenced>
+                    <mi>outside</mi>
+                </msub>
+            </mrow>
+            <mrow>
+                <mo>d</mo>
+                <mi>t</mi>
+            </mrow>
+        </mfrac>
+        <mo>=</mo>
+        <mrow>
+            <mo>-</mo>
+            <mfrac>
+                <mrow>
+                    <msub>
+                        <mi>k</mi>
+                        <mi>cat1</mi>
+                    </msub>
+                    <mo>&InvisibleTimes;</mo>
+                    <msub>
+                        <mfenced open="[" close="]">
+                            <mi>TryP</mi>
+                        </mfenced>
+                        <mi>outside</mi>
+                    </msub>
+                    <mo>&InvisibleTimes;</mo>
+                    <msub>
+                        <mfenced open="[" close="]">
+                            <mi>Tyr</mi>
+                        </mfenced>
+                        <mi>outside</mi>
+                    </msub>
+                </mrow>
+                <mrow>
+                    <msub>
+                        <mi>K</mi>
+                        <mi>m1</mi>
+                    </msub>
+                    <mo>+</mo>
+                    <msub>
+                        <mfenced open="[" close="]">
+                            <mi>Tyr</mi>
+                        </mfenced>
+                        <mi>outside</mi>
+                    </msub>
+                </mrow>
+            </mfrac>
+        </mrow>
+    </math>
+    <!--third eq-->
+    <math>
+        <mfrac>
+            <mrow>
+                <mo>d</mo>
+                <msub>
+                    <mfenced open="[" close="]"><mi>TAL</mi></mfenced>
+                    <mi>cell</mi>
+                </msub>
+            </mrow>
+            <mrow>
+                <mo>d</mo>
+                <mi>t</mi>
+            </mrow>
+        </mfrac>
+        <mo>=</mo>
+        <mfrac>
+            <mrow>
+                <msub>
+                    <mi>k</mi>
+                    <mi>cat1</mi>
+                </msub>
+                <mo>&InvisibleTimes;</mo>
+                <msub>
+                    <mfenced open="[" close="]">
+                        <mi>TryP</mi>
+                    </mfenced>
+                    <mi>cell</mi>
+                </msub>
+                <mo>&InvisibleTimes;</mo>
+                <msub>
+                    <mfenced open="[" close="]">
+                        <mi>Tyr</mi>
+                    </mfenced>
+                    <mi>outside</mi>
+                </msub>
+            </mrow>
+            <mrow>
+                <msub>
+                    <mi>K</mi>
+                    <mi>m1</mi>
+                </msub>
+                <mo>+</mo>
+                <msub>
+                    <mfenced open="[" close="]">
+                        <mi>Tyr</mi>
+                    </mfenced>
+                    <mi>outside</mi>
+                </msub>
+            </mrow>
+        </mfrac>
+        <mo>-</mo>
+        <mfrac>
+            <mrow>
+                <msub>
+                    <mi>k</mi>
+                    <mi>cat2</mi>
+                </msub>
+                <mo>&InvisibleTimes;</mo>
+                <msub>
+                    <mfenced open="[" close="]">
+                        <mi>TAL</mi>
+                    </mfenced>
+                    <mi>cell</mi>
+                </msub>
+                <mo>&InvisibleTimes;</mo>
+                <msub>
+                    <mfenced open="[" close="]">
+                        <mi>Tyr</mi>
+                    </mfenced>
+                    <mi>cell</mi>
+                </msub>
+            </mrow>
+            <mrow>
+                <msub>
+                    <mi>K</mi>
+                    <mi>m2</mi>
+                </msub>
+                <mo>+</mo>
+                <msub>
+                    <mfenced open="[" close="]">
+                        <mi>Tyr</mi>
+                    </mfenced>
+                    <mi>cell</mi>
+                </msub>
+            </mrow>
+        </mfrac>
+    </math>
+    <!--fourth-->
+    <math>
+        <mfrac>
+            <mrow>
+                <mo>d</mo>
+                <msub>
+                    <mfenced open="[" close="]"><mi>PCA</mi></mfenced>
+                    <mi>tot</mi>
+                </msub>
+            </mrow>
+            <mrow>
+                <mo>d</mo>
+                <mi>t</mi>
+            </mrow>
+        </mfrac>
+        <mo>=</mo>
+        <mrow>
+            <mfrac>
+                <mrow>
+                    <msub>
+                        <mi>k</mi>
+                        <mi>cat2</mi>
+                    </msub>
+                    <mo>&InvisibleTimes;</mo>
+                    <msub>
+                        <mfenced open="[" close="]">
+                            <mi>TAL</mi>
+                        </mfenced>
+                        <mi>tot</mi>
+                    </msub>
+                    <mo>&InvisibleTimes;</mo>
+                    <msub>
+                        <mfenced open="[" close="]">
+                            <mi>Tyr</mi>
+                        </mfenced>
+                        <mi>cell</mi>
+                    </msub>
+                </mrow>
+                <mrow>
+                    <msub>
+                        <mi>K</mi>
+                        <mi>m2</mi>
+                    </msub>
+                    <mo>+</mo>
+                    <msub>
+                        <mfenced open="[" close="]">
+                            <mi>Tyr</mi>
+                        </mfenced>
+                        <mi>cell</mi>
+                    </msub>
+                </mrow>
+            </mfrac>
+        </mrow>
+    </math>
+    <!---->
+    <!--5-->
+    <math display="block">
+        <mfrac>
+            <mrow>
+                <mo>d</mo>
+                <msub>
+                    <mfenced open="[" close="]"><mi>Nissle</mi></mfenced>
+                    <mi>biomass</mi>
+                </msub>
+            </mrow>
+            <mrow>
+                <mo>d</mo>
+                <mi>t</mi>
+            </mrow>
+        </mfrac>
+        <mo>=</mo>
+        <mi>&mu;</mi>
+        <mo>&sdot;</mo>
+        <msub>
+            <mfenced open="[" close="]"><mi>Nissle</mi></mfenced>
+            <mi>biomass</mi>
+        </msub>
+        <mo>&#8290</mo>
+        <mfrac>
+            <mrow>
+                <mn>1</mn>
+                <mo>-</mo>
+                <mfenced>
+                    <msub>
+                        <mfenced open="[" close="]"><mi>Nissle</mi></mfenced>
+                        <mi>biomass</mi>
+                    </msub>
+                    <mo>+</mo>
+                    <msub>
+                        <mi>&alpha;</mi>
+                        <mn>1</mn>
+                    </msub>
+                    <mo>&#8290</mo>
+                    <msub>
+                        <mfenced open="[" close="]"><mi>Nissle</mi></mfenced>
+                        <mi>biomass</mi>
+                    </msub>
+                </mfenced>
+            </mrow>
+            <mi>K</mi>
+        </mfrac>
+    </math>
+    <math><mfrac><mrow><mo mathvariant="italic">d</mo><mfenced open="[" close="]"><mi mathvariant="italic">P</mi></mfenced></mrow><mrow><mo mathvariant="italic">d</mo><mi>t</mi></mrow></mfrac></math>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            displayAlign: "center",
+            displayIndent: "2em"
+        });
+    </script>
+    
     <script src="https://2019.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

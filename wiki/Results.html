@@ -1,0 +1,428 @@
+{{Template:NCKU_Tainan/block_css}}
+{{Template:NCKU_Tainan/bootstrap_min_css}}
+{{Template:NCKU_Tainan/template_css}}
+{{Template:NCKU_Tainan/header}}
+{{Template:NCKU_Tainan/universal_css}}
+<html lang="en">
+<body data-spy="scroll" data-target=".sidenav" data-offset="101">  
+    <div class="content container-fluid">
+        <div class="row">
+            <!--Sidebar (Remember to change the subtitle context, but don't change the id)-->
+            <aside class="sidenav d-none d-lg-flex flex-column justify-content-start align-items-center col-2"> 
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Subtitle1"><i>p</i>-Cresol Reducing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Subtitle2"><i>p</i>-Cresol Sensing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Subtitle3">Biosafety</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Subtitle4">Characterization</a>
+                    </li>
+                </ul>
+            </aside>
+            <main class="">
+                <!--The Page Name-->
+                <div class="pageName">
+                    <h1>Results</h1>
+                    <div class="divider"></div>
+                </div>
+                <section>
+                    <h2>Overview</h2>
+                    <ol>
+                        <li><p>Construct each part and test the function of TAL, <i>tyrP</i>, <i><i>pchR</i></i> and bacteriocin.</p></li>
+                        <li><p>Using spot-on-lawn assay to test the bacteriocin bactericidal activity.</p></li>
+                        <li><p>Use the previously developed method (<a href="https://2019.igem.org/Team:NCKU_Tainan/Protocols" target="_blank">see Protocols</a>) to measure the <i>p</i>-Coumaric acid production of TAL.</p></li>
+                        <li><p>Knockout <i>dapA</i> and <i>can</i> gene and phenotype check.</p></li>
+                        <li><p>Characterize the anaerobic sensing promoter <i>P<sub>fnr</sub></i> (<a href="http://parts.igem.org/Part:BBa_K1123000" target="_blank">BBa_K1123000</a>) and improve TAL with native RBS biobrick (BBa_I742148)</p></li>
+                    </ol>
+                </section>
+                <hr>
+                <section>
+                    <h2 id ="Subtitle1"><i>p</i>-Cresol Reducing</h2>
+                    <h3>Bacteriocin</h3>
+                    <p><b>Achievements:</b></p>
+                    <ol class="mb-4">
+                        <li>Successfully proven CBM-B bacteriocin is able to inhibit <i>Clostridium</i> growth</li>
+                    </ol>
+                    <p>    In the human gut microbiome, <i>Clostridium</i> related species have been reported to have the highest conversion capability of fermenting tyrosine into <i>p</i>-Cresol<sup>[<a href="#ref1">1</a>]</sup>. To target the root of <i>p</i>-Cresol accumulation, reducing the population of <i>Clostridium</i> is needed. We decide to use <i>C. difficile</i> as a model of <i>p</i>-Cresol producing bacteria because it is a popular research target due to its notorious infectious ability.</p>
+                    <p>    Luckily, iGEM NCKU-Tainan 2019 was kindly supported by one of our PIs, Professor Huang, an assistant professor from the Microbiology and Immunology Department, who is currently devoting himself in the field of developing novel therapeutic approach for <i>C. difficile</i> infection. He kindly provided us with a plasmid containing a bacteriocin gene (CBM-B) from <i>Clostridium</i> <i>butyricum</i> Miyairi. This bacteriocin was proven to have bactericidal activity against certain strains of <i>Clostridium</i>, including <i>C. difficile</i><sup>[<a href="#ref2">2</a>]</sup>.</p>
+                    <p>    As proof of concept that bacteriocin is able to inhibit <i>Clostridium</i> growth, we did a spot-on-lawn assay using purified bacteriocin protein provided by advisors to observe the inhibition zone formation. As shown in Fig. 1 below, a clear inhibition zone formed in the middle of the BHI plate streak with <i>C. difficile</i> R20291 strain.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/2/2e/T--NCKU_Tainan--spot-on-lawn.png" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/2/2e/T--NCKU_Tainan--spot-on-lawn.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 1. Spot-on-lawn test using 5 μl purified bacteriocin, inhibition zone formation in the middle of the plate can clearly be seen.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    We also obtained MIC (minimal inhibitory concentration) data from Professor Huang’s lab. By using purified bacteriocin to inhibit growth on different strains of bacteria, we are able to test it’s specificity. In Fig. 2, the data listed showed that purified CBM-B specifically targets <i>Clostridium</i> related species but not other species of bacteria.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/9/94/T--NCKU_Tainan--MIC-test.png" target="_blank" style="width:70%"><img src="https://2019.igem.org/wiki/images/9/94/T--NCKU_Tainan--MIC-test.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 2. Minimum Inhibitory Concentration (MIC) test.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    To further incorporate bacteriocin into our project, we wanted to integrate the bacteriocin into a live therapeutic drug instead of having patients consuming purified bacteriocins. Thus, we decided to fuse our CBM-B with a secretion tag, YebF. YebF is a secretory protein with unknown function in <i>E. coli</i><sup>[<a href="#ref3">3</a>]</sup>. We first amplified the <i>yebF</i> fragments from the genome of <i>E. coli</i> MG1655 and the CBM-B fragment from the plasmid kindly provided by Professor Huang. Literature has reported that the CBM-B gene encodes a bacteriocin protein that will perform self-cleavage, and only the C-terminus fragment has bactericidal properties<sup>[<a href="#ref2">2</a>]</sup>. So, we designed two versions of CBM-B construct by separately amplifying the full version of CBM-B gene and also the sCBMB (short-length CBM-B) that encodes the C-terminus protein region only. Concerned that the fusion of sCBM-B with <i>yebF</i> may affect its bactericidal function, two linker sequences was introduced between <i>yebF</i> and sCBM-B using overhang primers. We also used PCR to amplify the <a href="http://parts.igem.org/Part:BBa_K880005" target="_blank">K880005</a> promoter from iGEM distribution kit, and used overextension PCR to piece these fragments together, before ligating them into pSB3K3 plasmid.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/3/31/T--NCKU_Tainan--CBMB-Amplification.png" target="_blank" style="width:95%"><img src="https://2019.igem.org/wiki/images/3/31/T--NCKU_Tainan--CBMB-Amplification.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 3. (a) Schematics of PCR strategy for each reaction. (b) 1.5% Agarose Gel figure show PCR result. M: Marker; Lane 1: Promoter+RBS; Lane 2: Promoter+RBS; Lane 3: CBM-B; Lane 4: GS linker-sCBM-B; Lane 5: TB linker-sCBM-B; Lane 6: <i>yebF</i>-GS overhang; Lane 7: <i>yebF</i>-TB overhang; Lane 8: <i>yebF</i>-CBM-B overhang.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/4/41/T--NCKU_Tainan--CBMB-Overhang.png" target="_blank" style="width:95%"><img src="https://2019.igem.org/wiki/images/4/41/T--NCKU_Tainan--CBMB-Overhang.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 4. (a) Schematic of PCR strategy for each reaction. (b) 1.5% Agarose Gel figure show PCR result. M: Marker; Lane 1: PCR product of BBa_K2997000; Lane 2: PCR product of BBa_K2997005; Lane 3: PCR product of BBa_K2997006; Lane 4: PCR product of BBa_K2997007.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    However, after several attempts of constructing the <i>yebF</i>-bacteriocin plasmid, mutations kept appearing in the coding region. We will further complete <i>yebF</i>-bacteriocin construct in the future. We hypothesize that adding the yebF secretion tag into the construct is toxic to the bacteria.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/d/de/T--NCKU_Tainan--CBMB-Mutation.png" target="_blank" style="width:70%"><img src="https://2019.igem.org/wiki/images/d/de/T--NCKU_Tainan--CBMB-Mutation.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 5. Alignment results showing 1 bp deletion causing frameshifting in the coding region of <i>yebF</i>-GSlinker-sCBM-B construct. Red triangular indicates the deletion base pair.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Tyrosine ammonia lyase & Tyrosine transporter</h3>
+                    <p><b>Achievements:</b></p>
+                    <ol class="mb-4">
+                        <li>Construction of <a href="http://parts.igem.org/Part:BBa_K2997000" target="_blank">BBa_K2997000</a>, <a href="http://parts.igem.org/Part:BBa_K2997009" target="_blank">BBa_K2997009</a> and <a href="http://parts.igem.org/Part:BBa_K2997010" target="_blank">BBa_K2997010</a></li>
+                        <li>Run SDS-PAGE to confirm expression in <i>E. coli</i> Nissle</li>
+                        <li>Conduct functional test to measure the activity of TAL and <i>tyrP</i></li>
+                    </ol>
+                    <p>    We constructed Tyrosine Ammonia Lyase with a native RBS and B0034 RBS, (<a href="http://parts.igem.org/Part:BBa_K2997009" target="_blank">BBa_K2997009</a> and <a href="http://parts.igem.org/Part:BBa_K2997010" target="_blank">BBa_K2997010</a>), and transformed both plasmids into <i>E. coli</i> Nissle 1917 and confirmed it by double digestion. The results are as follows:</p>
+                    <div class="container-fluid p-0" >
+                        <div class="row no-gutters">
+                            <div class="col-lg">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/7/75/T--NCKU_Tainan--Result-C3Tori_double_digest_2.jpg" target="_blank" style="width:70%"><img src="https://2019.igem.org/wiki/images/7/75/T--NCKU_Tainan--Result-C3Tori_double_digest_2.jpg" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 6. Confirmation of BBa_K2997009 by double digestion, arrow indicates TAL with NRBS (~1600 bp).M: Marker; Lane 1: pSB1C3-BBa_K2997009; Lane 2: BBa_K2997009.</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg d-flex justify-content-center align-items-center">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/e/e5/T--NCKU_Tainan--Result-C3T34_double_digest_2.jpg" target="_blank" style="width:70%"><img src="https://2019.igem.org/wiki/images/e/e5/T--NCKU_Tainan--Result-C3T34_double_digest_2.jpg" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 7. Confirmation of <a href="http://parts.igem.org/Part:BBa_K2997010" target="_blank">BBa_K2997010</a> by double digestion, arrow indicates TAL with B0034 (~1600 bp). M: Marker; Lane 1: pSB1C3-BBa_K2997010; Lane 2: BBa_K2997010.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    Meanwhile, we amplified the tyrosine transporter and its promoter (<a href="http://parts.igem.org/Part:BBa_K2997000" target="_blank">BBa_K2997000</a>) from <i>E. coli</i> MG1655 and cloning into pSB4A3. We then transformed the plasmid into DH5&alpha; and <i>E. coli</i> Nissle 1917.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/a/a7/T--NCKU_Tainan--Result-TyrP-double_digest_2.jpg" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/a/a7/T--NCKU_Tainan--Result-TyrP-double_digest_2.jpg" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 8. Confirmation of BBa_K2997000 by double digestion. M: Marker; Lane 1: BBa_K2997000, arrow indicates Ptyrp-tyrP insert at 1307 bp; Lane 2: pSB4A3-J04450 (negative control).</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    RT-PCR experiment was used to confirm that the constructed TAL Biobrick is being transcribed. As seen in Fig. 9, cDNA for both bacteria carrying TAL constructs are being detected by PCR. Confirming that the TAL genes is actually being transcribed in <i>E. coli</i> Nissle.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/6/62/T--NCKU_Tainan--RT-PCR.png" target="_blank" style="width:90%"><img src="https://2019.igem.org/wiki/images/6/62/T--NCKU_Tainan--RT-PCR.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 9. Reverse Transcription (RT)-PCR Results to confirm that our construct is being transcribed. (a) Schematics show location of amplified regions and primers. (b) 1.5 % Agarose gel shows PCR results. All products have expected size of 250 bp as shown in (a). (cDNA: Total cDNA; RNA: Total RNA; plasmid: pSB1C3 containing respective Biobrick.)</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table-striped table-bordered">
+                        <caption>Table 1. Description of templates and primers being used in each lane.</caption>
+                        <thead>
+                            <tr>
+                                <th style="text-align: center;">Lane</th>
+                                <th style="text-align: center;">Template</th>
+                                <th style="text-align: center;">Primers</th>
+                                <th style="text-align: center;">Lane</th>
+                                <th style="text-align: center;">Template</th>
+                                <th style="text-align: center;">Primers</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;">1</td>
+                                <td>PCR positive control</td>
+                                <td></td>
+                                <td style="text-align: center;">8</td>
+                                <td>BBa_K2997009 cDNA</td>
+                                <td style="text-align: center;">3+4</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">2</td>
+                                <td>BBa_K2997009 cDNA</td>
+                                <td style="text-align: center;">1+2</td>
+                                <td style="text-align: center;">9</td>
+                                <td>BBa_K2997010 cDNA</td>
+                                <td style="text-align: center;">3+4</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">3</td>
+                                <td>BBa_K2997009 RNA</td>
+                                <td style="text-align: center;">1+2</td>
+                                <td style="text-align: center;">10</td>
+                                <td>BBa_K2997009 RNA</td>
+                                <td style="text-align: center;">3+4</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">4</td>
+                                <td>BBa_K2997009 plasmid</td>
+                                <td style="text-align: center;">1+2</td>
+                                <td style="text-align: center;">11</td>
+                                <td>BBa_K2997010 RNA</td>
+                                <td style="text-align: center;">3+4</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">5</td>
+                                <td>BBa_K2997010 cDNA</td>
+                                <td style="text-align: center;">1’+2</td>
+                                <td style="text-align: center;">12</td>
+                                <td>BBa_K2997009 plasmid</td>
+                                <td style="text-align: center;">3+4</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">6</td>
+                                <td>BBa_K2997010 RNA</td>
+                                <td style="text-align: center;">1’+2</td>
+                                <td style="text-align: center;">13</td>
+                                <td>BBa_K2997010 plasmid</td>
+                                <td style="text-align: center;">3+4</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">7</td>
+                                <td>BBa_K2997010 plasmid</td>
+                                <td style="text-align: center;">1’+2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>    Then, we carried out SDS-PAGE to check the protein expression of TAL, both with TyrP and without TyrP. The expected protein size of TAL is 54 kDa and the expected protein size of TyrP is 43 kDa. As seen in the results below, however, there’s no distinguishable band around both sizes.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    
+                                    <a href="https://2019.igem.org/wiki/images/0/02/T--NCKU_Tainan--Result-SDSPAGE_2.jpg" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/0/02/T--NCKU_Tainan--Result-SDSPAGE_2.jpg" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 10. 12% SDS-PAGE of <i>E. coli</i> Nissle 1917 with different plasmids. M: Marker; Lane 1: Wild Type; Lane 2: pSB1C3; Lane 3: BBa_K2997009 ; Lane 4: BBa_K2997010; Lane 5: Dual plasmid containing BBa_K2997009 and BBa_K2997000; Lane 6: Dual plasmid containing BBa_K2997010 and BBa_K2997000; Lane 7: Positive control (CD630_33920)</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    Finally, to confirm the protein activity of TAL and TyrP, we performed a functional test using <a href="https://2019.igem.org/Team:NCKU_Tainan/Design#Subtitle1" target="_blank"><i>n</i>-octanol extraction method</a>, which was previously proposed by <a href="http://2013.igem.org/Team:Uppsala" target="_blank">iGEM Uppsala 2013</a> and has been verified by HPLC. The <i>p</i>-Coumaric acid concentration was measured through the absorbance value at 310 nm wavelength under Nanodrop UV-Vis wavelength. The standard curve of <i>p</i>-Coumaric acid was drawn in Fig. 11 to determine the relationship between <i>p</i>-Coumaric acid concentrations and its 310 nm arbitrary unit (a.u.). Our samples with TAL constructs were then mapped onto the standard curve, to know how much <i>p</i>-Coumaric acid is being produced.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    
+                                    <a href="https://2019.igem.org/wiki/images/1/1f/T--NCKU_Tainan--Standard_Curve_48hr.png" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/1/1f/T--NCKU_Tainan--Standard_Curve_48hr.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 11. The standard curve of <i>p</i>-Coumaric acid concentration in correlation with absorbance at 310 nm, which is provided by genetic <i>E. coli</i> Nissle in LB broth after 48 hours.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    We compared the TAL constructs containing the native and B0034 ribosome binding sites, (BBa_K2997009 and BBa_K2997010) to determine if <i>p</i>-Coumaric Acid production is improved by changing the ribosome binding sites. From the results seen in Fig. 12, BBa_K2997010 is able to produce a higher amount of <i>p</i>-Coumaric acid. Hence, we are able to prove that by changing the RBS (from Native to B0034), the conversion of tyrosine into <i>p</i>-Coumaric acid can increase by 1.73-fold.</p>
+                    <p>    We can further improve the conversion of tyrosine into <i>p</i>-Coumaric acid by adding a tyrosine transporter (BBa_K2997000). As seen in Fig. 12, when tyrosine transporter is added, the production of <i>p</i>-Coumaric acid is significantly higher. When tyrosine transporter (BBa_K2997000) is introduced into <i>E. coli</i> Nissle with TAL constructs containing native RBS (BBa_K2997009) and B0034 RBS (BBa_K2997010), conversion of tyrosine into <i>p</i>-Coumaric acid is increased by 1.44-fold and 1.31-fold respectively.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    
+                                    <a href="https://2019.igem.org/wiki/images/d/d3/T--NCKU_Tainan--Results_tyrosine_to_pCA%2C_RBS_improve.png" target="_blank" style="width:35%"><img src="https://2019.igem.org/wiki/images/d/d3/T--NCKU_Tainan--Results_tyrosine_to_pCA%2C_RBS_improve.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 12. <i>p</i>-Coumaric acid/OD<sub>600</sub> levels of <i>E. coli</i> Nissle with TAL and tyrP in LB with 1 mM tyrosine.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    To further prove that the TAL enzyme can specifically use tyrosine as its substrate, we cultured <i>E. coli</i> Nissle with dual plasmids containing TAL with B0034 RBS (BBa_K2997010) and tyrosine transporter (BBa_K2997009) in LB medium with different concentrations of tyrosine with hopes to see a dose-dependent effect. As seen in Fig. 13, although no significance in <i>p</i>-Coumaric acid production in culture supplemented with 0.5 mM and 1.0 mM tyrosine was detected, there was an increasing trend. Furthermore, there was a significant increase when comparing culture supplemented with 1.0 mM and 2.0 mM tyrosine. We speculate that there was indeed a dose-dependent effect, but due to the sensitivity limitations of <i>n</i>-octanol extraction method, it was not apparent.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    
+                                    <a href="https://2019.igem.org/wiki/images/6/61/T--NCKU_Tainan--Results_pCA_dose_responding.png" target="_blank" style="width:35%"><img src="https://2019.igem.org/wiki/images/6/61/T--NCKU_Tainan--Results_pCA_dose_responding.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 13. <i>p</i>-Coumaric acid/OD<sub>600</sub> production levels from <i>E. coli</i> Nissle with dual plasmids of tyrP and TAL with B0034 RBS in LB with different concentrations of tyrosine.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section>
+                    <h2 id ="Subtitle2"><i>p</i>-Cresol Sensing</h2>
+                    <h3><i>pchR</i></h3>
+                    <p><b>Achievements:</b></p>
+                    <ol class="mb-4">
+                        <li>Construction of <i>pchR</i>-GFP <a href="http://parts.igem.org/Part:BBa_K2997008" target="_blank">BBa_K2997008</a> and confirm by double digestion.</li>
+                    </ol>
+                    <p>    The <i>pchR</i>-GFP (<a href="http://parts.igem.org/Part:BBa_K2997008" target="_blank">BBa_K2997008</a>) was constructed from IDT DNA synthesis in the form of 3 gBlock gene fragments via overhang PCR. Then, we performed digestion on the finished part and ligated it into the pSB1C3 vector. Subsequently, we transformed the <i>pchR</i>-GFP construct (BBa_K2997008) into <i>E. coli</i> Top 10 using electroporation. After allowing the transformed <i>E. coli</i> Top 10 to grow on LB with Cm (Chloramphenicol) plates, colony PCR and sequencing was carried out to determine successful clones. The colony PCR results indicated that the <i>E. coli</i> has pSB1C3 with <i>pchR</i>-GFP. However, after several attempts to construct <i>pchR</i>-GFP, all the sequencing resulted in mutations.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    
+                                    <a href="http://parts.igem.org/wiki/images/b/bd/PchR_sequencing_result3.jpg" target="_blank" style="width:95%"><img src="http://parts.igem.org/wiki/images/b/bd/PchR_sequencing_result3.jpg" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 14. Sequencing results of the pSB1C3 with <i>pchR</i>-GFP construct.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    These results led us to hypothesize that the <i>pchR</i> protein is toxic to our <i>E. coli</i>. Moreover, according to a research paper<sup>[<a href="#ref4">4</a>]</sup> we have found, it is suggested in the study that <i>p</i>-Cresol is toxic to Gram-negative bacteria, which includes <i>E. coli</i>. Hence, this plasmid construct has been dropped.</p>
+                    <p>    Therefore, the construction of <i>pchR</i>-GFP was carried out again by re-doing overlap PCR, where we combine all the three IDT gene fragments into the full length <i>pchR</i>-GFP construct. For this time, the finished full length <i>pchR</i>-GFP part was then inserted into the vector pBBR1 MCS-4 (contains ampicillin selection marker).</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    
+                                    <a href="https://2019.igem.org/wiki/images/a/af/T--NCKU_Tainan--pCHR_double_digest_2.jpg" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/a/af/T--NCKU_Tainan--pCHR_double_digest_2.jpg" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 15. Gel electrophoresis result of pBBR1 MCS-4 with full length <i>pchR</i>-GFP. Lane 1: Marker; Lane 2: Pre-ligation of vector pBBR1 MCS-4 (4950 bp) and insert <i>pchR</i>-GFP (3138 bp); Lane 3: Post-ligation of pBBR1 MCS-4 with full <i>pchR</i>-GFP (8098 bp).</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    After that, we proceeded into transforming the construct into <i>Pseudomonas</i> <i>fluorescens</i> 55 and <i>Pseudomonas</i> <i>aeruginosa</i> PAD1 via electroporation.</p>
+                    <p>    However, due to several complications regarding the selection marker being used (Ampicillin), we were not able to obtain definitive results indicating that we have positive colonies. This is due to the fact that <i>P. fluorescens</i> 55 and <i>P. aeruginosa</i> PAD1 are naturally resistant to ampicillin and the vector we used contains ampicillin selection marker. Hence, positive colonies cannot be differentiated from negative colonies. Besides that, our colony PCR results on the single colonies were also proven to be negative.</p>
+                    <p>    Therefore, with time being one of the main factors, we decided to drop any further construction and functional experiments surrounding the <i>p</i>-Cresol sensing part (<i>pchR</i>-GFP).</p>
+                </section>
+                <hr>
+                <section>
+                    <h2 id ="Subtitle3">Biosafety</h2>
+                    <p><b>Achievements:</b></p>
+                    <ol class="mb-4">
+                        <li>Successful knockout of <i>can</i> gene and <i>dapA</i> gene</li>
+                    </ol>
+                    <p>    In order to make our live therapeutic safe for human consumption, we added a kill switch into our <i>E. coli</i> Nissle in the form of gene knockouts. We used Lambda Red Recombineering system, which  is based on homologous recombination, to perform gene knockouts. By using lambda red genes and hijacking <i>E. coli</i> Nissle’s own recombineering system, we are able to replace the target DNA  region with a DNA fragment of our choosing. <a href="https://2019.igem.org/Team:NCKU_Tainan/Protocols" target="_blank">Electroporation</a> was then used to deliver DNA fragments and plasmids into the bacteria.</p>
+                    <p>    We amplified the Chloramphenicol Resistance (CmR) Cassette from pKD3 plasmid using Amplification PCR, and used that fragment to replace the target gene. The resistance cassette is flanked by FRT sites, which then allows the removal of the cassettes with the help of pCP20, an FLP helper plasmid. Before we electroporated the CmR cassette into <i>E. coli</i> Nissle, we electroporated in pKD46, a recombinase helper plasmid.</p>
+                    <p>    We experimented with two different gene knockouts, <i>can</i> gene knockout and <i>dapA</i> gene knockout, and compared its effectiveness.</p>
+                    <h3><i>dapA</i> Gene Knock Out</h3>
+                    <p>    <i>dapA</i> encodes for 4-hydroxy-tetrahydrodipicolinate synthase, an enzyme necessary for cell wall synthesis<sup>[<a href="#ref5">5</a>]</sup>. By knocking out this gene, the bacteria will have to depend on exogenous diaminopimelate (DAP) for cell wall assembly and growth, making it a potential kill switch as the bacteria will not survive without suppliance of exogenous DAP.</p>
+                    <p>    We confirmed that we have successfully replaced the <i>dapA</i> gene with CmR cassette using colony PCR. The size of CmR cassette inserted between the homology arms is approximately 1600 base pairs.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/1/17/T--NCKU_Tainan--Dap_PCR_2.jpg" target="_blank" style="width:95%"><img src="https://2019.igem.org/wiki/images/1/17/T--NCKU_Tainan--Dap_PCR_2.jpg" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 16. (a) Schematics showing <i>dapA</i> knockout strategy (b) Confirmation of <i>dapA</i> knockout in <i>E. coli</i> Nissle via colony PCR. M: Marker; Lane 1: Wild Type (no bands); Lane 2: Δ<i>dapA</i>::CmR 1 (1.6 kb); Lane 2: Δ<i>dapA</i>::CmR 2 (1.6 kb).</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    To further confirm our mutant <i>E. coli</i> works as a kill switch, we did a phenotype test by streaking out bacteria on different plates.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/c/ce/T--NCKU_Tainan--dapa-plate.png" target="_blank" style="width:95%"><img src="https://2019.igem.org/wiki/images/c/ce/T--NCKU_Tainan--dapa-plate.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 17. Confirmation of <i>dapA</i> knockout in <i>E. coli</i> Nissle. <i>E. coli</i> Nissle and other strains were streaked onto agar plates containing (A) just Lysogeny Broth (LB); (B) 0.1 M DAP; (C) Chloramphenicol (Cm) and 0.1 M DAP for phenotyping.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    As seen in Fig. 17, without exogenous DAP, Δ<i>dapA</i>::CmR is unable to grow. And since it <i>can</i> survive on Cm plates, we <i>can</i> confirm that it contains the CmR cassette.</p>
+                    <p>    However, we realized that we would have to think of a way to provide exogenous DAP in our capsule to prevent our <i>E. coli</i> from dying before it reaches the gut. After deliberating the cost-performance ratio, we decided it wasn’t a good fit for what we had in mind. Thus, we did not continue on with replacing the CmR cassette with FRT sites.</p>
+                    <h3><i>can</i> Gene Knock Out</h3>
+                    <p>    The <i>can</i> gene of <i>E. coli</i> encodes for carbonic anhydrase (CA), an enzyme that assists rapid interconversion of CO<sub>2</sub> and water into carbonic acid, protons and bicarbonate ions. <i>E. coli</i> requires a constant supply of bicarbonate as a metabolic substrate during normal growth<sup>[<a href="#ref6">6</a>]</sup>. So, if this gene is knocked out, <i>E. coli</i> is unable to turn the CO<sub>2</sub> into bicarbonate fast enough before the CO<sub>2</sub> diffuses out and causes cell death<sup>[<a href="#ref7">7</a>]</sup>. Inside the gut, where we want the <i>E. coli</i> to survive, the CO<sub>2</sub> concentration is high enough (ranging from 5% to 29%) to allow the spontaneous conversion of CO<sub>2</sub> into bicarbonate ions. However, when the <i>E. coli</i> exits the human body, the lowered concentration of CO<sub>2</sub> will result in its death.</p>
+                    <p>    We confirmed that we have successfully replaced the <i>can</i> gene with CmR cassette using colony PCR. The size of CmR cassette inserted between the homology arms is approximately 1400 base pairs. The size of FRT sites inserted between the homology arms is approximately 500 base pairs.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/8/8b/T--NCKU_Tainan--Can_PCR_2.jpg" target="_blank" style="width:95%"><img src="https://2019.igem.org/wiki/images/8/8b/T--NCKU_Tainan--Can_PCR_2.jpg" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 18. Confirmation of <i>can</i> knockout in <i>E. coli</i> Nissle via colony PCR. M: Marker; Lane 1: Wild Type (~1.1 kb), Lane 2: Δcan::CmR 1 (~1.4 kb), Lane 3: Δcan::CmR 2 (~1.4 kb), Lane 4: Δcan::FRT 1 (~500 bp), Lane 5: Δcan::FRT 2 (~500 bp)</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    To further confirm our mutant <i>E. coli</i> works as a kill switch, we did a phenotype test by streaking our bacteria on different plates and placing them in different conditions.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/e/ec/T--NCKU_Tainan--can-plate.png" target="_blank" style="width:95%"><img src="https://2019.igem.org/wiki/images/e/ec/T--NCKU_Tainan--can-plate.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 19. Confirmation of <i>can</i> knockout in <i>E. coli</i> Nissle. <i>E. coli</i> Nissle and other strains were streaked onto agar plates and placed in (A) 0.04% CO<sub>2</sub>; (B) 5% CO<sub>2</sub>; (C) 5% CO<sub>2</sub> and contains Chloramphenicol (Cm) for phenotyping.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    As shown in Fig. 19, Δcan::CmR and Δcan::FRT requires a higher CO<sub>2</sub> level to survive. When streaked on Cm plates, Δcan::CmR is still able to grow while Δcan::FRT is unable to grow, thus proving that we have succeeded in knocking out the can gene and replacing it with CmR cassette and FRT sites respectively.</p>
+                    <p>    Thereby, we will use the can gene knockout as our kill switch.</p>
+                </section>
+                <hr>
+                <section>
+                    <h2 id ="Subtitle4">Characterization</h2>
+                    <p>    This year, we characterized FNR promoter (<a href="http://parts.igem.org/Part:BBa_K1123000" target="_blank">BBa_K1123000</a>) which is an anaerobic promoter. Originally, we used this promoter to drive the expression of TAL constructs. However, finding that this promoter has a higher expression level of GFP under aerobic conditions, we did not use this promoter for our project. Instead, we used the strong constitutive promoter J23100 as our promoter.</p>
+                    <p>    We first cultured DH5&alpha; pSB1C3-<i>P<sub>FNR</sub></i>-GFP under aerobic and anaerobic conditions. After 10 hours of incubation, we fixed the <i>E. coli</i> cells in 2% agarose gel and placed it on a glass slide, then place the glass slide under a microscope for image capturing.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/b/b7/T--NCKU_Tainan--FNR_microscopy.png" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/b/b7/T--NCKU_Tainan--FNR_microscopy.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 20. Differential interference contrast (DIC) microscope image and fluorescence microscope image for a single <i>E. coli</i> cell.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    We then compared the brightness of a single <i>E. coli</i> cell under a fluorescence microscope using ImageJ Intensity Processing. The results are shown below.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <!-- put link in href & src , width in a can adjust-->
+                                    <a href="https://2019.igem.org/wiki/images/2/23/T--NCKU_Tainan--pFNR-GFP_new.png" target="_blank" style="width:35%"><img src="https://2019.igem.org/wiki/images/2/23/T--NCKU_Tainan--pFNR-GFP_new.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption class="mt-3">Fig. 21. Quantification of single <i>E. coli</i> cell (n=3) fluorescence intensity using ImageJ Intensity Processing after 10 hours of incubation in both aerobic and anaerobic conditions.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="ref">
+                    <h2>References</h2>
+                    <ol>
+                        <li id="ref1">Saito, Y., Sato, T., Nomoto, K., & Tsuji, H. (2018). Identification of phenol- and <i>p</i>-Cresol-producing intestinal bacteria by using media supplemented with tyrosine and its metabolites. <i>FEMS Microbiology Ecology</i>, 94(9).</li>
+                        <li id="ref2">Nakanishi, S., & Tanaka, M. (2010). Sequence analysis of a bacteriocinogenic plasmid of <i>Clostridium</i> <i>butyricum</i> and expression of the bacteriocin gene in <i>Escherichia coli</i>. <i>Anaerobe</i>, 16(3), 253–257.</li>
+                        <li id="ref3">Zhang, G., Brokx, S., & Weiner, J. H. (2005). Extracellular accumulation of recombinant proteins fused to the carrier protein YebF in <i>Escherichia coli</i>. <i>Nature Biotechnology</i>, 24(1), 100–104.</li>
+                        <li id="ref4">Passmore, I. J., Letertre, M., Preston, M. D., Bianconi, I., Harrison, M. A., Nasher, F., … Dawson, L. F. (2018). Para-cresol production by <i>Clostridium difficile</i> affects microbial diversity and membrane integrity of Gram-negative bacteria. <i>PLoS pathogens</i>, 14(9), e1007191. InterPro EMBL-EBI. “4-Hydroxy-Tetrahydrodipicolinate Synthase, DapA (IPR005263) < InterPro < EMBL-EBI.” Ebi.Ac.Uk, 2019, <a href="www.ebi.ac.uk/interpro/entry/IPR005263" target="_blank">www.ebi.ac.uk/interpro/entry/IPR005263</a>. Accessed 5 July 2019.</li>
+                        <li id="ref5">Merlin, C., Masters, M., McAteer, S., & Coulson, A. (2003). Why Is Carbonic Anhydrase Essential to <i>Escherichia coli</i>? <i>Journal of Bacteriology</i>, 185(21), 6415–6424.</li>
+                        <li id="ref6">Hashimoto, M., & Kato, J.-I. (2003). Indispensability of the <i>Escherichia coli</i> Carbonic Anhydrases YadF and CynT in Cell Proliferation at a Low CO<sub>2</sub> Partial Pressure. <i>Bioscience, Biotechnology, and Biochemistry</i>, 67(4), 919–922.</li>
+                    </ol>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/jquery-3_4_1_min_js?action=raw&amp;ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/4.3.1/bootstrap_min_js?action=raw&amp;ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NCKU_Tainan/js/Universal?action=raw&amp;ctype=text/javascript"></script>
+    <script>
+        // remember to edit this according to page
+        $( document ).ready(function() {
+            $("#breadtext").html('<a href="https://2019.igem.org/Team:NCKU_Tainan">Home</a> > <a>Results</a>')
+        });
+    </script>
+</body>
+</html>
+{{Template:NCKU_Tainan/gotop}}
+{{Template:NCKU_Tainan/footer}}

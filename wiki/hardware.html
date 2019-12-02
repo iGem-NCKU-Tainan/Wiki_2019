@@ -8,20 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Sansita&display=swap" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target=".sidenav" data-offset="10">  
+<body data-spy="scroll" data-target=".sidenav" data-offset="101">  
     <div class="content container-fluid">
         <div class="row">
             <!--Sidebar (Remember to change the subtitle context, but don't change the id)-->
             <aside class="sidenav d-none d-lg-flex flex-column justify-content-start align-items-center col-2"> 
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link" href="#Subtitle1">Overview</a>
+                        <a class="nav-link" href="#Subtitle1">Background</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Subtitle2">Blood Separation</a>
+                        <a class="nav-link" href="#Subtitle2">Overview</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Subtitle3">p-Cresol Reader</a>
+                        <a class="nav-link" href="#Subtitle3">Demonstration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Subtitle4">Blood separation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Subtitle5"><i>p</i>-Cresol Reader</a>
                     </li>
                 </ul>
             </aside>
@@ -32,80 +38,389 @@
                     <div class="divider"></div>
                 </div>
                 <section>
-                    <!--If you want to use image use below-->
-                    <div class="container-fluid p-0">
-                        <div class="row no-gutters">
-                            <div class="col-lg ">
-                                <figure class="d-flex flex-column justify-content-center align-items-center">
-                                    <a href="https://miro.medium.com/max/531/1*ifSob78knBe5rME04WHftg.png" target="_blank" style="width:50%"><img src="https://miro.medium.com/max/531/1*ifSob78knBe5rME04WHftg.png" alt="" title=""></a>
-                                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
-                                </figure>
-                            </div>
-                        </div>
+                    <h2 id="Subtitle1">Background</h2>
+                    <p>    In Taiwan, National Health Insurance does not cover blood <i>p</i>-Cresol inspection fee. Additionally, each inspection costs about 1500 NTD<sup>[<a href="#ref1">1</a>]</sup> (50 USD) which is much more expensive compared to other blood tests<sup>[<a href="#ref2">2</a>]</sup> (Table1.). Since the accumulation of <i>p</i>-Cresol in patient’s blood is highly associated with the deterioration of chronic kidney disease and cardiovascular diseases, the monitoring of blood <i>p</i>-Cresol is necessary and important. The current method of measuring blood <i>p</i>-Cresol is high-performance liquid chromatography (HPLC) followed by mass spectrometry (MS). The cost of HPLC instrumentation and the complexity of the sample pretreatment makes <i>p</i>-Cresol inspection even harder to gain its universality. Hence, we created <b>CreSense</b> (a blood <i>p</i>-Cresol reader) making each test much affordable (1.6 USD per test) and easier, letting blood <i>p</i>-Cresol inspection more accessible to CKD patients and the public.</p>
+                    <div class="container-fluid p-0 justify-content-center align-items-center">
+                        <table class="table-striped table-bordered">
+                            <caption>Table1. A fraction of self-paid blood tests not covered byTaiwan’s National Health Insurance.</caption>
+                            <thead>
+                                <tr>
+                                    <th>Blood Tests</th>
+                                    <th>Testing Fee</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>HBS Ag antibody test</td>
+                                    <td>160NTD</td>
+                                </tr>
+                                <tr>
+                                    <td>HAV IgM antibody test</td>
+                                    <td>240NTD</td>
+                                </tr>
+                                <tr>
+                                    <td>GOT/GPT test</td>
+                                    <td>90NTD</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Cholesterol Test</td>
+                                    <td>70NTD</td>
+                                </tr>
+                                <tr>
+                                    <td>Triglycerides Test</td>
+                                    <td>120NTD</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <p>    In Taiwan, National Health Insurance doesn’t cover blood p-Cresol inspection fee. In addition, each examination is expensive, cost about 1500NTD (About 50 USD). To make p-Cresol examination more cost-effective and easy, our team designed a detector to achieve this goal with the help of synthetic biology.</p>
                 </section>
                 <hr>
                 <section>
-                    <h2 id ="Subtitle1">Device Overview</h2>
-                    <p>    Our device consists of two parts. In the first part, we pretreat whole blood to extract plasma for GFP reaction. In the second part, the presence of p-Cresol in plasma will induce p-cresol sensing E. coli to produce fluorescent protein which can be detected by photoresistor. From the GFP intensity, we will be able to indicate the p-Cresol concentration.</p>
+                    <h2 id ="Subtitle2">Device Overview</h2>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/thumb/a/a4/T--NCKU_Tainan--Hardware_final_product.png/800px-T--NCKU_Tainan--Hardware_final_product.png" target="_blank" style="width:90%"><img src="https://2019.igem.org/wiki/images/thumb/a/a4/T--NCKU_Tainan--Hardware_final_product.png/800px-T--NCKU_Tainan--Hardware_final_product.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption>Fig1. The perspective view of <b>CreSense</b></figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/thumb/4/47/T--NCKU_Tainan--Hardware_perspective.png/758px-T--NCKU_Tainan--Hardware_perspective.png" target="_blank" style="width:90%"><img src="https://2019.igem.org/wiki/images/thumb/4/47/T--NCKU_Tainan--Hardware_perspective.png/758px-T--NCKU_Tainan--Hardware_perspective.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption>Fig1. The perspective view of <b>CreSense</b></figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    Introducing <b>CreSense</b> - a user-friendly, affordable and customizable blood <i>p</i>-Cresol biosensing system. We designed <b>CreSense</b> to quantify blood <i>p</i>-Cresol concentration with a centrifugal platform and <a href="https://2019.igem.org/Team:NCKU_Tainan/Demonstrate" target="_blank"><i>p</i>-Cresol sensing bacteria</a>. <b>CreSense</b> consists of two parts - a centrifugal platform and a fluorescence detector. The centrifugal platform separates blood plasma from whole blood and directs separated plasma into the reaction chamber. In the second part, we inject <i>p</i>-Cresol sensing bacteria into the reaction chamber where the presence of <i>p</i>-Cresol in the plasma will induce <i>p</i>-Cresol sensing bacteria to produce GFP. The fluorescence emission can then be detected by a light-to-frequency converter (TSL 235R) located above the reaction chamber. The <i>p</i>-Cresol sensing bacteria can be changed to any kind of biomarker sensing bacteria, which gives <b>CreSense</b> wider range of applications.</p>
+                    <h3>Device Budget</h3>
+                    <div class="container-fluid p-0 justify-content-center align-items-center">
+                        <table class="table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Component</th>
+                                    <th>Quantity</th>
+                                    <th>Cost per unit</th>
+                                    <th>Cost</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Arduino Uno</td>
+                                    <td>1</td>
+                                    <td>160 NTD (5.23 USD)</td>
+                                    <td>160 NTD (5.23 USD)</td>
+                                </tr>
+                                <tr>
+                                    <td>NodeMCU ESP8266</td>
+                                    <td>1</td>
+                                    <td>337 NTD (11 USD)</td>
+                                    <td>337 NTD (11 USD)</td>
+                                </tr>
+                                <tr>
+                                    <td>Electric speed controller</td>
+                                    <td>1</td>
+                                    <td>550 NTD (17.96 USD)</td>
+                                    <td>550 NTD (17.96 USD)</td>
+                                </tr>
+                                <tr>
+                                    <td>Brushless motor</td>
+                                    <td>1</td>
+                                    <td>450 NTD (14.70 USD)</td>
+                                    <td>450 NTD (14.70 USD)</td>
+                                </tr>
+                                <tr>
+                                    <td>Light sensor (TSL 235R)</td>
+                                    <td>1</td>
+                                    <td>135 NTD (4.41 USD)</td>
+                                    <td>135 NTD (4.41 USD)</td>
+                                </tr>
+                                <tr>
+                                    <td>Filter</td>
+                                    <td>1</td>
+                                    <td>520 NTD (16.98 USD)</td>
+                                    <td>520 NTD (16.98 USD)</td>
+                                </tr>
+                                <tr>
+                                    <td>Casing</td>
+                                    <td>1</td>
+                                    <td>500 NTD (16.33 USD)</td>
+                                    <td>500 NTD (16.33 USD)</td>
+                                </tr>
+                                <tr>
+                                    <td>Screws</td>
+                                    <td>8</td>
+                                    <td>7.5 NTD (0.24 USD)</td>
+                                    <td>60NTD (1.96 USD)</td>
+                                </tr>
+                                <tr>
+                                    <td>Lithium-ion battery</td>
+                                    <td>1</td>
+                                    <td>300 NTD (9.80 USD)</td>
+                                    <td>300 NTD (9.80USD)</td>
+                                </tr>
+                                <tr>
+                                    <td>Sensor holder</td>
+                                    <td>1</td>
+                                    <td>200 NTD(6.53 USD)</td>
+                                    <td>200 NTD (6.53 USD)</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">Total</td>
+                                    <td>3212NTD (104.90 USD)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </section>
+                <hr>
                 <section>
-                    <h2 id ="Subtitle2">Blood Separation</h2>
-                    <p>    There are white blood cells in human’s blood which could be lethal for      E. coli. In order to make our p-Cresol sensing E. coli able to survive in blood sample and produce fluorescent protein, filtering out blood cells beforehand is necessary. We try two ways to achieve this goal while integrating all the steps we need. One is constructing a lab-on-chip centrifugal microfluidic system, the other one is using paper-based sensor.</p>
-                    <h3>A lab-on-chip centrifugal microfluidic system</h3>
-                    <p>    In microfluidic centrifugal platform, fluidic processing steps such as the mixing of reagents or the moving of samples can be automated simply by implementing different spinning profiles. Also, It can be easily operated by health professional’s in diagnostic centers. With the advantages mentioned above, we’re able to extract blood plasma and mix it with p-Cresol sensing E. coli easily and rapidly.</p>
-                    <!--image(below)-->
+                    <h2 id="Subtitle3">Demonstration</h2>
                     <div class="container-fluid p-0">
                         <div class="row no-gutters">
                             <div class="col-lg ">
-                                <figure class="d-flex flex-column justify-content-center align-items-center">
-                                    <a href="https://dynamicdnalabs.com/wp-content/uploads/2018/11/bacterial-plasmid.jpg" target="_blank" style="width:50%"><img src="https://dynamicdnalabs.com/wp-content/uploads/2018/11/bacterial-plasmid.jpg" alt="Trulli" title="Trulli" style="width:100%"></a>
-                                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/thumb/a/a4/T--NCKU_Tainan--Hardware_final_product.png/800px-T--NCKU_Tainan--Hardware_final_product.png" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/thumb/a/a4/T--NCKU_Tainan--Hardware_final_product.png/800px-T--NCKU_Tainan--Hardware_final_product.png" alt="" title="" style="width:100%"></a>
                                 </figure>
                             </div>
                         </div>
                     </div>
-                    <p>    For the centrifugal platform, we choose a brushless motor instead of DC motor to reduce operational and mechanical noise, also to obtain higher torque to weight ratio. In addition, we combined three layers of acrylic as a chip holder where we can put our microfluidic chips.</p>
-                    <div class="container-fluid p-0">
-                        <div class="row no-gutters">
-                            <div class="col-lg ">
-                                <figure class="d-flex flex-column justify-content-center align-items-center">
-                                    <a href="https://dynamicdnalabs.com/wp-content/uploads/2018/11/bacterial-plasmid.jpg" target="_blank" style="width:50%"><img src="https://dynamicdnalabs.com/wp-content/uploads/2018/11/bacterial-plasmid.jpg" alt="Trulli" title="Trulli" style="width:100%"></a>
-                                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
-                                </figure>
-                            </div>
-                            <div class="col-lg ">
-                                <figure class="d-flex flex-column justify-content-center align-items-center">
-                                    <a href="https://dynamicdnalabs.com/wp-content/uploads/2018/11/bacterial-plasmid.jpg" target="_blank" style="width:50%"><img src="https://dynamicdnalabs.com/wp-content/uploads/2018/11/bacterial-plasmid.jpg" alt="Trulli" title="Trulli" style="width:100%"></a>
-                                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                    <p>    In the beginning, we used Polydimethylsiloxane (PDMS) to make microfluidic chips. We created acrylic molds to cast PDMS into desired shape, then we bond another layer of pdms onto it to cover the channels with the help of oxygen plasma treatment. From June to July, we made three different versions with minor changes solving the problems we faced.</p>
-                    <div class="container-fluid p-0">
-                        <div class="row no-gutters">
-                            <div class="col-lg">
-                                <figure class="d-flex flex-column justify-content-center align-items-center">
-                                    <a href="https://dynamicdnalabs.com/wp-content/uploads/2018/11/bacterial-plasmid.jpg" target="_blank" style="width:50%"><img src="https://dynamicdnalabs.com/wp-content/uploads/2018/11/bacterial-plasmid.jpg" alt="Trulli" title="Trulli" style="width:100%"></a>
-                                    <figcaption>Fig.1 - In version 1, we found out that when we insert fluid into the chip, there would be bubbles stuck in the corner of the chamber. We solved it by filleting every corner in version 2. When testing version 1 & 2, the bottom of whole blood chamber wasn’t strong enough to endure the force sample creates when the spinner’s RPM reaches 2500 RPM, we tried to overcome this by reinforcing the bottom part of whole blood chamber in version 3.</figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                    <p>    After we made the mold for version 3, we consulted with professor JUI-CHEN YANG. He suggested us to use slide glass instead of another layer of PDMS to cover the channel, which the bonding will be stronger compared to PDMS-PDMS bonding. So we tried but we haven’t tested it yet.</p>
-                    <p>    In addition to PDMS microfluidic chip, we made sculpted acrylic disc to replace microfluidic chip and chip holder. By doing so, we can eliminate the bonding problem and also decrease the loading on the motor.</p>
+                    <p>    To demonstrate our engineered system works, we have made a video to explain each part of <b>CreSense</b> and the operating process.</p>
+                    <p>    <a href="https://2019.igem.org/Team:NCKU_Tainan/Demonstrate" target="_blank">How it works?</a></p>
                 </section>
+                <hr>
                 <section>
-                    <h2 id ="Subtitle3">Blood p-Cresol Reader</h2>
+                    <h2 id ="Subtitle4">Blood Plasma Separation</h2>
+                    <p>   There are white blood cells in human blood which could be lethal to the <i>p</i>-Cresol sensing bacteria. In order to make our <i>p</i>-Cresol sensing bacteria able to survive in the blood sample and produce fluorescent protein, filtering out blood cells beforehand is necessary. We searched for a simple way to separate blood plasma while integrating all the required steps. Finally, we chose a centrifugal microfluidic platform to achieve this goal<sup>[<a href="#ref3">3</a>]</sup>.</p>
+                    <p>    In the microfluidic centrifugal platform, fluidic processing steps such as the mixing of reagents or the moving of samples can be automated simply by implementing different spinning profiles<sup>[<a href="#ref4">4</a>]</sup>. Also, it can be easily operated by healthcare professionals in diagnostic centers. With all the advantages mentioned above, we’re able to separate the blood plasma and mix it with the <i>p</i>-Cresol sensing bacteria easily and rapidly.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center">
+                                    <a href="https://2019.igem.org/wiki/images/8/81/T--NCKU_Tainan--Hardware_motor.jpg" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/8/81/T--NCKU_Tainan--Hardware_motor.jpg" alt="" title="" style="width:100%"></a>
+                                    <figcaption>Fig2. Centrifugal platform.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    <b>CreSense</b> is equipped with a brushless motor to reduce the operational and mechanical noises, and also to obtain higher torque to weight ratio.</p>
+                    <p>    The microfluidic centrifugal platform disc is made by three layers of laser-cut-machine-processed acrylic disc which is combined by two layers of double-sided tape.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/thumb/f/ff/T--NCKU_Tainan--Hardware_chamber_design.jpg/800px-T--NCKU_Tainan--Hardware_chamber_design.jpg" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/thumb/f/ff/T--NCKU_Tainan--Hardware_chamber_design.jpg/800px-T--NCKU_Tainan--Hardware_chamber_design.jpg" alt="" title="" style="width:100%"></a>
+                                    <figcaption>Fig3. Microfluidic channel design.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>   On the acrylic disc, we designed two chambers. The chamber on the right (trapezoidal chamber) is the blood separation chamber, the one on the left (square chamber) is the reaction chamber. The blood separation chamber is where we inject whole blood to separate the plasma and the reaction chamber is where the GFP production take place.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/thumb/a/a7/T--NCKU_Tainan--Hardware_plasma_separation.jpg/800px-T--NCKU_Tainan--Hardware_plasma_separation.jpg" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/thumb/a/a7/T--NCKU_Tainan--Hardware_plasma_separation.jpg/800px-T--NCKU_Tainan--Hardware_plasma_separation.jpg" alt="" title="" style="width:100%"></a>
+                                    <figcaption>Fig4. Successful plasma separation.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    By implementing different spinning profile, <a href="https://2019.igem.org/Team:NCKU_Tainan/Demonstrate" target="_blank">plasma can be extracted from whole blood and directed into the reaction chamber</a>. After injecting blood sample, the disc spins at 3000RPM (600RCF) for 10min where the plasma and blood cell would be separated in blood separation chamber. Then, we lower the speed to 900RPM (50RCF) and capillary force will direct the plasma into the reaction chamber through the lower channel between two chambers.</p>
+                    <p>    In the beginning of designing the centrifugal microfluidic platform, we used Polydimethylsiloxane (PDMS) to make microfluidic chips as sample holder and tested several versions. However, PDMS chip centrifugal tests kept failing because of bonding issues. In the middle of August, we <a href="https://2019.igem.org/Team:NCKU_Tainan/Human_Practices" target="_blank">consulted professor Ruey-Jen Yang</a>, he suggested us to replace PDMS with acrylic due to its stronger strength and not-easily deformed property. In the end we choose acrylic as the material used in the device. Both methods are listed below.</p>
+                    <div class="accordion">
+                        <div class="card">
+                            <button class="card-header" id="headingPDMS" data-toggle="collapse" data-target="#collapsePDMS" aria-expanded="false" aria-controls="collapsePDMS">
+                                <h3 id="PDMS">PDMS Chip</h3>
+                            </button>
+                            <div id="collapsePDMS" class="collapse" aria-labelledby="headingPDMS">
+                                <div class="card-body">
+                                    <div class="container-fluid p-0">
+                                        <div class="row no-gutters">
+                                            <div class="col-lg ">
+                                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                                    <a href="https://2019.igem.org/wiki/images/0/00/T--NCKU_Tainan--Hardware_pdms.jpg" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/0/00/T--NCKU_Tainan--Hardware_pdms.jpg" alt="" title="" style="width:100%"></a>
+                                                    <figcaption>Fig5. PDMS microfluidic chip.</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>    We made acrylic molds for casting PDMS into the desired shape, then bonded another flat layer of PDMS onto it with the help of oxygen plasma treatment to cover up the channels, forming a three-dimensional structure. The chamber on the right (trapezoidal chamber) is blood separation chamber, the one on the left(square chamber) is reaction chamber. The blood separation chamber is where we inject whole blood to separate plasma. The reaction chamber is where the GFP production take place. From June to July, we made three different versions of molds with minor changes solving the problems we faced.</p>
+                                    <div class="container-fluid p-0 my-3">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-target="#pdmsVer1" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Ver1.</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-target="#pdmsVer2" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Ver2.</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-target="#pdmsVer3" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Ver3.</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pdmsVer1" role="tabpanel" aria-labelledby="v-pills-pdmsVer1-tab">
+                                                <figure class="inFrame d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                                    <a href="https://2019.igem.org/wiki/images/7/7e/T--NCKU_Tainan--Hardware_ver1_chip.png" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/7/7e/T--NCKU_Tainan--Hardware_ver1_chip.png" style="width:100%"></a>
+                                                    <figcaption>Fig6. Microfluidic chip version 1.</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="tab-pane fade" id="pdmsVer2" role="tabpanel" aria-labelledby="v-pills-pdmsVer2-tab">
+                                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                                    <a href="https://2019.igem.org/wiki/images/c/c6/T--NCKU_Tainan--Hardware_ver2_chip.png" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/c/c6/T--NCKU_Tainan--Hardware_ver2_chip.png" style="width:100%"></a>
+                                                    <figcaption>Fig7. Microfluidic chip version 2.</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="tab-pane fade" id="pdmsVer3" role="tabpanel" aria-labelledby="v-pills-pdmsVer3-tab">
+                                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                                    <a href="https://2019.igem.org/wiki/images/6/6a/T--NCKU_Tainan--Hardware_ver3_chip.png" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/6/6a/T--NCKU_Tainan--Hardware_ver3_chip.png" style="width:100%"></a>
+                                                    <figcaption>Fig8. Microfluidic chip version 3.</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>    In version 1, we found out that when we insert fluid into the chip, there would be bubbles stuck at the corner of the chamber. We solved it by filleting every corner in version 2. When testing version 1 & 2, the bottom of whole blood chamber wasn’t strong enough to endure the force sample creates when the spinner’s rotational speed reaches 2500 RPM, we tried to overcome this by reinforcing the bottom part of the blood separation chamber in version 3.</p>
+                                    <p>    After we made the mold for version 3, we consulted Professor Ruey-Jen Yang. He suggested us to use glass slides instead of another layer of PDMS to cover the channels, which the bonding will be stronger compared to PDMS-PDMS bonding. We took his advice and the result turned out to be unsatisfying - several bonding failed. However, after a week of debugging we obtained successful ones by adjusting the parameters of the oxygen plasma machine.</p>
+                                    <h4>Final test for PDMS chip</h4>
+                                    <p>    In the final test, we put three microfluidic chips (PDMS-glass bond) on the chip holder and raise the spinning profile to 3000RPM for 10 minutes and then lowered 900 RPM for 5 minute<sup>[<a href="#ref3">3</a>]</sup>. The PDMS-glass bond chip is able to withstand the centrifugal force. With the adjusted parameters of the oxygen plasma machine, the bond between PDMS-PDMS layer was also strengthened and it too worked fine for blood plasma separation. We choose acrylic disc instead of PDMS chip in the end because PDMS chip has a longer fabrication time.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <button class="card-header" id="headingAcrylic" data-toggle="collapse" data-target="#collapseAcrylic" aria-expanded="false" aria-controls="collapseAcrylic">
+                                <h3 class="mb-0">Acrylic Disc</h3>
+                            </button>
+                            <div id="collapseAcrylic" class="collapse" aria-labelledby="headingAcrylic">
+                                <div class="card-body">
+                                    <div class="container-fluid p-0">
+                                        <div class="row no-gutters">
+                                            <div class="col-lg ">
+                                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                                    <a href="https://2019.igem.org/wiki/images/thumb/b/b9/T--NCKU_Tainan--Hardware_acrylic_disc.jpg/600px-T--NCKU_Tainan--Hardware_acrylic_disc.jpg" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/thumb/b/b9/T--NCKU_Tainan--Hardware_acrylic_disc.jpg/600px-T--NCKU_Tainan--Hardware_acrylic_disc.jpg" alt="" title="" style="width:100%"></a>
+                                                    <figcaption>Fig9. Acrylic disc</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid p-0" >
+                                        <div class="row no-gutters">
+                                            <div class="col-lg">
+                                                <p>    The major problem we encounter when we inject blood into the PDMS chip, blood often flew all the way into the reaction chamber instead of confined in the reaction chamber. So we designed a passive valve in the channel between whole blood chamber and reaction chamber.</p>
+                                            </div>
+                                            <div class="col-lg d-flex justify-content-center align-items-center">
+                                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                                    <a href="https://2019.igem.org/wiki/images/thumb/2/2c/T--NCKU_Tainan--Hardware_passive.jpg/800px-T--NCKU_Tainan--Hardware_passive.jpg" target="_blank"><img src="https://2019.igem.org/wiki/images/thumb/2/2c/T--NCKU_Tainan--Hardware_passive.jpg/800px-T--NCKU_Tainan--Hardware_passive.jpg" alt="" title="" style="width:100%"></a>
+                                                    <figcaption>Fig10. Passive valve</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4>Final test for acrylic disc</h4>
+                                    <p>    In the acrylic final test, we did the same experiment in <a href="#PDMS" target="_blank">PDMS chip final test</a>. The tests of acrylic disc’s ability of separating plasma turned out to be successful. We can see that there’s significant separation of plasma. Also, the plasma flew into the reaction chamber as we desired.</p>
+                                    <div class="container-fluid p-0">
+                                        <div class="row no-gutters">
+                                            <div class="col-lg ">
+                                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                                    <a href="https://2019.igem.org/wiki/images/thumb/e/ef/T--NCKU_Tainan--Hardware_detector_final.png/800px-T--NCKU_Tainan--Hardware_detector_final.png" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/thumb/e/ef/T--NCKU_Tainan--Hardware_detector_final.png/800px-T--NCKU_Tainan--Hardware_detector_final.png" alt="" title="" style="width:100%"></a>
+                                                    <figcaption>Fig11. Successful acrylic disc plasma separation.</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section>
+                    <h2 id ="Subtitle5">Blood <i>p</i>-Cresol Reader</h2>
+                    <p>    To determine the concentration of <i>p</i>-Cresol in a more cost-effective and easy way, we equipped <b>CreSense</b> with a blood <i>p</i>-Cresol reader with our <a href="https://2019.igem.org/Team:NCKU_Tainan/Design" target="_blank"><i>p</i>-Cresol sensing bacteria</a>. These bacteria will emit green fluorescence when they sense <i>p</i>-Cresol in blood plasma.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/thumb/e/ef/T--NCKU_Tainan--Hardware_detector_final.png/800px-T--NCKU_Tainan--Hardware_detector_final.png" target="_blank" style="width:70%"><img src="https://2019.igem.org/wiki/images/thumb/e/ef/T--NCKU_Tainan--Hardware_detector_final.png/800px-T--NCKU_Tainan--Hardware_detector_final.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption>Fig12. <b>CreSense</b>: fluorescence detector.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>    In our <a href="https://2019.igem.org/Team:NCKU_Tainan/Parts" target="_blank">biobrick construct</a>, we are using <a href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2762017" target="_blank">GFP</a> as our reporter. To excite the emission of fluorescence by the GFP, we used a blue laser. The optimal fluorescence emission is at around 515 nm. A 510 nm filter is used to block the excitation light and allow the emission light to pass through.</p>
+                    <p>    With the aid of a light-frequency converter - <a target="https://www.sparkfun.com/datasheets/Sensors/Imaging/TSL235R-LF.pdf" target="_blank">TSL 235R</a> as our light sensor, we will be able to read different emission light intensity. Sensor readings will then be shown on the LCD screen and be uploaded onto our realtime database for further monitoring of blood <i>p</i>-Cresol level.</p>
+                    <p>    We also tested our fluorescence detector by adding autofluorescence <i>E. coli</i> (pSB1C3-j23100-sfGFP in DH5a) into blood plasma and we are now positive that our device can successfully senses the fluorescence emission from the bacteria in plasma.</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/thumb/d/d3/T--NCKU_Tainan--Hardware_DetectorTest2.png/755px-T--NCKU_Tainan--Hardware_DetectorTest2.png" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/thumb/d/d3/T--NCKU_Tainan--Hardware_DetectorTest2.png/755px-T--NCKU_Tainan--Hardware_DetectorTest2.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption>Fig13. Detector test with autofluorescence E.coli.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="card">
+                            <button class="card-header" id="headingreader" data-toggle="collapse" data-target="#collapseReader" aria-expanded="false" aria-controls="collapseReader">
+                                <h3>Fluorescence Reader Improvement</h3>
+                            </button>
+                            <div id="collapseReader" class="collapse" aria-labelledby="headingreader">
+                                <div class="card-body">
+                                    <div class="container-fluid p-0" >
+                                        <div class="row no-gutters">
+                                            <div class="col-lg d-flex justify-content-center align-items-center">
+                                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                                    <a href="https://2019.igem.org/wiki/images/thumb/d/d5/T--NCKU_Tainan--Hardware_Detector_Version1.png/438px-T--NCKU_Tainan--Hardware_Detector_Version1.png" target="_blank"><img src="https://2019.igem.org/wiki/images/thumb/d/d5/T--NCKU_Tainan--Hardware_Detector_Version1.png/438px-T--NCKU_Tainan--Hardware_Detector_Version1.png" alt="" title="" style="width:100%"></a>
+                                                    <figcaption>Fig14. Initial design of <b>CreSense</b> fluorescence detector.</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col-lg">
+                                                <p>    In the beginning of designing our fluorescence detector, we used LDR as our light sensor. We soon realized that without a filter, our detector reading could not reflect the actual fluorescence intensity. From the graph, we can see that the light sensor works fine for light transmittance measurement. The darker the surroundings is, the lower the LDR value.</p>
+                                                <div class="container-fluid p-0">
+                                                    <div class="row no-gutters">
+                                                        <div class="col-lg ">
+                                                            <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                                                <a href="https://2019.igem.org/wiki/images/thumb/a/ac/T--NCKU_Tainan--Hardware_DetectorTest1.png/774px-T--NCKU_Tainan--Hardware_DetectorTest1.png" target="_blank" style="width:90%"><img src="https://2019.igem.org/wiki/images/thumb/a/ac/T--NCKU_Tainan--Hardware_DetectorTest1.png/774px-T--NCKU_Tainan--Hardware_DetectorTest1.png" alt="" title="" style="width:100%"></a>
+                                                                <figcaption>Fig15. First detector test.</figcaption>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>    This does not fit the purpose of our device which is fluorescence measurement. To measure only the fluorescence emission but not the total visible light transmission, we decided to add a narrow bandpass filter to block the excitation light (510nm) from the blue laser reaching the light sensor. We also changed the position of the light sensor and avoid a collinear arrangement. Besides, we replaced the light dependent resistor with our TSL 235R light-frequency converter thus improving the accuracy of our device.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Online Database</h3>
+                    <p>    Our <b>CreSense</b> device will be placed at the healthcare service provider. We connect Arduino Uno to a NodeMCU to store the detector readings onto an online realtime database with Firebase. These data can then be accessed by the healthcare professionals. In the future, we are hoping that we can integrate with Taiwan’s Ministry of Health and Welfare database. By doing so, our device can make a greater impact by helping to monitor the blood <i>p</i>-Cresol level of our CKD patients.</p>
+                </section>
+                <hr>
+                <section>
+                    <h2>Arduino code and Circuits</h2>
+                    <p>    We use Arduino IDE to code for our Arduino UNO and a NodeMCU board for our whole device. The complete code can be found on <a href="https://github.com/iGem-NCKU-Tainan" target="_blank">Github</a>.</p>
+                    <p>    Below is our entire wiring sketch:</p>
+                    <div class="container-fluid p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg ">
+                                <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                    <a href="https://2019.igem.org/wiki/images/thumb/6/60/T--NCKU_Tainan--Hardware_Arduino_Sketch.png/800px-T--NCKU_Tainan--Hardware_Arduino_Sketch.png" target="_blank" style="width:50%"><img src="https://2019.igem.org/wiki/images/thumb/6/60/T--NCKU_Tainan--Hardware_Arduino_Sketch.png/800px-T--NCKU_Tainan--Hardware_Arduino_Sketch.png" alt="" title="" style="width:100%"></a>
+                                    <figcaption>Fig16. <b>CreSense</b>: Arduino sketch</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section class="ref">
                     <h2>References</h2>
                     <ol>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li id="ref1">大安聯合醫事檢驗所. (n.d.). Retrieved from <a href="http://www.ucl.com.tw/webshop/shop/ServiceQueryInfo.asp?GoodsID=D0114066&GoodstypeID=D0&MiddleID=D011" target="_blank">http://www.ucl.com.tw/webshop/shop/ServiceQueryInfo.asp?GoodsID=D0114066&GoodstypeID=D0&MiddleID=D011</a></li>
+                        <li id="ref2">新北市政府衛生局 . (n.d.). 門診資訊-自費抽血檢驗項目表. Retrieved from <a href="https://zhonghe.health.ntpc.gov.tw/content/index.php?parent_id=10054&type_id=10054" target="_blank">https://zhonghe.health.ntpc.gov.tw/content/index.php?parent_id=10054&type_id=10054</a></li>
+                        <li id="ref3">Gorkin, R., Park, J., Siegrist, J., Amasia, M., Lee, B. S., Park, J.-M., … Cho, Y.-K. (2010). Centrifugal microfluidics for biomedical applications. Lab on a Chip, 10(14), 1758. doi: 10.1039/b924109d</li>
+                        <li id="ref4">Amasia, M., & Madou, M. (2010). Large-volume centrifugal microfluidic device for blood plasma separation. Bioanalysis, 2(10), 1701–1710. doi: 10.4155/bio.10.140</li>
                     </ol>
                 </section>
             </main>

@@ -96,102 +96,134 @@
     </header>
     <main id="fullpage">
         <section id="Logo" class="section d-flex flex-column justify-content-around align-items-center">
-            <div class="logo-wrapper center-adjust d-flex flex-column justify-content-center align-items-center">
-                <video id="Logo-video" preload muted poster="">
+            <div class="logo-wrapper center-adjust d-lg-flex flex-column justify-content-center align-items-center d-none">
+                <video id="Logo-video" preload muted poster="https://2019.igem.org/wiki/images/thumb/5/58/T--NCKU_Tainan--Home_logo_poster.jpg/800px-T--NCKU_Tainan--Home_logo_poster.jpg">
                     <source src="https://2019.igem.org/wiki/images/e/ea/T--NCKU_Tainan--Home_logo_video.mp4" type="video/mp4" />
-                    <source src="example/Yif-Magic.ogv" type="video/ogg" />
-                    <source src="example/Yif-Magic.webm" type="video/web" />
-                    您的瀏覽器不支援HTML 5影片播放標籤video格式。
                     Your browser doesn't support the video tag.
                 </video>
-                <a class="down bounce" href="#Game">
+                <a class="down bounce" href="#" style="z-index: 5;">
+                    <img class="d-lg-none" src="https://2019.igem.org/wiki/images/thumb/f/ff/T--NCKU_Tainan--Arrow_down.png/236px-T--NCKU_Tainan--Arrow_down.png">
+                </a>
+            </div>
+            <div class="logo-wrapper center-adjust d-lg-none flex-column justify-content-center align-items-center d-flex">
+                <img class="big-logo" src="https://2019.igem.org/wiki/images/4/4a/T--NCKU_Tainan--Logo_big.jpg">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="pagename" style="text-align: center;">OH MY GUT</h1>
+                    <hr class="pagename">
+                    <p class="pagename" style="text-align: center;">A comprehensive solution for the accumulation of p-Cresol</p>
+                </div>
+                <a class="down bounce" href="#" style="z-index: 5;">
                     <img src="https://2019.igem.org/wiki/images/thumb/f/ff/T--NCKU_Tainan--Arrow_down.png/236px-T--NCKU_Tainan--Arrow_down.png">
                 </a>
             </div>
-            <!--div class="down-wrapper d-flex flex-column justify-content-center align-items-center">
-                
-            </div-->
         </section>
-        <section id="Project" class="section">
-            <div class="container-fluid wrapper">
-                <div class="row wrapper">
-                    <div class="col-lg-7 center-adjust text-wrapper wrapper d-flex justify-content-center align-items-center ">
-                        <div class="text">
-                            <h2>Project</h2>
-                            <p>    Patients suffering from Chronic Kidney disease are unable to filter out uremic toxins inside the body due to a failing kidney. Accumulation of <i>p</i>-Cresol, one of the uremic toxins, have been associated with cardiovascular disease and worsening of Chronic Kidney Disease. To solve this problem, iGEM NCKU will be engineering <i>E. coli</i> Nissle, which is an FDA approved probiotic, to have two specific functions. First, to secrete bacteriocin and reduce the major gut <i>p</i>-Cresol producer, the <i>Clostridium</i> population. Second, to convert excess <i>p</i>-Cresol precursor, tyrosine into a harmless byproduct called <i>p</i>-Coumaric acid rather than <i>p</i>-Cresol. For biosafety concern, we knocked out the <i>yadF</i> gene to ensure <i>E. coli</i> will die when they enter the atmosphere. To provide additional aid in monitoring the level of <i>p</i>-Cresol in these patients’ body, we will also provide an open-source biosensing platform that uses live bacteria to detect specific compounds inside the blood.</p>
+        <section id="" class="section">
+            <div class="container-fluid wrapper text-wrapper center-adjust">
+                <div class="container-fluid py-2 d-flex flex-column justify-content-center align-items-center" style="min-height: 100%;">
+                    <div class="row">
+                        <div class="col-lg py-lg-0 py-2">
+                            <h2 style="text-align:center;">Abstract</h2>
+                            <p>    In the tiny island that is home to nearly 24 million people, Taiwan has a staggering amount of people suffering from Chronic Kidney Disease (CKD). CKD has long been ranked as one of the top 10 causes of death in Taiwan and has an estimated prevalence of 11.9%, with a total burden of more than 2.5 million people[1]. It is also very costly, with the government paying nearly 1.6 billion USD in 2016 alone.</p>
+                            <p>    Oh My Gut is a leading and innovative solution to the unsolved problem of <i>p</i>-Cresol accumulation. Research has proven that <i>p</i>-Cresol accumulation is associated with cardiovascular disease, deterioration of CKD and many other serious complications. Hence, we will provide two products, CreSolve and CreSense to help CKD patients achieve a better quality of life.</p>
+                        </div>
+                        <div class="col-lg py-lg-0 py-2">
+                            <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                <!-- put link in href & src-->
+                                <a class="img-full" href="https://2019.igem.org/wiki/images/7/7c/T--NCKU_Tainan--Home_kingdom_of_dialysis.png" target="_blank"><img src="https://2019.igem.org/wiki/images/7/7c/T--NCKU_Tainan--Home_kingdom_of_dialysis.png" alt="" title="" style="width:100%"></a>
+                            </figure>  
                         </div>
                     </div>
-                    <div class="col-lg-5 center-adjust img-wrapper d-flex justify-content-center align-items-center">
-                        <img class="device" src="device.png" alt="" title="">
-                    </div> 
+                </div>
+            </div>
+        </section>
+        <section id="" class="section">
+            <div class="container-fluid wrapper text-wrapper center-adjust">
+                <div class="container-fluid py-2 d-flex flex-column justify-content-center align-items-center" style="min-height: 100%;">
+                    <div class="row">
+                        <div class="col-lg py-lg-0 py-2">
+                            <figure class="d-flex flex-column justify-content-center align-items-center px-lg-3">
+                                <a class="img-full" href="https://2019.igem.org/wiki/images/f/f6/T--NCKU_Tainan--Home_CresolveCresense.png" target="_blank"><img src="https://2019.igem.org/wiki/images/f/f6/T--NCKU_Tainan--Home_CresolveCresense.png" alt="" title="" style="width:100%"></a>
+                            </figure>      
+                        </div>
+                        <div class="col-lg py-lg-0 py-2">
+                            <p>    CreSolve is a living therapeutic drug which can be consumed in the form of a capsule and dosage of which will be based on doctor’s prescription. It consists of a type of engineered <i>E.coli</i> Nissle 1917 (an FDA approved probiotic) that is able to specifically target both <i>p</i>-Cresol producers and <i>p</i>-Cresol precursor. By reducing <i>p</i>-Cresol production, we are able to slow down <i>p</i>-Cresol accumulation.</p>
+                            <p>    CreSense is a blood <i>p</i>-Cresol quantification device that can measure the <i>p</i>-Cresol level in the human blood plasma via blood separation and living bacteria bio-sensing techniques. CreSense is also customizable - by switching the current bio-sensing bacteria with another to measure other compounds, it enables a wide range of medical applications.</p>
+                            <p class="mt-5" style="text-shadow: 1px .9px #767676; font-size:1.5rem;">▼ Scroll down to watch our introduction video.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="Video" class="section">
-            <div class="video-wrapper wrapper center-adjust d-flex justify-content-center align-items-center">
-                <video id="Intro-video" controls poster="">
-                    <source src="https://2019.igem.org/wiki/images/e/ea/T--NCKU_Tainan--Home_logo_video.mp4" type="video/mp4" />
-                    <source src="example/Yif-Magic.ogv" type="video/ogg" />
-                    <source src="example/Yif-Magic.webm" type="video/web" />
-                    您的瀏覽器不支援HTML 5影片播放標籤video格式。
-                    Your browser doesn't support the video tag.
-                </video>
+            <div class="video-wrapper wrapper center-adjust d-flex flex-column justify-content-center align-items-center">
+                <div class="container d-flex flex-column justify-content-center align-items-center" style="height: 80%;">
+                    <video id="Intro-video" controls poster="https://2019.igem.org/wiki/images/e/ec/T--NCKU_Tainan--Home_introvid_thumbnail.jpg">
+                        <source src="https://2019.igem.org/wiki/images/0/07/T--NCKU_Tainan--Home_animation.mp4" type="video/mp4" />
+                        Your browser doesn't support the video tag.
+                    </video>
+                    <p style="text-align: center;">▶ <a href="https://www.youtube.com/watch?v=mmoMAV5IgUo&feature=youtu.be" target="_blank">For a HD video, check out our YouTube channel!</a></p>
+                </div>
+                <div class="container d-flex justify-content-end align-items-start" style="height: 10%;">
+                    <a class="des-link">
+                        <div class="close"></div>
+                    </a>
+                </div>
             </div>
         </section>
-        <section id="Game" class="section"></section>
         <footer class="section fp-auto-height">
             <!--htmlfooter start-->
             <div class="container footer-container">
-      <div class="row footer-row">
-        <div class="col-12 col-md-6 colOne">
-          <!--icon of logo-->
-          <div id="gutImage">
-            <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/f/fe/T--NCKU_Tainan--Logotext_icon.png/499px-T--NCKU_Tainan--Logotext_icon.png"></a>
-          </div>
-          <!--icon of NCKUigem-->
-          <div>
-            <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/5/5b/T--NCKU_Tainan--NCKUigemtext_icon.png/428px-T--NCKU_Tainan--NCKUigemtext_icon.png"></a>
-          </div>
-          <!--icon of NCKU-->
-          <div>
-            <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/f/f3/T--NCKU_Tainan--NCKUtext_icon.png/499px-T--NCKU_Tainan--NCKUtext_icon.png"></a>
-          </div>
-          <!--icon of Diamond-->
-          <div>
-            <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/f/f1/T--NCKU_Tainan--Diamodtext_icon.png/499px-T--NCKU_Tainan--Diamodtext_icon.png"></a>
-          </div>
-        </div>
-        <div class="col-md-1 footer-col1" style='border-right:3px solid #ffffff;'></div>
-        <div class="col-md-1 footer-col1"></div>
-        <div class="col-12 col-md-4 colTwo">
-          <div class="col-12 col-md-12 col-two-icon">
-            <!--icon of phone-->
-            <div>
-              <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/b/b4/T--NCKU_Tainan--Phone_icon.png/600px-T--NCKU_Tainan--Phone_icon.png"></a>
+                <div class="row footer-row">
+                    <div class="col-12 col-md-6 colOne">
+                        <!--icon of logo-->
+                        <div id="gutImage">
+                            <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/f/fe/T--NCKU_Tainan--Logotext_icon.png/499px-T--NCKU_Tainan--Logotext_icon.png"></a>
+                        </div>
+                        <!--icon of NCKUigem-->
+                        <div>
+                            <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/d/da/T--NCKU_Tainan--Footer_iGEM_NCKU.png/428px-T--NCKU_Tainan--Footer_iGEM_NCKU.png"></a>
+                        </div>
+                        <!--icon of NCKU-->
+                        <div>
+                            <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/f/f3/T--NCKU_Tainan--NCKUtext_icon.png/499px-T--NCKU_Tainan--NCKUtext_icon.png"></a>
+                        </div>
+                        <!--icon of Diamond-->
+                        <div>
+                            <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/f/f1/T--NCKU_Tainan--Diamodtext_icon.png/499px-T--NCKU_Tainan--Diamodtext_icon.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-1 footer-col1" style='border-right:3px solid #ffffff;'></div>
+                    <div class="col-md-1 footer-col1"></div>
+                    <div class="col-12 col-md-4 colTwo">
+                        <div class="col-12 col-md-12 col-two-icon">
+                            <!--icon of phone-->
+                            <div>
+                                <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/b/b4/T--NCKU_Tainan--Phone_icon.png/600px-T--NCKU_Tainan--Phone_icon.png"></a>
+                            </div>
+                            <!--icon of mail-->
+                            <div>
+                                <a href="joechen199712@gmail.com"><img src="https://2019.igem.org/wiki/images/thumb/f/fe/T--NCKU_Tainan--Mail_icon.png/600px-T--NCKU_Tainan--Mail_icon.png"></a>
+                            </div>
+                            <!--icon of instagram-->
+                            <div>
+                                <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/4/44/T--NCKU_Tainan--Instagram_icon.png/600px-T--NCKU_Tainan--Instagram_icon.png"></a>
+                            </div>
+                            <!--icon of facebook-->
+                            <div>
+                                <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/e/ec/T--NCKU_Tainan--Facebook_icon.png/600px-T--NCKU_Tainan--Facebook_icon.png"></a>
+                            </div>
+                        </div>
+                        <p class="col-12 footer-text">
+                            mail : igem.ncku.tainan@gmail.com 
+                            <br>
+                            phone : 06-2757575
+                        </p>
+                    </div>
+                    <!--end of col-4-->
+                </div>
             </div>
-            <!--icon of mail-->
-            <div>
-              <a href="joechen199712@gmail.com"><img src="https://2019.igem.org/wiki/images/thumb/f/fe/T--NCKU_Tainan--Mail_icon.png/600px-T--NCKU_Tainan--Mail_icon.png"></a>
-            </div>
-            <!--icon of instagram-->
-            <div>
-              <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/4/44/T--NCKU_Tainan--Instagram_icon.png/600px-T--NCKU_Tainan--Instagram_icon.png"></a>
-            </div>
-            <!--icon of facebook-->
-            <div>
-              <a href="#"><img src="https://2019.igem.org/wiki/images/thumb/e/ec/T--NCKU_Tainan--Facebook_icon.png/600px-T--NCKU_Tainan--Facebook_icon.png"></a>
-            </div>
-          </div>
-          <p class="col-12 footer-text">
-            mail:
-            <br>
-            phone : 06-2757575 ( 50311 )
-          </p>
-        </div>
-        <!--end of col-4-->
-      </div>
-    </div>
-    </footer>
+            <!--htmlfooter end-->
+        </footer>
     </main>
     <script src="https://2019.igem.org/Team:NCKU_Tainan/js/jquery-3_4_1_min_js?action=raw&ctype=text/javascript"></script>
     <script src="https://2019.igem.org/Team:NCKU_Tainan/js/4.3.1/bootstrap_min_js?action=raw&ctype=text/javascript"></script>
