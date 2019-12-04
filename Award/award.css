@@ -262,9 +262,19 @@ body.blurring {
   overflow: auto;
   width: 80%;
 }
+.card > img.close{
+  width: 3%;
+  margin-top: .5%;
+  margin-right: .5%;
+  height: auto;
+}
+.card > video {
+  width: 85%;
+  margin-bottom: 3%;
+}
 @media (min-width: 768px) { 
   .dimmer > .card {
-    width: 50%;
+    width: 80%;
   }
 }
 /*figure default settings*/
