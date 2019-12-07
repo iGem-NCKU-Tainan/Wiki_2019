@@ -287,6 +287,16 @@ body.blurring {
 .figure-default a img{
   width: 50%;
 }
+/*figure bigger setting*/
+.figure-large{
+  margin:1rem;
+}
+.figure-large a{
+  width: 100%;
+}
+.figure-large a img{
+  width: 70%;
+}
 /*for the bigger icon*/
 .figure-smaller a img{
   width: 20%;
