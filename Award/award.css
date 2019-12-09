@@ -269,7 +269,13 @@ body.blurring {
   height: auto;
 }
 .card > video {
-  width: 85%;
+  height: 90%;
+  margin-bottom: 3%;
+}
+.card > img.poster {
+  margin-top: 3%;
+  height: 80vh;
+  width: auto;
   margin-bottom: 3%;
 }
 @media (min-width: 768px) { 
